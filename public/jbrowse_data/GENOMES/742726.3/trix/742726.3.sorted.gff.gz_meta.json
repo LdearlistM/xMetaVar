@@ -1,0 +1,22 @@
+{
+  "dateCreated": "2025-08-25T12:50:17.090Z",
+  "tracks": [
+    {
+      "trackId": "742726.3_features",
+      "attributesIndexed": [
+        "gene"
+      ],
+      "excludedTypes": [
+        "None"
+      ],
+      "adapterConf": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "localPath": "/Users/cym/Desktop/毕设/WebServer/omicvap-nextjs/frontend/public/jbrowse_data/GENOMES/742726.3/742726.3.sorted.gff.gz",
+          "locationType": "LocalPathLocation"
+        }
+      }
+    }
+  ],
+  "assemblyNames": []
+}

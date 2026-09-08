@@ -1,0 +1,22 @@
+{
+  "dateCreated": "2025-09-10T02:29:35.282Z",
+  "tracks": [
+    {
+      "trackId": "272559.17_features",
+      "attributesIndexed": [
+        "gene"
+      ],
+      "excludedTypes": [
+        "None"
+      ],
+      "adapterConf": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "localPath": "/data/272559.17/272559.17.PATRIC.sorted.gff.gz",
+          "locationType": "LocalPathLocation"
+        }
+      }
+    }
+  ],
+  "assemblyNames": []
+}

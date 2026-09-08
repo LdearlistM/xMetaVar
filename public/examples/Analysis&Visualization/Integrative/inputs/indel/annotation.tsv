@@ -1,0 +1,1018 @@
+Site	genome_id	genome_name	accession	feature_type	patric_id	start	end	strand	gene	product	global_start	global_end
+ADLE01000001:766412:-1	742726.3	Barnesiella intestinihominis YIT 11860	ADLE01000001	CDS	fig|742726.3.peg.686	766345	766488	-		hypothetical protein	766345	766488
+ADLE01000008:95900:-1	742726.3	Barnesiella intestinihominis YIT 11860	ADLE01000008	-1	-1	-1	-1	+	-1	-1	-1	-1
+ADLE01000008:493878:1	742726.3	Barnesiella intestinihominis YIT 11860	ADLE01000008	-1	-1	-1	-1	+	-1	-1	-1	-1
+ADLE01000008:345356:-1	742726.3	Barnesiella intestinihominis YIT 11860	ADLE01000008	CDS	fig|742726.3.peg.1341	344928	345815	-		Mobilizable transposon, tnpC protein	1559078	1559965
+ADLE01000014:30194:-1	742726.3	Barnesiella intestinihominis YIT 11860	ADLE01000014	CDS	fig|742726.3.peg.1916	28873	30195	+		hypothetical protein	2219620	2220942
+ADLE01000014:110148:1	742726.3	Barnesiella intestinihominis YIT 11860	ADLE01000014	-1	-1	-1	-1	+	-1	-1	-1	-1
+ADLE01000015:345358:1	742726.3	Barnesiella intestinihominis YIT 11860	ADLE01000015	-1	-1	-1	-1	+	-1	-1	-1	-1
+ADLE01000017:93242:-1	742726.3	Barnesiella intestinihominis YIT 11860	ADLE01000017	-1	-1	-1	-1	+	-1	-1	-1	-1
+AFZZ01000038:2707:-1	1002367.3	Prevotella stercorea DSM 18206	AFZZ01000038	-1	-1	-1	-1	+	-1	-1	-1	-1
+AFZZ01000117:2816:-1	1002367.3	Prevotella stercorea DSM 18206	AFZZ01000117	-1	-1	-1	-1	+	-1	-1	-1	-1
+AFZZ01000160:3873:-1	1002367.3	Prevotella stercorea DSM 18206	AFZZ01000160	-1	-1	-1	-1	+	-1	-1	-1	-1
+AFZZ01000160:3880:1	1002367.3	Prevotella stercorea DSM 18206	AFZZ01000160	-1	-1	-1	-1	+	-1	-1	-1	-1
+AFZZ01000163:10371:1	1002367.3	Prevotella stercorea DSM 18206	AFZZ01000163	CDS	fig|1002367.3.peg.1478	9621	10373	+		hypothetical protein	1844671	1845423
+AFZZ01000175:288:-1	1002367.3	Prevotella stercorea DSM 18206	AFZZ01000175	-1	-1	-1	-1	-	-1	-1	-1	-1
+AFZZ01000179:5646:-1	1002367.3	Prevotella stercorea DSM 18206	AFZZ01000179	CDS	fig|1002367.3.peg.1696	5535	5996	-		hypothetical protein	2102575	2103036
+AFZZ01000181:14852:-1	1002367.3	Prevotella stercorea DSM 18206	AFZZ01000181	-1	-1	-1	-1	+	-1	-1	-1	-1
+AFZZ01000222:6384:1	1002367.3	Prevotella stercorea DSM 18206	AFZZ01000222	-1	-1	-1	-1	+	-1	-1	-1	-1
+AFZZ01000222:6386:-1	1002367.3	Prevotella stercorea DSM 18206	AFZZ01000222	-1	-1	-1	-1	+	-1	-1	-1	-1
+AFZZ01000237:21582:-1	1002367.3	Prevotella stercorea DSM 18206	AFZZ01000237	CDS	fig|1002367.3.peg.2169	19309	21597	+		Alpha-1,2-mannosidase	2709632	2711920
+AFZZ01000246:25962:-1	1002367.3	Prevotella stercorea DSM 18206	AFZZ01000246	-1	-1	-1	-1	+	-1	-1	-1	-1
+BA000007:4834988:-1	386585.154	Escherichia coli O157:H7 str. Sakai	BA000007	repeat_region	fig|386585.154.repeat.181	4831412	4836964	+		repeat region	4927439	4932991
+BA000007:4834988:-1	386585.154	Escherichia coli O157:H7 str. Sakai	BA000007	rRNA	fig|386585.154.rna.108	4833769	4836675	+	rrlA	LSU rRNA ## 23S rRNA, large subunit ribosomal RNA	4929796	4932702
+BA000007:4834993:1	386585.154	Escherichia coli O157:H7 str. Sakai	BA000007	repeat_region	fig|386585.154.repeat.181	4831412	4836964	+		repeat region	4927439	4932991
+BA000007:4834993:1	386585.154	Escherichia coli O157:H7 str. Sakai	BA000007	rRNA	fig|386585.154.rna.108	4833769	4836675	+	rrlA	LSU rRNA ## 23S rRNA, large subunit ribosomal RNA	4929796	4932702
+BA000007:4979174:1	386585.154	Escherichia coli O157:H7 str. Sakai	BA000007	repeat_region	fig|386585.154.repeat.183	4975691	4981078	+		repeat region	5071718	5077105
+BA000007:4979174:1	386585.154	Escherichia coli O157:H7 str. Sakai	BA000007	rRNA	fig|386585.154.rna.112	4977950	4980856	+	rrlB	LSU rRNA ## 23S rRNA, large subunit ribosomal RNA	5073977	5076883
+BA000007:4979169:-1	386585.154	Escherichia coli O157:H7 str. Sakai	BA000007	repeat_region	fig|386585.154.repeat.183	4975691	4981078	+		repeat region	5071718	5077105
+BA000007:4979169:-1	386585.154	Escherichia coli O157:H7 str. Sakai	BA000007	rRNA	fig|386585.154.rna.112	4977950	4980856	+	rrlB	LSU rRNA ## 23S rRNA, large subunit ribosomal RNA	5073977	5076883
+BA000007:682086:1	386585.154	Escherichia coli O157:H7 str. Sakai	BA000007	CDS	fig|386585.154.peg.634	681250	684387	+	cusA	Copper/silver efflux RND transporter, transmembrane protein CusA	777277	780414
+BA000007:2509975:-1	386585.154	Escherichia coli O157:H7 str. Sakai	BA000007	-1	-1	-1	-1	+	-1	-1	-1	-1
+BA000007:2851175:1	386585.154	Escherichia coli O157:H7 str. Sakai	BA000007	-1	-1	-1	-1	+	-1	-1	-1	-1
+BA000007:3021361:1	386585.154	Escherichia coli O157:H7 str. Sakai	BA000007	-1	-1	-1	-1	+	-1	-1	-1	-1
+BA000007:3073157:1	386585.154	Escherichia coli O157:H7 str. Sakai	BA000007	-1	-1	-1	-1	+	-1	-1	-1	-1
+BA000007:5149157:1	386585.154	Escherichia coli O157:H7 str. Sakai	BA000007	-1	-1	-1	-1	+	-1	-1	-1	-1
+BA000007:4450423:-1	386585.154	Escherichia coli O157:H7 str. Sakai	BA000007	-1	-1	-1	-1	+	-1	-1	-1	-1
+BA000007:2466515:-1	386585.154	Escherichia coli O157:H7 str. Sakai	BA000007	-1	-1	-1	-1	+	-1	-1	-1	-1
+BA000007:2404856:-1	386585.154	Escherichia coli O157:H7 str. Sakai	BA000007	-1	-1	-1	-1	+	-1	-1	-1	-1
+BA000007:4450435:1	386585.154	Escherichia coli O157:H7 str. Sakai	BA000007	-1	-1	-1	-1	+	-1	-1	-1	-1
+BA000007:2822575:1	386585.154	Escherichia coli O157:H7 str. Sakai	BA000007	-1	-1	-1	-1	+	-1	-1	-1	-1
+BA000007:4667621:1	386585.154	Escherichia coli O157:H7 str. Sakai	BA000007	CDS	fig|386585.154.peg.4850	4667579	4668679	-	dnaN	DNA polymerase III beta subunit (EC 2.7.7.7)	4763606	4764706
+BA000007:3045197:-1	386585.154	Escherichia coli O157:H7 str. Sakai	BA000007	CDS	fig|386585.154.peg.3234	3044768	3045871	-	ompC	Outer membrane porin OmpC	3140795	3141898
+BA000007:4877812:-1	386585.154	Escherichia coli O157:H7 str. Sakai	BA000007	CDS	fig|386585.154.peg.5042	4877754	4877870	-		FIG00643742: hypothetical protein	4973781	4973897
+BA000007:2458097:1	386585.154	Escherichia coli O157:H7 str. Sakai	BA000007	CDS	fig|386585.154.peg.2574	2457735	2458667	-	ydjH	Uncharacterized sugar kinase YdjH	2553762	2554694
+CP001104:542969:-1	515620.21	[Eubacterium] eligens ATCC 27750	CP001104	CDS	fig|515620.21.peg.507	541772	542971	+		hypothetical protein	541772	542971
+CP001104:18188:1	515620.21	[Eubacterium] eligens ATCC 27750	CP001104	repeat_region	fig|515620.21.repeat.1	15219	20627	+		repeat region	15219	20627
+CP001104:18188:1	515620.21	[Eubacterium] eligens ATCC 27750	CP001104	rRNA	fig|515620.21.rna.4	17613	20502	+		LSU rRNA ## 23S rRNA, large subunit ribosomal RNA	17613	20502
+CP001104:399348:-1	515620.21	[Eubacterium] eligens ATCC 27750	CP001104	CDS	fig|515620.21.peg.359	399114	399905	+		hypothetical protein	399114	399905
+CP001104:842726:-1	515620.21	[Eubacterium] eligens ATCC 27750	CP001104	CDS	fig|515620.21.peg.796	841934	843052	+		Flagellar biosynthesis protein FlhB	841934	843052
+CP001104:248579:1	515620.21	[Eubacterium] eligens ATCC 27750	CP001104	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP001104:1252582:1	515620.21	[Eubacterium] eligens ATCC 27750	CP001104	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP001104:1813617:-1	515620.21	[Eubacterium] eligens ATCC 27750	CP001104	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP001104:1811874:1	515620.21	[Eubacterium] eligens ATCC 27750	CP001104	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP001104:1979079:1	515620.21	[Eubacterium] eligens ATCC 27750	CP001104	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP001104:1979081:1	515620.21	[Eubacterium] eligens ATCC 27750	CP001104	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP001104:1027149:1	515620.21	[Eubacterium] eligens ATCC 27750	CP001104	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP001104:1893611:1	515620.21	[Eubacterium] eligens ATCC 27750	CP001104	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP001104:1893615:-1	515620.21	[Eubacterium] eligens ATCC 27750	CP001104	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP001104:1335374:1	515620.21	[Eubacterium] eligens ATCC 27750	CP001104	CDS	fig|515620.21.peg.1255	1335365	1336705	-		Multi antimicrobial extrusion protein (Na(+)/drug antiporter), MATE family of MDR efflux pumps	1335365	1336705
+CP001104:1425156:-1	515620.21	[Eubacterium] eligens ATCC 27750	CP001104	CDS	fig|515620.21.peg.1342	1425072	1426787	-		DEAD-box ATP-dependent RNA helicase DeaD (= CshA) (EC 3.6.4.13)	1425072	1426787
+CP001104:2080335:1	515620.21	[Eubacterium] eligens ATCC 27750	CP001104	CDS	fig|515620.21.peg.1957	2077896	2080682	-		hypothetical protein	2077896	2080682
+CP001106:204276:-1	515620.21	[Eubacterium] eligens ATCC 27750	CP001106	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP001106:361460:1	515620.21	[Eubacterium] eligens ATCC 27750	CP001106	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP001106:361465:-1	515620.21	[Eubacterium] eligens ATCC 27750	CP001106	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP001106:459324:-1	515620.21	[Eubacterium] eligens ATCC 27750	CP001106	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP001106:459332:1	515620.21	[Eubacterium] eligens ATCC 27750	CP001106	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP001106:372316:-1	515620.21	[Eubacterium] eligens ATCC 27750	CP001106	CDS	fig|515620.21.peg.2517	372146	373219	-		Carbamoyl-phosphate synthase small chain (EC 6.3.5.5)	2576791	2577864
+CP001106:107147:-1	515620.21	[Eubacterium] eligens ATCC 27750	CP001106	CDS	fig|515620.21.peg.2239	106326	107732	-		Iron-sulfur cluster assembly protein SufB	2310971	2312377
+CP001106:107143:1	515620.21	[Eubacterium] eligens ATCC 27750	CP001106	CDS	fig|515620.21.peg.2239	106326	107732	-		Iron-sulfur cluster assembly protein SufB	2310971	2312377
+CP012938:2175028:-1	28116.7	Bacteroides ovatus strain ATCC 8483	CP012938	CDS	fig|28116.7.peg.1811	2171649	2175662	+	tmoS_6	Periplasmic ligand-binding sensor domain COG3292 / BaeS-type histidine kinase / OmpR-type DNA-binding response regulator	2171649	2175662
+CP012938:4056587:1	28116.7	Bacteroides ovatus strain ATCC 8483	CP012938	CDS	fig|28116.7.peg.3261	4056431	4057345	+		hypothetical protein	4056431	4057345
+CP012938:4499893:1	28116.7	Bacteroides ovatus strain ATCC 8483	CP012938	CDS	fig|28116.7.peg.3593	4499373	4499906	+		Colicin V production protein	4499373	4499906
+CP012938:4499893:1	28116.7	Bacteroides ovatus strain ATCC 8483	CP012938	CDS	fig|28116.7.peg.3594	4499887	4501386	+	sufB	Iron-sulfur cluster assembly protein SufB	4499887	4501386
+CP012938:3958279:-1	28116.7	Bacteroides ovatus strain ATCC 8483	CP012938	repeat_region	fig|28116.7.repeat.58	3956247	3958712	+		repeat region	3956247	3958712
+CP012938:3958664:-1	28116.7	Bacteroides ovatus strain ATCC 8483	CP012938	repeat_region	fig|28116.7.repeat.58	3956247	3958712	+		repeat region	3956247	3958712
+CP012938:3958667:1	28116.7	Bacteroides ovatus strain ATCC 8483	CP012938	repeat_region	fig|28116.7.repeat.58	3956247	3958712	+		repeat region	3956247	3958712
+CP012938:5432418:1	28116.7	Bacteroides ovatus strain ATCC 8483	CP012938	repeat_region	fig|28116.7.repeat.82	5432374	5434839	+		repeat region	5432374	5434839
+CP012938:5432420:-1	28116.7	Bacteroides ovatus strain ATCC 8483	CP012938	repeat_region	fig|28116.7.repeat.82	5432374	5434839	+		repeat region	5432374	5434839
+CP012938:5432799:-1	28116.7	Bacteroides ovatus strain ATCC 8483	CP012938	repeat_region	fig|28116.7.repeat.82	5432374	5434839	+		repeat region	5432374	5434839
+CP012938:3730483:-1	28116.7	Bacteroides ovatus strain ATCC 8483	CP012938	CDS	fig|28116.7.peg.3057	3729713	3730486	+	rebM	FIG01180763: hypothetical protein	3729713	3730486
+CP012938:6097548:1	28116.7	Bacteroides ovatus strain ATCC 8483	CP012938	CDS	fig|28116.7.peg.4775	6096517	6098112	+		Cell surface glycan-binding lipoprotein, utilization system for glycans and polysaccharides (PUL), SusD family	6096517	6098112
+CP012938:135910:1	28116.7	Bacteroides ovatus strain ATCC 8483	CP012938	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP012938:360094:1	28116.7	Bacteroides ovatus strain ATCC 8483	CP012938	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP012938:374092:1	28116.7	Bacteroides ovatus strain ATCC 8483	CP012938	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP012938:868281:-1	28116.7	Bacteroides ovatus strain ATCC 8483	CP012938	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP012938:868284:1	28116.7	Bacteroides ovatus strain ATCC 8483	CP012938	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP012938:1148350:1	28116.7	Bacteroides ovatus strain ATCC 8483	CP012938	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP012938:1148357:1	28116.7	Bacteroides ovatus strain ATCC 8483	CP012938	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP012938:1647205:1	28116.7	Bacteroides ovatus strain ATCC 8483	CP012938	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP012938:1905733:-1	28116.7	Bacteroides ovatus strain ATCC 8483	CP012938	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP012938:1905777:-1	28116.7	Bacteroides ovatus strain ATCC 8483	CP012938	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP012938:1905782:1	28116.7	Bacteroides ovatus strain ATCC 8483	CP012938	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP012938:2216486:-1	28116.7	Bacteroides ovatus strain ATCC 8483	CP012938	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP012938:2769902:1	28116.7	Bacteroides ovatus strain ATCC 8483	CP012938	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP012938:2776183:-1	28116.7	Bacteroides ovatus strain ATCC 8483	CP012938	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP012938:3915968:-1	28116.7	Bacteroides ovatus strain ATCC 8483	CP012938	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP012938:4698368:1	28116.7	Bacteroides ovatus strain ATCC 8483	CP012938	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP012938:4915105:1	28116.7	Bacteroides ovatus strain ATCC 8483	CP012938	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP012938:5046633:1	28116.7	Bacteroides ovatus strain ATCC 8483	CP012938	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP012938:5046640:-1	28116.7	Bacteroides ovatus strain ATCC 8483	CP012938	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP012938:5851431:1	28116.7	Bacteroides ovatus strain ATCC 8483	CP012938	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP012938:1991523:1	28116.7	Bacteroides ovatus strain ATCC 8483	CP012938	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP012938:5865861:-1	28116.7	Bacteroides ovatus strain ATCC 8483	CP012938	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP012938:3433414:-1	28116.7	Bacteroides ovatus strain ATCC 8483	CP012938	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP012938:1444540:1	28116.7	Bacteroides ovatus strain ATCC 8483	CP012938	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP012938:1380964:1	28116.7	Bacteroides ovatus strain ATCC 8483	CP012938	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP012938:1444551:-1	28116.7	Bacteroides ovatus strain ATCC 8483	CP012938	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP012938:6129385:-1	28116.7	Bacteroides ovatus strain ATCC 8483	CP012938	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP012938:1905778:-1	28116.7	Bacteroides ovatus strain ATCC 8483	CP012938	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP012938:3639340:1	28116.7	Bacteroides ovatus strain ATCC 8483	CP012938	CDS	fig|28116.7.peg.2981	3639331	3639969	-		Uncharacterized SAM-dependent O-methyltransferase	3639331	3639969
+CP027002:3104911:1	411470.47	[Ruminococcus] gnavus ATCC 29149	CP027002	repeat_region	fig|411470.47.repeat.75	3103153	3108617	+		repeat region	3103153	3108617
+CP027002:3104911:1	411470.47	[Ruminococcus] gnavus ATCC 29149	CP027002	misc_RNA	fig|411470.47.rna.71	3103474	3105011	+		16S ribosomal RNA	3103474	3105011
+CP027002:3222428:-1	411470.47	[Ruminococcus] gnavus ATCC 29149	CP027002	CDS	fig|411470.47.peg.3314	3220857	3222944	+	ppk1	Polyphosphate kinase (EC 2.7.4.1)	3220857	3222944
+CP027002:2334710:-1	411470.47	[Ruminococcus] gnavus ATCC 29149	CP027002	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP027002:2915264:-1	411470.47	[Ruminococcus] gnavus ATCC 29149	CP027002	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP027002:2915259:1	411470.47	[Ruminococcus] gnavus ATCC 29149	CP027002	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP027002:2679191:-1	411470.47	[Ruminococcus] gnavus ATCC 29149	CP027002	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP027002:1938925:1	411470.47	[Ruminococcus] gnavus ATCC 29149	CP027002	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP027002:1149992:-1	411470.47	[Ruminococcus] gnavus ATCC 29149	CP027002	CDS	fig|411470.47.peg.1211	1149422	1150252	-		Zinc ABC transporter, permease protein ZnuB	1149422	1150252
+CP027002:1149996:1	411470.47	[Ruminococcus] gnavus ATCC 29149	CP027002	CDS	fig|411470.47.peg.1211	1149422	1150252	-		Zinc ABC transporter, permease protein ZnuB	1149422	1150252
+CP040530:288485:1	818.1357	Bacteroides thetaiotaomicron strain DSM 2079	CP040530	CDS	fig|818.1357.peg.269	287355	288677	+		hypothetical protein	320391	321713
+CP040530:288476:-1	818.1357	Bacteroides thetaiotaomicron strain DSM 2079	CP040530	CDS	fig|818.1357.peg.269	287355	288677	+		hypothetical protein	320391	321713
+CP040530:1174741:1	818.1357	Bacteroides thetaiotaomicron strain DSM 2079	CP040530	CDS	fig|818.1357.peg.1004	1174673	1174840	+		hypothetical protein	1207709	1207876
+CP040530:1375116:-1	818.1357	Bacteroides thetaiotaomicron strain DSM 2079	CP040530	CDS	fig|818.1357.peg.1147	1374540	1375118	+		Rubrerythrin	1407576	1408154
+CP040530:2927051:-1	818.1357	Bacteroides thetaiotaomicron strain DSM 2079	CP040530	CDS	fig|818.1357.peg.2308	2926259	2927254	+		hypothetical protein	2959295	2960290
+CP040530:2927047:1	818.1357	Bacteroides thetaiotaomicron strain DSM 2079	CP040530	CDS	fig|818.1357.peg.2308	2926259	2927254	+		hypothetical protein	2959295	2960290
+CP040530:3957674:1	818.1357	Bacteroides thetaiotaomicron strain DSM 2079	CP040530	CDS	fig|818.1357.peg.3208	3956946	3958289	+		Vitellogenin II precursor	3989982	3991325
+CP040530:1111808:-1	818.1357	Bacteroides thetaiotaomicron strain DSM 2079	CP040530	CDS	fig|818.1357.peg.964	1110913	1111809	+		putative chitobiase	1143949	1144845
+CP040530:2932472:1	818.1357	Bacteroides thetaiotaomicron strain DSM 2079	CP040530	CDS	fig|818.1357.peg.2311	2929911	2932901	+		hypothetical protein	2962947	2965937
+CP040530:1485373:1	818.1357	Bacteroides thetaiotaomicron strain DSM 2079	CP040530	CDS	fig|818.1357.peg.1250	1485189	1486820	+		hypothetical protein	1518225	1519856
+CP040530:1485379:-1	818.1357	Bacteroides thetaiotaomicron strain DSM 2079	CP040530	CDS	fig|818.1357.peg.1250	1485189	1486820	+		hypothetical protein	1518225	1519856
+CP040530:298221:-1	818.1357	Bacteroides thetaiotaomicron strain DSM 2079	CP040530	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP040530:1624875:-1	818.1357	Bacteroides thetaiotaomicron strain DSM 2079	CP040530	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP040530:1624871:1	818.1357	Bacteroides thetaiotaomicron strain DSM 2079	CP040530	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP040530:1674086:-1	818.1357	Bacteroides thetaiotaomicron strain DSM 2079	CP040530	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP040530:2904561:-1	818.1357	Bacteroides thetaiotaomicron strain DSM 2079	CP040530	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP040530:3489259:-1	818.1357	Bacteroides thetaiotaomicron strain DSM 2079	CP040530	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP040530:5089925:-1	818.1357	Bacteroides thetaiotaomicron strain DSM 2079	CP040530	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP040530:5290041:-1	818.1357	Bacteroides thetaiotaomicron strain DSM 2079	CP040530	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP040530:5442253:1	818.1357	Bacteroides thetaiotaomicron strain DSM 2079	CP040530	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP040530:5442232:-1	818.1357	Bacteroides thetaiotaomicron strain DSM 2079	CP040530	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP040530:5610291:1	818.1357	Bacteroides thetaiotaomicron strain DSM 2079	CP040530	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP040530:5610294:-1	818.1357	Bacteroides thetaiotaomicron strain DSM 2079	CP040530	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP040530:1537827:-1	818.1357	Bacteroides thetaiotaomicron strain DSM 2079	CP040530	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP040530:2545276:1	818.1357	Bacteroides thetaiotaomicron strain DSM 2079	CP040530	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP040530:3546770:1	818.1357	Bacteroides thetaiotaomicron strain DSM 2079	CP040530	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP040530:3560429:1	818.1357	Bacteroides thetaiotaomicron strain DSM 2079	CP040530	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP040530:3825260:1	818.1357	Bacteroides thetaiotaomicron strain DSM 2079	CP040530	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP040530:5212961:1	818.1357	Bacteroides thetaiotaomicron strain DSM 2079	CP040530	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP040530:4221602:-1	818.1357	Bacteroides thetaiotaomicron strain DSM 2079	CP040530	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP040530:882200:-1	818.1357	Bacteroides thetaiotaomicron strain DSM 2079	CP040530	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP040530:1008643:1	818.1357	Bacteroides thetaiotaomicron strain DSM 2079	CP040530	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP040530:3812978:1	818.1357	Bacteroides thetaiotaomicron strain DSM 2079	CP040530	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP040530:5217033:1	818.1357	Bacteroides thetaiotaomicron strain DSM 2079	CP040530	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP040530:21975:1	818.1357	Bacteroides thetaiotaomicron strain DSM 2079	CP040530	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP040530:21963:-1	818.1357	Bacteroides thetaiotaomicron strain DSM 2079	CP040530	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP040530:882173:1	818.1357	Bacteroides thetaiotaomicron strain DSM 2079	CP040530	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP040530:4449429:1	818.1357	Bacteroides thetaiotaomicron strain DSM 2079	CP040530	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP040530:3145047:1	818.1357	Bacteroides thetaiotaomicron strain DSM 2079	CP040530	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP040530:2918818:1	818.1357	Bacteroides thetaiotaomicron strain DSM 2079	CP040530	CDS	fig|818.1357.peg.2304	2918804	2918935	-		hypothetical protein	2951840	2951971
+CP040530:4212978:1	818.1357	Bacteroides thetaiotaomicron strain DSM 2079	CP040530	CDS	fig|818.1357.peg.3405	4211879	4212979	-		putative heme biosynthesis protein	4244915	4246015
+CP040530:4212978:1	818.1357	Bacteroides thetaiotaomicron strain DSM 2079	CP040530	CDS	fig|818.1357.peg.3406	4212976	4213428	-		hypothetical protein	4246012	4246464
+CP040530:4757668:-1	818.1357	Bacteroides thetaiotaomicron strain DSM 2079	CP040530	CDS	fig|818.1357.peg.3907	4757664	4760066	-		Putative outer membrane protein, probably involved in nutrient binding	4790700	4793102
+CP040530:5610352:1	818.1357	Bacteroides thetaiotaomicron strain DSM 2079	CP040530	CDS	fig|818.1357.peg.4653	5610315	5611880	-		hypothetical protein	5643351	5644916
+CP040530:882584:1	818.1357	Bacteroides thetaiotaomicron strain DSM 2079	CP040530	CDS	fig|818.1357.peg.795	882212	883402	-		Putative outer membrane protein	915248	916438
+CP040530:2277160:-1	818.1357	Bacteroides thetaiotaomicron strain DSM 2079	CP040530	CDS	fig|818.1357.peg.1832	2277138	2277422	-		hypothetical protein	2310174	2310458
+CP040530:2277167:1	818.1357	Bacteroides thetaiotaomicron strain DSM 2079	CP040530	CDS	fig|818.1357.peg.1832	2277138	2277422	-		hypothetical protein	2310174	2310458
+CP040530:5990434:1	818.1357	Bacteroides thetaiotaomicron strain DSM 2079	CP040530	CDS	fig|818.1357.peg.4957	5990168	5992990	-		Autotransporter adhesin	6023204	6026026
+CP040530:2538901:1	818.1357	Bacteroides thetaiotaomicron strain DSM 2079	CP040530	CDS	fig|818.1357.peg.2041	2538896	2540107	-		Integrase	2571932	2573143
+CP040530:4814324:1	818.1357	Bacteroides thetaiotaomicron strain DSM 2079	CP040530	CDS	fig|818.1357.peg.3940	4810129	4814367	-		beta-galactosidase	4843165	4847403
+CP042285:487199:1	823.3647	Parabacteroides distasonis strain APCS2/PD	CP042285	CDS	fig|823.3647.peg.422	486041	487204	+		8-amino-7-oxononanoate synthase (EC 2.3.1.47)	490189	491352
+CP042285:1728461:1	823.3647	Parabacteroides distasonis strain APCS2/PD	CP042285	CDS	fig|823.3647.peg.1525	1727805	1729349	+		Putative NADH-dependent dehydrogenase	1731953	1733497
+CP042285:1728455:-1	823.3647	Parabacteroides distasonis strain APCS2/PD	CP042285	CDS	fig|823.3647.peg.1525	1727805	1729349	+		Putative NADH-dependent dehydrogenase	1731953	1733497
+CP042285:3093746:1	823.3647	Parabacteroides distasonis strain APCS2/PD	CP042285	CDS	fig|823.3647.peg.2673	3090253	3094617	+		T6SS PAAR-repeat protein / RhaS protein	3094401	3098765
+CP042285:3093741:-1	823.3647	Parabacteroides distasonis strain APCS2/PD	CP042285	CDS	fig|823.3647.peg.2673	3090253	3094617	+		T6SS PAAR-repeat protein / RhaS protein	3094401	3098765
+CP042285:3093752:1	823.3647	Parabacteroides distasonis strain APCS2/PD	CP042285	CDS	fig|823.3647.peg.2673	3090253	3094617	+		T6SS PAAR-repeat protein / RhaS protein	3094401	3098765
+CP042285:3124644:-1	823.3647	Parabacteroides distasonis strain APCS2/PD	CP042285	CDS	fig|823.3647.peg.2708	3124444	3125511	+		hypothetical protein	3128592	3129659
+CP042285:3524388:-1	823.3647	Parabacteroides distasonis strain APCS2/PD	CP042285	CDS	fig|823.3647.peg.3100	3524279	3525055	+		Ferredoxin	3528427	3529203
+CP042285:3585604:1	823.3647	Parabacteroides distasonis strain APCS2/PD	CP042285	CDS	fig|823.3647.peg.3150	3585383	3585646	+		hypothetical protein	3589531	3589794
+CP042285:858886:-1	823.3647	Parabacteroides distasonis strain APCS2/PD	CP042285	CDS	fig|823.3647.peg.793	858793	859017	+		hypothetical protein	862941	863165
+CP042285:1537135:-1	823.3647	Parabacteroides distasonis strain APCS2/PD	CP042285	CDS	fig|823.3647.peg.1349	1534960	1537209	+	pnp	Polyribonucleotide nucleotidyltransferase (EC 2.7.7.8)	1539108	1541357
+CP042285:2262233:1	823.3647	Parabacteroides distasonis strain APCS2/PD	CP042285	CDS	fig|823.3647.peg.1953	2261288	2262244	+		Carbon-nitrogen hydrolase family protein	2265436	2266392
+CP042285:597796:-1	823.3647	Parabacteroides distasonis strain APCS2/PD	CP042285	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP042285:1770635:-1	823.3647	Parabacteroides distasonis strain APCS2/PD	CP042285	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP042285:1985991:-1	823.3647	Parabacteroides distasonis strain APCS2/PD	CP042285	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP042285:2037233:1	823.3647	Parabacteroides distasonis strain APCS2/PD	CP042285	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP042285:2086398:-1	823.3647	Parabacteroides distasonis strain APCS2/PD	CP042285	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP042285:2259884:1	823.3647	Parabacteroides distasonis strain APCS2/PD	CP042285	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP042285:2361114:1	823.3647	Parabacteroides distasonis strain APCS2/PD	CP042285	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP042285:2361117:-1	823.3647	Parabacteroides distasonis strain APCS2/PD	CP042285	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP042285:2387094:-1	823.3647	Parabacteroides distasonis strain APCS2/PD	CP042285	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP042285:3377926:-1	823.3647	Parabacteroides distasonis strain APCS2/PD	CP042285	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP042285:4912336:-1	823.3647	Parabacteroides distasonis strain APCS2/PD	CP042285	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP042285:529906:-1	823.3647	Parabacteroides distasonis strain APCS2/PD	CP042285	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP042285:1318059:1	823.3647	Parabacteroides distasonis strain APCS2/PD	CP042285	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP042285:2715728:1	823.3647	Parabacteroides distasonis strain APCS2/PD	CP042285	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP042285:2590818:1	823.3647	Parabacteroides distasonis strain APCS2/PD	CP042285	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP042285:418307:1	823.3647	Parabacteroides distasonis strain APCS2/PD	CP042285	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP042285:418317:1	823.3647	Parabacteroides distasonis strain APCS2/PD	CP042285	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP042285:1274797:-1	823.3647	Parabacteroides distasonis strain APCS2/PD	CP042285	CDS	fig|823.3647.peg.1139	1273166	1276333	-		ATP-dependent helicase	1277314	1280481
+CP042285:3883363:-1	823.3647	Parabacteroides distasonis strain APCS2/PD	CP042285	CDS	fig|823.3647.peg.3407	3883154	3885253	-	topB	DNA topoisomerase III (EC 5.99.1.2)	3887302	3889401
+CP042285:4455632:1	823.3647	Parabacteroides distasonis strain APCS2/PD	CP042285	CDS	fig|823.3647.peg.3921	4454925	4457930	-		hypothetical protein	4459073	4462078
+CP042285:5033143:1	823.3647	Parabacteroides distasonis strain APCS2/PD	CP042285	CDS	fig|823.3647.peg.4431	5031826	5034135	-		Putative TonB-dependent receptor	5035974	5038283
+CP042285:855762:-1	823.3647	Parabacteroides distasonis strain APCS2/PD	CP042285	CDS	fig|823.3647.peg.788	855750	857030	-		FIG00897206: hypothetical protein	859898	861178
+CP042285:3015511:1	823.3647	Parabacteroides distasonis strain APCS2/PD	CP042285	CDS	fig|823.3647.peg.2587	3014552	3016126	-		Phage protein	3018700	3020274
+CP042285:4455635:-1	823.3647	Parabacteroides distasonis strain APCS2/PD	CP042285	CDS	fig|823.3647.peg.3921	4454925	4457930	-		hypothetical protein	4459073	4462078
+CP046176:2119339:1	357276.1035	Bacteroides dorei strain DSM 17855	CP046176	CDS	fig|357276.1035.peg.1858	2118639	2119487	+		Pantoate--beta-alanine ligase (EC 6.3.2.1)	2118639	2119487
+CP046176:4079586:-1	357276.1035	Bacteroides dorei strain DSM 17855	CP046176	CDS	fig|357276.1035.peg.3673	4079518	4079733	+		hypothetical protein	4079518	4079733
+CP046176:121968:1	357276.1035	Bacteroides dorei strain DSM 17855	CP046176	CDS	fig|357276.1035.peg.94	120676	122907	+		TonB-dependent outer membrane receptor	120676	122907
+CP046176:821171:1	357276.1035	Bacteroides dorei strain DSM 17855	CP046176	CDS	fig|357276.1035.peg.670	821141	821377	+		hypothetical protein	821141	821377
+CP046176:1335935:-1	357276.1035	Bacteroides dorei strain DSM 17855	CP046176	CDS	fig|357276.1035.peg.1090	1335923	1336111	+		hypothetical protein	1335923	1336111
+CP046176:2811308:-1	357276.1035	Bacteroides dorei strain DSM 17855	CP046176	CDS	fig|357276.1035.peg.2526	2810537	2811817	+		Serine hydroxymethyltransferase (EC 2.1.2.1)	2810537	2811817
+CP046176:338184:1	357276.1035	Bacteroides dorei strain DSM 17855	CP046176	CDS	fig|357276.1035.peg.286	338091	339287	+		Thiol:disulfide interchange protein	338091	339287
+CP046176:338180:-1	357276.1035	Bacteroides dorei strain DSM 17855	CP046176	CDS	fig|357276.1035.peg.286	338091	339287	+		Thiol:disulfide interchange protein	338091	339287
+CP046176:571840:-1	357276.1035	Bacteroides dorei strain DSM 17855	CP046176	CDS	fig|357276.1035.peg.508	570931	571917	+		hypothetical protein	570931	571917
+CP046176:1345894:-1	357276.1035	Bacteroides dorei strain DSM 17855	CP046176	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP046176:2344046:1	357276.1035	Bacteroides dorei strain DSM 17855	CP046176	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP046176:2344057:-1	357276.1035	Bacteroides dorei strain DSM 17855	CP046176	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP046176:2347597:-1	357276.1035	Bacteroides dorei strain DSM 17855	CP046176	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP046176:4126460:1	357276.1035	Bacteroides dorei strain DSM 17855	CP046176	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP046176:4874693:-1	357276.1035	Bacteroides dorei strain DSM 17855	CP046176	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP046176:177456:-1	357276.1035	Bacteroides dorei strain DSM 17855	CP046176	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP046176:1233233:-1	357276.1035	Bacteroides dorei strain DSM 17855	CP046176	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP046176:4601851:-1	357276.1035	Bacteroides dorei strain DSM 17855	CP046176	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP046176:40896:-1	357276.1035	Bacteroides dorei strain DSM 17855	CP046176	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP046176:751163:-1	357276.1035	Bacteroides dorei strain DSM 17855	CP046176	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP046176:1042739:-1	357276.1035	Bacteroides dorei strain DSM 17855	CP046176	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP046176:2338942:1	357276.1035	Bacteroides dorei strain DSM 17855	CP046176	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP046176:3244397:1	357276.1035	Bacteroides dorei strain DSM 17855	CP046176	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP046176:335719:-1	357276.1035	Bacteroides dorei strain DSM 17855	CP046176	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP046176:335725:1	357276.1035	Bacteroides dorei strain DSM 17855	CP046176	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP046176:1774482:1	357276.1035	Bacteroides dorei strain DSM 17855	CP046176	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP046176:1618680:-1	357276.1035	Bacteroides dorei strain DSM 17855	CP046176	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP046176:1774466:-1	357276.1035	Bacteroides dorei strain DSM 17855	CP046176	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP046176:1673175:1	357276.1035	Bacteroides dorei strain DSM 17855	CP046176	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP046176:356289:1	357276.1035	Bacteroides dorei strain DSM 17855	CP046176	CDS	fig|357276.1035.peg.305	355430	356479	-		site-specific recombinase	355430	356479
+CP046176:3882874:-1	357276.1035	Bacteroides dorei strain DSM 17855	CP046176	CDS	fig|357276.1035.peg.3541	3882503	3883156	-	rpe	Ribulose-phosphate 3-epimerase (EC 5.1.3.1)	3882503	3883156
+CP046176:3882867:1	357276.1035	Bacteroides dorei strain DSM 17855	CP046176	CDS	fig|357276.1035.peg.3541	3882503	3883156	-	rpe	Ribulose-phosphate 3-epimerase (EC 5.1.3.1)	3882503	3883156
+CP046176:2303358:1	357276.1035	Bacteroides dorei strain DSM 17855	CP046176	CDS	fig|357276.1035.peg.2014	2302920	2304200	-		RteB, two-component system response regulator	2302920	2304200
+CP048433:1548360:-1	411903.3	Collinsella aerofaciens ATCC 25986 strain JCM 10188	CP048433	repeat_region	fig|411903.30.repeat.82	1547005	1552556	+		repeat region	1547005	1552556
+CP048433:1550421:-1	411903.3	Collinsella aerofaciens ATCC 25986 strain JCM 10188	CP048433	repeat_region	fig|411903.30.repeat.82	1547005	1552556	+		repeat region	1547005	1552556
+CP048433:1693210:-1	411903.3	Collinsella aerofaciens ATCC 25986 strain JCM 10188	CP048433	repeat_region	fig|411903.30.repeat.89	1689663	1695207	+		repeat region	1689663	1695207
+CP048433:2089681:1	411903.3	Collinsella aerofaciens ATCC 25986 strain JCM 10188	CP048433	CDS	fig|411903.30.peg.1883	2088515	2089753	+		Vancomycin (or other glycopeptides) histidine kinase VanS => unclassified	2088515	2089753
+CP048433:1556076:-1	411903.3	Collinsella aerofaciens ATCC 25986 strain JCM 10188	CP048433	repeat_region	fig|411903.30.repeat.83	1553000	1558543	+		repeat region	1553000	1558543
+CP048433:1693080:-1	411903.3	Collinsella aerofaciens ATCC 25986 strain JCM 10188	CP048433	repeat_region	fig|411903.30.repeat.89	1689663	1695207	+		repeat region	1689663	1695207
+CP048433:1550551:-1	411903.3	Collinsella aerofaciens ATCC 25986 strain JCM 10188	CP048433	repeat_region	fig|411903.30.repeat.82	1547005	1552556	+		repeat region	1547005	1552556
+CP048433:516856:1	411903.3	Collinsella aerofaciens ATCC 25986 strain JCM 10188	CP048433	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP048433:2203708:1	411903.3	Collinsella aerofaciens ATCC 25986 strain JCM 10188	CP048433	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP048433:2203703:-1	411903.3	Collinsella aerofaciens ATCC 25986 strain JCM 10188	CP048433	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP048433:1548360:-1	411903.3	Collinsella aerofaciens ATCC 25986 strain JCM 10188	CP048433	rRNA	fig|411903.30.rna.45	1547338	1550314	-		LSU rRNA ## 23S rRNA, large subunit ribosomal RNA	1547338	1550314
+CP048433:929272:-1	411903.3	Collinsella aerofaciens ATCC 25986 strain JCM 10188	CP048433	CDS	fig|411903.30.peg.888	928467	929408	-		Phosphate ABC transporter, substrate-binding protein PstS (TC 3.A.1.7.1)	928467	929408
+CP048433:1668704:-1	411903.3	Collinsella aerofaciens ATCC 25986 strain JCM 10188	CP048433	CDS	fig|411903.30.peg.1534	1668701	1669975	-		FIG00512925: hypothetical protein	1668701	1669975
+CP048433:1906156:1	411903.3	Collinsella aerofaciens ATCC 25986 strain JCM 10188	CP048433	CDS	fig|411903.30.peg.1734	1906059	1907093	-	hypE	[NiFe] hydrogenase metallocenter assembly protein HypE	1906059	1907093
+CP048433:1906152:-1	411903.3	Collinsella aerofaciens ATCC 25986 strain JCM 10188	CP048433	CDS	fig|411903.30.peg.1734	1906059	1907093	-	hypE	[NiFe] hydrogenase metallocenter assembly protein HypE	1906059	1907093
+CP048433:1556076:-1	411903.3	Collinsella aerofaciens ATCC 25986 strain JCM 10188	CP048433	rRNA	fig|411903.30.rna.48	1553331	1556307	-		LSU rRNA ## 23S rRNA, large subunit ribosomal RNA	1553331	1556307
+CP072255:440676:-1	997890.6	Bacteroides uniformis CL03T12C37	CP072255	CDS	fig|997890.6.peg.377	440544	440789	+		hypothetical protein	440544	440789
+CP072255:440736:-1	997890.6	Bacteroides uniformis CL03T12C37	CP072255	CDS	fig|997890.6.peg.377	440544	440789	+		hypothetical protein	440544	440789
+CP072255:2621745:-1	997890.6	Bacteroides uniformis CL03T12C37	CP072255	CDS	fig|997890.6.peg.2454	2621558	2621854	+		Conjugative transposon protein TraL	2621558	2621854
+CP072255:1404717:1	997890.6	Bacteroides uniformis CL03T12C37	CP072255	CDS	fig|997890.6.peg.1282	1401893	1404727	+	uvrA_2	Excinuclease ABC subunit A	1401893	1404727
+CP072255:76055:1	997890.6	Bacteroides uniformis CL03T12C37	CP072255	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP072255:1022382:-1	997890.6	Bacteroides uniformis CL03T12C37	CP072255	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP072255:1505444:1	997890.6	Bacteroides uniformis CL03T12C37	CP072255	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP072255:1505439:-1	997890.6	Bacteroides uniformis CL03T12C37	CP072255	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP072255:943227:1	997890.6	Bacteroides uniformis CL03T12C37	CP072255	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP072255:4426029:-1	997890.6	Bacteroides uniformis CL03T12C37	CP072255	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP072255:1862298:-1	997890.6	Bacteroides uniformis CL03T12C37	CP072255	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP072255:1862293:1	997890.6	Bacteroides uniformis CL03T12C37	CP072255	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP072255:2090046:-1	997890.6	Bacteroides uniformis CL03T12C37	CP072255	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP072255:3697713:1	997890.6	Bacteroides uniformis CL03T12C37	CP072255	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP072255:1873442:-1	997890.6	Bacteroides uniformis CL03T12C37	CP072255	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP072255:1738639:-1	997890.6	Bacteroides uniformis CL03T12C37	CP072255	CDS	fig|997890.6.peg.1611	1738307	1739113	-		FIG00408616: hypothetical protein	1738307	1739113
+CP072255:1738636:1	997890.6	Bacteroides uniformis CL03T12C37	CP072255	CDS	fig|997890.6.peg.1611	1738307	1739113	-		FIG00408616: hypothetical protein	1738307	1739113
+CP072255:659367:1	997890.6	Bacteroides uniformis CL03T12C37	CP072255	CDS	fig|997890.6.peg.565	657556	660264	-		hypothetical protein	657556	660264
+CP072255:1789676:1	997890.6	Bacteroides uniformis CL03T12C37	CP072255	CDS	fig|997890.6.peg.1657	1786344	1789721	-		hypothetical protein	1786344	1789721
+CP072255:1789683:-1	997890.6	Bacteroides uniformis CL03T12C37	CP072255	CDS	fig|997890.6.peg.1657	1786344	1789721	-		hypothetical protein	1786344	1789721
+CP072258:5313597:-1	997873.77	Bacteroides caccae CL03T12C61	CP072258	CDS	fig|997873.77.peg.4733	5313104	5313970	+		UPF0701 protein YicC	5313104	5313970
+CP072258:5313594:1	997873.77	Bacteroides caccae CL03T12C61	CP072258	CDS	fig|997873.77.peg.4733	5313104	5313970	+		UPF0701 protein YicC	5313104	5313970
+CP072258:1298709:-1	997873.77	Bacteroides caccae CL03T12C61	CP072258	CDS	fig|997873.77.peg.1139	1298300	1299814	+		Cell surface glycan-binding lipoprotein, utilization system for glycans and polysaccharides (PUL), SusD family	1298300	1299814
+CP072258:4033441:-1	997873.77	Bacteroides caccae CL03T12C61	CP072258	CDS	fig|997873.77.peg.3577	4033300	4033482	+		hypothetical protein	4033300	4033482
+CP072258:4039798:-1	997873.77	Bacteroides caccae CL03T12C61	CP072258	CDS	fig|997873.77.peg.3583	4039277	4041481	+		hypothetical protein	4039277	4041481
+CP072258:4033464:1	997873.77	Bacteroides caccae CL03T12C61	CP072258	CDS	fig|997873.77.peg.3577	4033300	4033482	+		hypothetical protein	4033300	4033482
+CP072258:4050434:-1	997873.77	Bacteroides caccae CL03T12C61	CP072258	CDS	fig|997873.77.peg.3598	4050093	4050437	+		hypothetical protein	4050093	4050437
+CP072258:4050437:1	997873.77	Bacteroides caccae CL03T12C61	CP072258	CDS	fig|997873.77.peg.3598	4050093	4050437	+		hypothetical protein	4050093	4050437
+CP072258:1299314:-1	997873.77	Bacteroides caccae CL03T12C61	CP072258	CDS	fig|997873.77.peg.1139	1298300	1299814	+		Cell surface glycan-binding lipoprotein, utilization system for glycans and polysaccharides (PUL), SusD family	1298300	1299814
+CP072258:1299309:1	997873.77	Bacteroides caccae CL03T12C61	CP072258	CDS	fig|997873.77.peg.1139	1298300	1299814	+		Cell surface glycan-binding lipoprotein, utilization system for glycans and polysaccharides (PUL), SusD family	1298300	1299814
+CP072258:4064029:-1	997873.77	Bacteroides caccae CL03T12C61	CP072258	CDS	fig|997873.77.peg.3614	4063993	4064202	+		hypothetical protein	4063993	4064202
+CP072258:1892534:1	997873.77	Bacteroides caccae CL03T12C61	CP072258	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP072258:1892670:1	997873.77	Bacteroides caccae CL03T12C61	CP072258	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP072258:1892677:-1	997873.77	Bacteroides caccae CL03T12C61	CP072258	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP072258:2185448:-1	997873.77	Bacteroides caccae CL03T12C61	CP072258	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP072258:2261451:-1	997873.77	Bacteroides caccae CL03T12C61	CP072258	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP072258:1299816:-1	997873.77	Bacteroides caccae CL03T12C61	CP072258	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP072258:2880597:1	997873.77	Bacteroides caccae CL03T12C61	CP072258	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP072258:2880592:-1	997873.77	Bacteroides caccae CL03T12C61	CP072258	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP072258:4047168:-1	997873.77	Bacteroides caccae CL03T12C61	CP072258	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP072258:4047221:-1	997873.77	Bacteroides caccae CL03T12C61	CP072258	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP072258:4047179:1	997873.77	Bacteroides caccae CL03T12C61	CP072258	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP072258:4523314:-1	997873.77	Bacteroides caccae CL03T12C61	CP072258	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP072258:554337:-1	997873.77	Bacteroides caccae CL03T12C61	CP072258	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP072258:3175325:1	997873.77	Bacteroides caccae CL03T12C61	CP072258	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP072258:221646:1	997873.77	Bacteroides caccae CL03T12C61	CP072258	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP072258:459009:1	997873.77	Bacteroides caccae CL03T12C61	CP072258	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP072258:712769:1	997873.77	Bacteroides caccae CL03T12C61	CP072258	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP072258:3022202:1	997873.77	Bacteroides caccae CL03T12C61	CP072258	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP072258:2353079:1	997873.77	Bacteroides caccae CL03T12C61	CP072258	CDS	fig|997873.77.peg.2012	2352210	2353640	-		FIG00898120: hypothetical protein	2352210	2353640
+CP072258:2353076:-1	997873.77	Bacteroides caccae CL03T12C61	CP072258	CDS	fig|997873.77.peg.2012	2352210	2353640	-		FIG00898120: hypothetical protein	2352210	2353640
+CP072258:3037220:-1	997873.77	Bacteroides caccae CL03T12C61	CP072258	CDS	fig|997873.77.peg.2627	3037008	3037580	-		cAMP-binding proteins - catabolite gene activator and regulatory subunit of cAMP-dependent protein kinases	3037008	3037580
+CP072258:3037217:1	997873.77	Bacteroides caccae CL03T12C61	CP072258	CDS	fig|997873.77.peg.2627	3037008	3037580	-		cAMP-binding proteins - catabolite gene activator and regulatory subunit of cAMP-dependent protein kinases	3037008	3037580
+CP072258:1062059:1	997873.77	Bacteroides caccae CL03T12C61	CP072258	CDS	fig|997873.77.peg.957	1061469	1062476	-	rfbB_1	Nucleoside-diphosphate-sugar epimerase	1061469	1062476
+CP072258:3036839:1	997873.77	Bacteroides caccae CL03T12C61	CP072258	CDS	fig|997873.77.peg.2626	3036483	3036908	-		hypothetical protein	3036483	3036908
+CP072258:3131563:-1	997873.77	Bacteroides caccae CL03T12C61	CP072258	CDS	fig|997873.77.peg.2731	3131552	3131722	-		hypothetical protein	3131552	3131722
+CP072258:1621599:1	997873.77	Bacteroides caccae CL03T12C61	CP072258	CDS	fig|997873.77.peg.1376	1621294	1621917	-		Conjugative transposon protein TraG	1621294	1621917
+CP072258:1621605:-1	997873.77	Bacteroides caccae CL03T12C61	CP072258	CDS	fig|997873.77.peg.1376	1621294	1621917	-		Conjugative transposon protein TraG	1621294	1621917
+CP072258:1622525:1	997873.77	Bacteroides caccae CL03T12C61	CP072258	CDS	fig|997873.77.peg.1379	1622453	1622752	-		Conjugative transposon protein TraE	1622453	1622752
+CP072258:1622516:-1	997873.77	Bacteroides caccae CL03T12C61	CP072258	CDS	fig|997873.77.peg.1379	1622453	1622752	-		Conjugative transposon protein TraE	1622453	1622752
+CP072258:848021:-1	997873.77	Bacteroides caccae CL03T12C61	CP072258	CDS	fig|997873.77.peg.796	847718	848083	-		hypothetical protein	847718	848083
+CP072260:3867:-1	997873.77	Bacteroides caccae CL03T12C61	CP072260	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP072260:4063:1	997873.77	Bacteroides caccae CL03T12C61	CP072260	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP072260:4057:-1	997873.77	Bacteroides caccae CL03T12C61	CP072260	CDS	fig|997873.77.peg.4902	3905	4060	-		hypothetical protein	5496718	5496873
+CP073280:3168448:1	39488.252	Anaerobutyricum hallii strain EHAL	CP073280	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP073280:2099929:-1	39488.252	Anaerobutyricum hallii strain EHAL	CP073280	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP073280:776825:-1	39488.252	Anaerobutyricum hallii strain EHAL	CP073280	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP073280:75552:-1	39488.252	Anaerobutyricum hallii strain EHAL	CP073280	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP073280:103998:-1	39488.252	Anaerobutyricum hallii strain EHAL	CP073280	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP073280:468164:1	39488.252	Anaerobutyricum hallii strain EHAL	CP073280	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP073280:397453:-1	39488.252	Anaerobutyricum hallii strain EHAL	CP073280	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP073280:266602:-1	39488.252	Anaerobutyricum hallii strain EHAL	CP073280	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP073280:979501:-1	39488.252	Anaerobutyricum hallii strain EHAL	CP073280	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP073280:2922099:1	39488.252	Anaerobutyricum hallii strain EHAL	CP073280	CDS	fig|39488.252.peg.2711	2922078	2923037	-		hypothetical protein	2922078	2923037
+CP073280:3287314:1	39488.252	Anaerobutyricum hallii strain EHAL	CP073280	CDS	fig|39488.252.peg.3023	3287275	3291999	-		hypothetical protein	3287275	3291999
+CP085932:1049034:1	537011.437	Prevotella copri DSM 18205 strain FDAARGOS_1573	CP085932	repeat_region	fig|537011.437.repeat.55	1048900	1050497	+		repeat region	1048900	1050497
+CP085932:1446554:1	537011.437	Prevotella copri DSM 18205 strain FDAARGOS_1573	CP085932	CDS	fig|537011.437.peg.1252	1446006	1446902	+		FIG00418142: hypothetical protein	1446006	1446902
+CP085932:1446551:-1	537011.437	Prevotella copri DSM 18205 strain FDAARGOS_1573	CP085932	CDS	fig|537011.437.peg.1252	1446006	1446902	+		FIG00418142: hypothetical protein	1446006	1446902
+CP085932:690663:-1	537011.437	Prevotella copri DSM 18205 strain FDAARGOS_1573	CP085932	CDS	fig|537011.437.peg.590	690545	692146	+	pckA	Phosphoenolpyruvate carboxykinase [ATP] (EC 4.1.1.49)	690545	692146
+CP085932:1212640:1	537011.437	Prevotella copri DSM 18205 strain FDAARGOS_1573	CP085932	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP085932:1542532:1	537011.437	Prevotella copri DSM 18205 strain FDAARGOS_1573	CP085932	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP085932:2131115:1	537011.437	Prevotella copri DSM 18205 strain FDAARGOS_1573	CP085932	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP085932:2690538:1	537011.437	Prevotella copri DSM 18205 strain FDAARGOS_1573	CP085932	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP085932:2690542:-1	537011.437	Prevotella copri DSM 18205 strain FDAARGOS_1573	CP085932	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP085932:1778566:1	537011.437	Prevotella copri DSM 18205 strain FDAARGOS_1573	CP085932	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP085932:3041792:1	537011.437	Prevotella copri DSM 18205 strain FDAARGOS_1573	CP085932	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP085932:2131122:-1	537011.437	Prevotella copri DSM 18205 strain FDAARGOS_1573	CP085932	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP085932:2173661:-1	537011.437	Prevotella copri DSM 18205 strain FDAARGOS_1573	CP085932	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP085932:2573348:1	537011.437	Prevotella copri DSM 18205 strain FDAARGOS_1573	CP085932	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP085932:248679:-1	537011.437	Prevotella copri DSM 18205 strain FDAARGOS_1573	CP085932	CDS	fig|537011.437.peg.220	248156	249841	-		Cell surface glycan-binding lipoprotein, utilization system for glycans and polysaccharides (PUL), SusD family	248156	249841
+CP085932:1043435:1	537011.437	Prevotella copri DSM 18205 strain FDAARGOS_1573	CP085932	CDS	fig|537011.437.peg.888	1042910	1044220	-	ltrA	Retron-type RNA-directed DNA polymerase (EC 2.7.7.49)	1042910	1044220
+CP092643:488052:1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	CDS	fig|39491.2717.peg.480	486863	488194	+		hypothetical protein	486863	488194
+CP092643:876769:-1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	CDS	fig|39491.2717.peg.896	876671	878368	+		Oligopeptide ABC transporter, substrate-binding protein OppA (TC 3.A.1.5.1)	876671	878368
+CP092643:919531:-1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	CDS	fig|39491.2717.peg.935	918802	919737	+		hypothetical protein	918802	919737
+CP092643:1038144:-1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	CDS	fig|39491.2717.peg.1034	1037121	1038146	+	purM	Phosphoribosylformylglycinamidine cyclo-ligase (EC 6.3.3.1)	1037121	1038146
+CP092643:1079545:-1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	CDS	fig|39491.2717.peg.1076	1078118	1079545	+	gatB	Aspartyl-tRNA(Asn) amidotransferase subunit B (EC 6.3.5.6) @ Glutamyl-tRNA(Gln) amidotransferase subunit B (EC 6.3.5.7)	1078118	1079545
+CP092643:61320:1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	CDS	fig|39491.2717.peg.48	60470	61693	+		hypothetical protein	60470	61693
+CP092643:634671:-1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	CDS	fig|39491.2717.peg.637	632715	634838	+	ftsH	Cell division-associated, ATP-dependent zinc metalloprotease FtsH	632715	634838
+CP092643:805677:-1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	CDS	fig|39491.2717.peg.826	805078	805677	+		Substrate-specific component BioY of biotin ECF transporter	805078	805677
+CP092643:76564:-1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	CDS	fig|39491.2717.peg.65	76132	76566	+		hypothetical protein	76132	76566
+CP092643:76564:-1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	repeat_region	fig|39491.2717.repeat.3	76537	78340	+		repeat region	76537	78340
+CP092643:953081:1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	CDS	fig|39491.2717.peg.964	953055	953183	+		hypothetical protein	953055	953183
+CP092643:953183:-1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	CDS	fig|39491.2717.peg.964	953055	953183	+		hypothetical protein	953055	953183
+CP092643:953423:1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	CDS	fig|39491.2717.peg.965	953224	954123	+		hypothetical protein	953224	954123
+CP092643:236862:-1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	CDS	fig|39491.2717.peg.234	235313	236932	+		hypothetical protein	235313	236932
+CP092643:918181:1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	CDS	fig|39491.2717.peg.934	917006	918352	+		putative DinF, damage-inducible protein; possible cation efflux pump (multidrug resistance protein)	917006	918352
+CP092643:918178:-1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	CDS	fig|39491.2717.peg.934	917006	918352	+		putative DinF, damage-inducible protein; possible cation efflux pump (multidrug resistance protein)	917006	918352
+CP092643:2913476:-1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	CDS	fig|39491.2717.peg.2815	2912711	2913871	+		Putative serine/threonine protein kinase	2912711	2913871
+CP092643:209904:1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP092643:401453:-1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP092643:468203:-1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP092643:1605648:-1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP092643:1750088:-1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP092643:2037783:-1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP092643:2037768:1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP092643:2091547:-1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP092643:2123873:-1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP092643:2254126:1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP092643:2265838:-1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP092643:2988547:1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP092643:303571:-1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP092643:366361:-1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP092643:423962:1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP092643:748312:1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP092643:900908:1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP092643:912457:-1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP092643:915523:-1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP092643:1040864:-1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP092643:1415093:1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP092643:1838086:-1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP092643:1838102:1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP092643:1838164:-1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP092643:2141338:1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP092643:2219492:-1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP092643:2233806:-1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP092643:2275586:-1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP092643:2454658:-1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP092643:2708470:1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP092643:2848334:1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP092643:2937381:1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP092643:3005800:1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP092643:3125862:-1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP092643:315682:-1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP092643:1463591:1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP092643:2910556:-1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP092643:2963388:1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP092643:3059399:1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP092643:3160320:1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP092643:2408522:1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP092643:1347959:1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP092643:1507932:-1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP092643:1764188:-1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP092643:2028068:-1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	CDS	fig|39491.2717.peg.2013	2023820	2028967	-		hypothetical protein	2023820	2028967
+CP092643:2172572:1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	CDS	fig|39491.2717.peg.2137	2170985	2173006	-		hypothetical protein	2170985	2173006
+CP092643:1696670:1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	CDS	fig|39491.2717.peg.1674	1695455	1697311	-		Limit dextrin alpha-1,6-maltotetraose-hydrolase (EC 3.2.1.196)	1695455	1697311
+CP092643:2024809:-1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	CDS	fig|39491.2717.peg.2013	2023820	2028967	-		hypothetical protein	2023820	2028967
+CP092643:2026864:1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	CDS	fig|39491.2717.peg.2013	2023820	2028967	-		hypothetical protein	2023820	2028967
+CP092643:2026868:-1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	CDS	fig|39491.2717.peg.2013	2023820	2028967	-		hypothetical protein	2023820	2028967
+CP092643:2027180:1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	CDS	fig|39491.2717.peg.2013	2023820	2028967	-		hypothetical protein	2023820	2028967
+CP092643:2262313:-1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	CDS	fig|39491.2717.peg.2215	2262265	2263614	-		ABC transporter, RND-adapter-like protein	2262265	2263614
+CP092643:2369447:1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	CDS	fig|39491.2717.peg.2312	2369440	2372256	-		hypothetical protein	2369440	2372256
+CP092643:3022483:1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	CDS	fig|39491.2717.peg.2941	3021784	3022734	-		Selenium-dependent molybdenum hydroxylase system protein YqeB	3021784	3022734
+CP092643:3154764:-1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	CDS	fig|39491.2717.peg.3086	3154721	3155245	-		hypothetical protein	3154721	3155245
+CP092643:280732:1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	CDS	fig|39491.2717.peg.278	280670	281110	-		Ribosomal-protein-S5p-alanine acetyltransferase (EC 2.3.1.128)	280670	281110
+CP092643:1797925:-1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	CDS	fig|39491.2717.peg.1759	1797852	1797992	-		hypothetical protein	1797852	1797992
+CP092643:1834872:-1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	CDS	fig|39491.2717.peg.1793	1832267	1835077	-	infB	Translation initiation factor 2	1832267	1835077
+CP092643:2851759:-1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	CDS	fig|39491.2717.peg.2747	2851118	2852332	-		hypothetical protein	2851118	2852332
+CP092643:2851756:1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	CDS	fig|39491.2717.peg.2747	2851118	2852332	-		hypothetical protein	2851118	2852332
+CP092643:2303561:1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	CDS	fig|39491.2717.peg.2245	2303552	2304613	-		Stage V sporulation protein AD (SpoVAD)	2303552	2304613
+CP092643:3263420:1	39491.2717	[Eubacterium] rectale VPI 0990	CP092643	CDS	fig|39491.2717.peg.3229	3262433	3264247	-	ftsH	Cell division-associated, ATP-dependent zinc metalloprotease FtsH	3262433	3264247
+CP102258:1036205:1	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	CDS	fig|28111.542.peg.897	1035039	1036436	+	pgtP	Glycerol-3-phosphate transporter	1035039	1036436
+CP102258:1036199:-1	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	CDS	fig|28111.542.peg.897	1035039	1036436	+	pgtP	Glycerol-3-phosphate transporter	1035039	1036436
+CP102258:1212822:1	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	CDS	fig|28111.542.peg.1036	1212172	1212822	+		Biopolymer transport protein ExbD/TolR	1212172	1212822
+CP102258:1698247:1	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	repeat_region	fig|28111.542.repeat.16	1692359	1699442	+		repeat region	1692359	1699442
+CP102258:1698251:-1	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	repeat_region	fig|28111.542.repeat.16	1692359	1699442	+		repeat region	1692359	1699442
+CP102258:1105636:-1	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	repeat_region	fig|28111.542.repeat.9	1105545	1106404	+		repeat region	1105545	1106404
+CP102258:3512576:-1	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	CDS	fig|28111.542.peg.3084	3512256	3513284	+		hypothetical protein	3512256	3513284
+CP102258:3512579:1	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	CDS	fig|28111.542.peg.3084	3512256	3513284	+		hypothetical protein	3512256	3513284
+CP102258:3574552:-1	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	repeat_region	fig|28111.542.repeat.44	3573787	3574646	+		repeat region	3573787	3574646
+CP102258:2237870:1	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102258:3314744:-1	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102258:3314752:1	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102258:3349749:-1	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102258:859288:1	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102258:3474170:1	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102258:201005:1	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102258:1698247:1	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	CDS	fig|28111.542.peg.1418	1697645	1698685	-		hypothetical protein	1697645	1698685
+CP102258:1698251:-1	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	CDS	fig|28111.542.peg.1418	1697645	1698685	-		hypothetical protein	1697645	1698685
+CP102258:1460390:-1	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	CDS	fig|28111.542.peg.1215	1458119	1460437	-		Guanosine-3',5'-bis(diphosphate) 3'-pyrophosphohydrolase (EC 3.1.7.2) / GTP pyrophosphokinase (EC 2.7.6.5), (p)ppGpp synthetase II	1458119	1460437
+CP102258:1865803:-1	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	CDS	fig|28111.542.peg.1639	1865177	1865824	-		DNA resolvase	1865177	1865824
+CP102265:1078668:-1	411459.41	Blautia obeum ATCC 29174	CP102265	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102265:575752:-1	411459.41	Blautia obeum ATCC 29174	CP102265	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102265:1198020:-1	411459.41	Blautia obeum ATCC 29174	CP102265	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102265:149981:-1	411459.41	Blautia obeum ATCC 29174	CP102265	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102265:149985:1	411459.41	Blautia obeum ATCC 29174	CP102265	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102265:125329:1	411459.41	Blautia obeum ATCC 29174	CP102265	CDS	fig|411459.41.peg.108	124649	126475	-		FIG00517494: hypothetical protein	124649	126475
+CP102265:125334:-1	411459.41	Blautia obeum ATCC 29174	CP102265	CDS	fig|411459.41.peg.108	124649	126475	-		FIG00517494: hypothetical protein	124649	126475
+CP102265:210849:1	411459.41	Blautia obeum ATCC 29174	CP102265	CDS	fig|411459.41.peg.196	210794	210919	-		hypothetical protein	210794	210919
+CP102265:3303468:-1	411459.41	Blautia obeum ATCC 29174	CP102265	CDS	fig|411459.41.peg.3222	3303358	3304080	-		Citrate lyase beta chain (EC 4.1.3.6)	3303358	3304080
+CP102267:77758:-1	1121115.15	Blautia wexlerae DSM 19850	CP102267	CDS	fig|1121115.15.peg.66	76929	77759	+	rhaD	Rhamnulose-1-phosphate aldolase (EC 4.1.2.19)	76929	77759
+CP102267:1179277:-1	1121115.15	Blautia wexlerae DSM 19850	CP102267	CDS	fig|1121115.15.peg.1142	1178375	1179820	+		hypothetical protein	1178375	1179820
+CP102267:3476531:-1	1121115.15	Blautia wexlerae DSM 19850	CP102267	misc_binding	fig|1121115.15.misc_binding.7	3476405	3476674	+		T-box leader; Derived by automated computational analysis using gene prediction method: cmsearch.	3476405	3476674
+CP102267:171779:1	1121115.15	Blautia wexlerae DSM 19850	CP102267	CDS	fig|1121115.15.peg.146	171051	172193	+		Metal chaperone, involved in Zn homeostasis	171051	172193
+CP102267:4268906:1	1121115.15	Blautia wexlerae DSM 19850	CP102267	repeat_region	fig|1121115.15.repeat.276	4268739	4268961	+		repeat region	4268739	4268961
+CP102267:2996159:-1	1121115.15	Blautia wexlerae DSM 19850	CP102267	CDS	fig|1121115.15.peg.2955	2995701	2996786	+		LSU rRNA pseudouridine(1911/1915/1917) synthase (EC 5.4.99.23)	2995701	2996786
+CP102267:700130:-1	1121115.15	Blautia wexlerae DSM 19850	CP102267	CDS	fig|1121115.15.peg.649	699392	700132	+	truA	tRNA pseudouridine(38-40) synthase (EC 5.4.99.12)	699392	700132
+CP102267:1803365:-1	1121115.15	Blautia wexlerae DSM 19850	CP102267	CDS	fig|1121115.15.peg.1760	1803331	1804026	+		Retron-type RNA-directed DNA polymerase (EC 2.7.7.49)	1803331	1804026
+CP102267:494550:1	1121115.15	Blautia wexlerae DSM 19850	CP102267	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102267:558527:1	1121115.15	Blautia wexlerae DSM 19850	CP102267	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102267:1752275:-1	1121115.15	Blautia wexlerae DSM 19850	CP102267	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102267:3244557:1	1121115.15	Blautia wexlerae DSM 19850	CP102267	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102267:3245955:-1	1121115.15	Blautia wexlerae DSM 19850	CP102267	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102267:1401625:1	1121115.15	Blautia wexlerae DSM 19850	CP102267	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102267:2995506:-1	1121115.15	Blautia wexlerae DSM 19850	CP102267	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102267:3288883:-1	1121115.15	Blautia wexlerae DSM 19850	CP102267	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102267:2284184:1	1121115.15	Blautia wexlerae DSM 19850	CP102267	CDS	fig|1121115.15.peg.2247	2283579	2284193	-		hypothetical protein	2283579	2284193
+CP102267:3192866:1	1121115.15	Blautia wexlerae DSM 19850	CP102267	CDS	fig|1121115.15.peg.3146	3192464	3195244	-		hypothetical protein	3192464	3195244
+CP102267:4193301:-1	1121115.15	Blautia wexlerae DSM 19850	CP102267	CDS	fig|1121115.15.peg.4118	4193290	4193391	-		hypothetical protein	4193290	4193391
+CP102267:8584:1	1121115.15	Blautia wexlerae DSM 19850	CP102267	CDS	fig|1121115.15.peg.9	8577	9239	-		GTP pyrophosphokinase (EC 2.7.6.5)	8577	9239
+CP102267:2842406:1	1121115.15	Blautia wexlerae DSM 19850	CP102267	CDS	fig|1121115.15.peg.2793	2842391	2842513	-		hypothetical protein	2842391	2842513
+CP102267:2842401:-1	1121115.15	Blautia wexlerae DSM 19850	CP102267	CDS	fig|1121115.15.peg.2792	2841961	2842401	-		hypothetical protein	2841961	2842401
+CP102267:2842401:-1	1121115.15	Blautia wexlerae DSM 19850	CP102267	CDS	fig|1121115.15.peg.2793	2842391	2842513	-		hypothetical protein	2842391	2842513
+CP102270:1118335:1	45851.82	Butyrivibrio crossotus DSM 2876	CP102270	CDS	fig|45851.820.peg.1121	1117173	1118654	+		Uncharacterized protein BT3327	1117173	1118654
+CP102270:2009845:1	45851.82	Butyrivibrio crossotus DSM 2876	CP102270	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102270:1812796:1	45851.82	Butyrivibrio crossotus DSM 2876	CP102270	CDS	fig|45851.820.peg.1801	1810326	1819205	-		hypothetical protein	1810326	1819205
+CP102270:2034770:-1	45851.82	Butyrivibrio crossotus DSM 2876	CP102270	CDS	fig|45851.820.peg.2011	2034014	2035327	-	tig	Cell division trigger factor (EC 5.2.1.8)	2034014	2035327
+CP102270:2034776:1	45851.82	Butyrivibrio crossotus DSM 2876	CP102270	CDS	fig|45851.820.peg.2011	2034014	2035327	-	tig	Cell division trigger factor (EC 5.2.1.8)	2034014	2035327
+CP102277:162542:1	470146.25	Coprococcus comes ATCC 27758	CP102277	CDS	fig|470146.25.peg.159	162312	163625	+		hypothetical protein	162312	163625
+CP102277:161860:1	470146.25	Coprococcus comes ATCC 27758	CP102277	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102277:392377:1	470146.25	Coprococcus comes ATCC 27758	CP102277	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102277:392365:-1	470146.25	Coprococcus comes ATCC 27758	CP102277	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102277:2568926:-1	470146.25	Coprococcus comes ATCC 27758	CP102277	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102277:92866:1	470146.25	Coprococcus comes ATCC 27758	CP102277	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102277:739916:1	470146.25	Coprococcus comes ATCC 27758	CP102277	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102277:2172838:1	470146.25	Coprococcus comes ATCC 27758	CP102277	CDS	fig|470146.25.peg.2243	2172061	2173158	-	glf	UDP-galactopyranose mutase (EC 5.4.99.9)	2172061	2173158
+CP102277:2172834:-1	470146.25	Coprococcus comes ATCC 27758	CP102277	CDS	fig|470146.25.peg.2243	2172061	2173158	-	glf	UDP-galactopyranose mutase (EC 5.4.99.9)	2172061	2173158
+CP102278:1351876:-1	33043.1681	Coprococcus eutactus ATCC 27759	CP102278	CDS	fig|33043.1681.peg.1183	1351138	1354113	+	infB	Translation initiation factor 2	1351138	1354113
+CP102278:2274325:-1	33043.1681	Coprococcus eutactus ATCC 27759	CP102278	repeat_region	fig|33043.1681.repeat.21	2274238	2276310	+		repeat region	2274238	2276310
+CP102278:2983642:1	33043.1681	Coprococcus eutactus ATCC 27759	CP102278	CDS	fig|33043.1681.peg.2669	2983199	2983717	+		Peptidyl-prolyl cis-trans isomerase (EC 5.2.1.8)	2983199	2983717
+CP102278:738515:1	33043.1681	Coprococcus eutactus ATCC 27759	CP102278	CDS	fig|33043.1681.peg.649	738117	739142	+		Branched-chain amino acid aminotransferase (EC 2.6.1.42)	738117	739142
+CP102278:738512:-1	33043.1681	Coprococcus eutactus ATCC 27759	CP102278	CDS	fig|33043.1681.peg.649	738117	739142	+		Branched-chain amino acid aminotransferase (EC 2.6.1.42)	738117	739142
+CP102278:1441044:-1	33043.1681	Coprococcus eutactus ATCC 27759	CP102278	CDS	fig|33043.1681.peg.1257	1440942	1441322	+		Biotin carboxyl carrier protein of oxaloacetate decarboxylase; Biotin carboxyl carrier protein	1440942	1441322
+CP102278:792268:-1	33043.1681	Coprococcus eutactus ATCC 27759	CP102278	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102278:12758:-1	33043.1681	Coprococcus eutactus ATCC 27759	CP102278	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102278:78551:-1	33043.1681	Coprococcus eutactus ATCC 27759	CP102278	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102278:113367:-1	33043.1681	Coprococcus eutactus ATCC 27759	CP102278	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102278:199380:-1	33043.1681	Coprococcus eutactus ATCC 27759	CP102278	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102278:307299:-1	33043.1681	Coprococcus eutactus ATCC 27759	CP102278	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102278:542051:1	33043.1681	Coprococcus eutactus ATCC 27759	CP102278	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102278:934293:-1	33043.1681	Coprococcus eutactus ATCC 27759	CP102278	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102278:969627:-1	33043.1681	Coprococcus eutactus ATCC 27759	CP102278	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102278:1963106:-1	33043.1681	Coprococcus eutactus ATCC 27759	CP102278	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102278:2475875:-1	33043.1681	Coprococcus eutactus ATCC 27759	CP102278	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102278:2673548:1	33043.1681	Coprococcus eutactus ATCC 27759	CP102278	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102278:2826666:1	33043.1681	Coprococcus eutactus ATCC 27759	CP102278	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102278:2852938:1	33043.1681	Coprococcus eutactus ATCC 27759	CP102278	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102278:2852933:-1	33043.1681	Coprococcus eutactus ATCC 27759	CP102278	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102278:2859883:-1	33043.1681	Coprococcus eutactus ATCC 27759	CP102278	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102278:2931756:-1	33043.1681	Coprococcus eutactus ATCC 27759	CP102278	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102278:3017814:-1	33043.1681	Coprococcus eutactus ATCC 27759	CP102278	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102278:3078397:1	33043.1681	Coprococcus eutactus ATCC 27759	CP102278	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102278:1531786:-1	33043.1681	Coprococcus eutactus ATCC 27759	CP102278	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102278:2354536:-1	33043.1681	Coprococcus eutactus ATCC 27759	CP102278	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102278:2354937:1	33043.1681	Coprococcus eutactus ATCC 27759	CP102278	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102278:2477050:-1	33043.1681	Coprococcus eutactus ATCC 27759	CP102278	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102278:2988274:-1	33043.1681	Coprococcus eutactus ATCC 27759	CP102278	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102278:907885:1	33043.1681	Coprococcus eutactus ATCC 27759	CP102278	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102278:286010:-1	33043.1681	Coprococcus eutactus ATCC 27759	CP102278	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102278:113373:1	33043.1681	Coprococcus eutactus ATCC 27759	CP102278	CDS	fig|33043.1681.peg.91	113371	113616	-		hypothetical protein	113371	113616
+CP102278:190895:1	33043.1681	Coprococcus eutactus ATCC 27759	CP102278	CDS	fig|33043.1681.peg.156	190673	191722	-		DNA replication helicase loader DnaC/DnaI	190673	191722
+CP102278:190892:-1	33043.1681	Coprococcus eutactus ATCC 27759	CP102278	CDS	fig|33043.1681.peg.156	190673	191722	-		DNA replication helicase loader DnaC/DnaI	190673	191722
+CP102278:1947053:-1	33043.1681	Coprococcus eutactus ATCC 27759	CP102278	CDS	fig|33043.1681.peg.1698	1946295	1947083	-		4-carboxymuconolactone decarboxylase (EC 4.1.1.44)	1946295	1947083
+CP102278:3043199:-1	33043.1681	Coprococcus eutactus ATCC 27759	CP102278	CDS	fig|33043.1681.peg.2726	3042777	3043817	-		Galactose/methyl galactoside ABC transporter, substrate-binding protein MglB (EC 3.6.3.17)	3042777	3043817
+CP102278:3043203:1	33043.1681	Coprococcus eutactus ATCC 27759	CP102278	CDS	fig|33043.1681.peg.2726	3042777	3043817	-		Galactose/methyl galactoside ABC transporter, substrate-binding protein MglB (EC 3.6.3.17)	3042777	3043817
+CP102278:3048311:1	33043.1681	Coprococcus eutactus ATCC 27759	CP102278	CDS	fig|33043.1681.peg.2729	3046699	3048327	-		Two-component response regulator yesN	3046699	3048327
+CP102278:1531781:1	33043.1681	Coprococcus eutactus ATCC 27759	CP102278	CDS	fig|33043.1681.peg.1346	1531473	1531781	-	rplU	LSU ribosomal protein L21p	1531473	1531781
+CP102278:1549013:-1	33043.1681	Coprococcus eutactus ATCC 27759	CP102278	CDS	fig|33043.1681.peg.1361	1548996	1549511	-		FIG01269488: protein, clustered with ribosomal protein L32p	1548996	1549511
+CP102278:1549016:1	33043.1681	Coprococcus eutactus ATCC 27759	CP102278	CDS	fig|33043.1681.peg.1361	1548996	1549511	-		FIG01269488: protein, clustered with ribosomal protein L32p	1548996	1549511
+CP102280:1718479:1	88431.1239	Dorea longicatena DSM 13814	CP102280	CDS	fig|88431.1239.peg.1651	1718113	1718481	+		IS110 family transposase	1718113	1718481
+CP102280:463563:1	88431.1239	Dorea longicatena DSM 13814	CP102280	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102280:563998:1	88431.1239	Dorea longicatena DSM 13814	CP102280	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102280:2885221:-1	88431.1239	Dorea longicatena DSM 13814	CP102280	CDS	fig|88431.1239.peg.2806	2885088	2885867	-		Transcriptional regulator, RpiR family	2885088	2885867
+CP132968:169325:-1	649756.3254	Anaerostipes hadrus BA1	CP132968	CDS	fig|649756.3254.peg.157	169025	169939	+		hypothetical protein	169025	169939
+CP132968:169331:1	649756.3254	Anaerostipes hadrus BA1	CP132968	CDS	fig|649756.3254.peg.157	169025	169939	+		hypothetical protein	169025	169939
+CP132968:550245:1	649756.3254	Anaerostipes hadrus BA1	CP132968	CDS	fig|649756.3254.peg.519	549420	550247	+	panB	3-methyl-2-oxobutanoate hydroxymethyltransferase (EC 2.1.2.11)	549420	550247
+CP132968:1598800:1	649756.3254	Anaerostipes hadrus BA1	CP132968	repeat_region	fig|649756.3254.repeat.57	1598499	1600053	+		repeat region	1598499	1600053
+CP132968:407922:-1	649756.3254	Anaerostipes hadrus BA1	CP132968	CDS	fig|649756.3254.peg.368	407761	408978	+		hypothetical protein	407761	408978
+CP132968:407916:1	649756.3254	Anaerostipes hadrus BA1	CP132968	CDS	fig|649756.3254.peg.368	407761	408978	+		hypothetical protein	407761	408978
+CP132968:2241003:1	649756.3254	Anaerostipes hadrus BA1	CP132968	CDS	fig|649756.3254.peg.2177	2240136	2241014	+		hypothetical protein	2240136	2241014
+CP132968:2734687:-1	649756.3254	Anaerostipes hadrus BA1	CP132968	CDS	fig|649756.3254.peg.2652	2733739	2734692	+	nudC	hypothetical protein	2733739	2734692
+CP132968:551578:-1	649756.3254	Anaerostipes hadrus BA1	CP132968	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP132968:239472:-1	649756.3254	Anaerostipes hadrus BA1	CP132968	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP132968:1561240:-1	649756.3254	Anaerostipes hadrus BA1	CP132968	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP132968:860136:-1	649756.3254	Anaerostipes hadrus BA1	CP132968	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP132968:514822:-1	649756.3254	Anaerostipes hadrus BA1	CP132968	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP132968:551180:-1	649756.3254	Anaerostipes hadrus BA1	CP132968	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP132968:1424027:-1	649756.3254	Anaerostipes hadrus BA1	CP132968	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP132968:1488697:1	649756.3254	Anaerostipes hadrus BA1	CP132968	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP132968:2763526:-1	649756.3254	Anaerostipes hadrus BA1	CP132968	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP132968:535555:1	649756.3254	Anaerostipes hadrus BA1	CP132968	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP132968:2372218:1	649756.3254	Anaerostipes hadrus BA1	CP132968	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP132968:2918260:-1	649756.3254	Anaerostipes hadrus BA1	CP132968	CDS	fig|649756.3254.peg.2829	2918007	2919608	-		hypothetical protein	2918007	2919608
+CP132968:1715134:-1	649756.3254	Anaerostipes hadrus BA1	CP132968	CDS	fig|649756.3254.peg.1693	1715115	1715612	-		TRAP-type C4-dicarboxylate transport system, small permease component	1715115	1715612
+CYXV01000001:431713:-1	301302.3	Roseburia faecis	CYXV01000001	CDS	fig|301302.3.peg.448	431563	431820	+		hypothetical protein	431563	431820
+CYXV01000001:431354:-1	301302.3	Roseburia faecis	CYXV01000001	-1	-1	-1	-1	+	-1	-1	-1	-1
+CYXV01000001:380417:1	301302.3	Roseburia faecis	CYXV01000001	-1	-1	-1	-1	+	-1	-1	-1	-1
+CYXV01000001:284642:1	301302.3	Roseburia faecis	CYXV01000001	-1	-1	-1	-1	+	-1	-1	-1	-1
+CYXV01000002:318705:1	301302.3	Roseburia faecis	CYXV01000002	-1	-1	-1	-1	+	-1	-1	-1	-1
+CYXV01000002:206151:-1	301302.3	Roseburia faecis	CYXV01000002	CDS	fig|301302.3.peg.715	205927	207396	-		Uncharacterized protein BT3327	660463	661932
+CYXV01000002:206161:1	301302.3	Roseburia faecis	CYXV01000002	CDS	fig|301302.3.peg.715	205927	207396	-		Uncharacterized protein BT3327	660463	661932
+CYXV01000003:245349:-1	301302.3	Roseburia faecis	CYXV01000003	CDS	fig|301302.3.peg.1118	244723	245349	+	purN	Phosphoribosylglycinamide formyltransferase (EC 2.1.2.2)	1064634	1065260
+CYXV01000003:186896:-1	301302.3	Roseburia faecis	CYXV01000003	CDS	fig|301302.3.peg.1066	186786	186905	-		hypothetical protein	1006697	1006816
+CYXV01000004:167909:-1	301302.3	Roseburia faecis	CYXV01000004	CDS	fig|301302.3.peg.1326	167905	168804	-	argB	N-acetylglutamate kinase (EC 2.7.2.8)	1260667	1261566
+CYXV01000004:142555:1	301302.3	Roseburia faecis	CYXV01000004	CDS	fig|301302.3.peg.1301	142531	143637	-		hypothetical protein	1235293	1236399
+CYXV01000005:148626:-1	301302.3	Roseburia faecis	CYXV01000005	-1	-1	-1	-1	+	-1	-1	-1	-1
+CYXV01000006:87158:1	301302.3	Roseburia faecis	CYXV01000006	CDS	fig|301302.3.peg.1717	86423	87820	+		Sodium/glycine symporter GlyP	1662099	1663496
+CYXV01000006:18858:1	301302.3	Roseburia faecis	CYXV01000006	CDS	fig|301302.3.peg.1644	18856	19686	+		hypothetical protein	1594532	1595362
+CYXV01000006:4920:1	301302.3	Roseburia faecis	CYXV01000006	-1	-1	-1	-1	+	-1	-1	-1	-1
+CYXV01000007:28814:-1	301302.3	Roseburia faecis	CYXV01000007	CDS	fig|301302.3.peg.1861	28706	31657	+		Secreted protein	1811274	1814225
+CYXV01000007:181772:1	301302.3	Roseburia faecis	CYXV01000007	CDS	fig|301302.3.peg.2022	181320	182765	+	fliC_1	Flagellin protein FlaA	1963888	1965333
+CYXV01000007:40554:1	301302.3	Roseburia faecis	CYXV01000007	-1	-1	-1	-1	+	-1	-1	-1	-1
+CYXV01000008:118514:1	301302.3	Roseburia faecis	CYXV01000008	CDS	fig|301302.3.peg.2148	118300	118518	+		hypothetical protein	2097335	2097553
+CYXV01000008:167997:1	301302.3	Roseburia faecis	CYXV01000008	-1	-1	-1	-1	+	-1	-1	-1	-1
+CYXV01000009:59098:1	301302.3	Roseburia faecis	CYXV01000009	-1	-1	-1	-1	+	-1	-1	-1	-1
+CYXV01000011:99218:-1	301302.3	Roseburia faecis	CYXV01000011	-1	-1	-1	-1	+	-1	-1	-1	-1
+CYXV01000011:78338:-1	301302.3	Roseburia faecis	CYXV01000011	-1	-1	-1	-1	+	-1	-1	-1	-1
+CYXV01000011:78350:1	301302.3	Roseburia faecis	CYXV01000011	CDS	fig|301302.3.peg.2603	78350	79204	-		hypothetical protein	2570377	2571231
+CYXV01000011:102520:-1	301302.3	Roseburia faecis	CYXV01000011	CDS	fig|301302.3.peg.2623	102234	103697	-		hypothetical protein	2594261	2595724
+CYXV01000013:91498:1	301302.3	Roseburia faecis	CYXV01000013	CDS	fig|301302.3.peg.2894	91339	91512	+		hypothetical protein	2835287	2835460
+CYXV01000014:23074:1	301302.3	Roseburia faecis	CYXV01000014	CDS	fig|301302.3.peg.2951	22783	23775	+		Flagellar hook-length control protein FliK	2889805	2890797
+CYXV01000015:5373:-1	301302.3	Roseburia faecis	CYXV01000015	-1	-1	-1	-1	+	-1	-1	-1	-1
+CYXV01000016:71398:1	301302.3	Roseburia faecis	CYXV01000016	CDS	fig|301302.3.peg.3227	69298	71439	+		hypothetical protein	3143185	3145326
+CYXV01000016:75757:-1	301302.3	Roseburia faecis	CYXV01000016	CDS	fig|301302.3.peg.3231	74893	75771	-		NPQTN specific sortase B	3148780	3149658
+CYXV01000018:33319:-1	301302.3	Roseburia faecis	CYXV01000018	-1	-1	-1	-1	+	-1	-1	-1	-1
+CYXV01000018:60767:1	301302.3	Roseburia faecis	CYXV01000018	CDS	fig|301302.3.peg.3380	60035	60781	-	ramA_1	hypothetical protein	3286315	3287061
+CYXV01000020:21078:-1	301302.3	Roseburia faecis	CYXV01000020	-1	-1	-1	-1	+	-1	-1	-1	-1
+CYXV01000020:7557:1	301302.3	Roseburia faecis	CYXV01000020	CDS	fig|301302.3.peg.3436	6841	8037	-		hypothetical protein	3347631	3348827
+CYXV01000031:94:1	301302.3	Roseburia faecis	CYXV01000031	repeat_region	fig|301302.3.repeat.114	20	127	+		repeat region	3546551	3546658
+CYXV01000038:207:1	301302.3	Roseburia faecis	CYXV01000038	-1	-1	-1	-1	+	-1	-1	-1	-1
+FNHZ01000002:66708:1	28052.1495	Lachnospira pectinoschiza strain M83	FNHZ01000002	CDS	fig|28052.1495.peg.1026	65893	66876	+		Electron transport complex protein RnfD	1014611	1015594
+FNHZ01000002:66715:-1	28052.1495	Lachnospira pectinoschiza strain M83	FNHZ01000002	CDS	fig|28052.1495.peg.1026	65893	66876	+		Electron transport complex protein RnfD	1014611	1015594
+FNHZ01000002:185433:1	28052.1495	Lachnospira pectinoschiza strain M83	FNHZ01000002	CDS	fig|28052.1495.peg.1142	185347	185529	-		LSU ribosomal protein L32p @ LSU ribosomal protein L32p, zinc-dependent	1134065	1134247
+FNHZ01000002:185436:-1	28052.1495	Lachnospira pectinoschiza strain M83	FNHZ01000002	CDS	fig|28052.1495.peg.1142	185347	185529	-		LSU ribosomal protein L32p @ LSU ribosomal protein L32p, zinc-dependent	1134065	1134247
+FNHZ01000002:229765:-1	28052.1495	Lachnospira pectinoschiza strain M83	FNHZ01000002	CDS	fig|28052.1495.peg.1180	228788	230380	-		Ribonuclease Y	1177506	1179098
+FNHZ01000002:188135:1	28052.1495	Lachnospira pectinoschiza strain M83	FNHZ01000002	CDS	fig|28052.1495.peg.1145	187576	188577	-		Phosphate acetyltransferase (EC 2.3.1.8)	1136294	1137295
+FNHZ01000002:188138:-1	28052.1495	Lachnospira pectinoschiza strain M83	FNHZ01000002	CDS	fig|28052.1495.peg.1145	187576	188577	-		Phosphate acetyltransferase (EC 2.3.1.8)	1136294	1137295
+FNHZ01000004:104081:-1	28052.1495	Lachnospira pectinoschiza strain M83	FNHZ01000004	-1	-1	-1	-1	+	-1	-1	-1	-1
+FNHZ01000004:102109:1	28052.1495	Lachnospira pectinoschiza strain M83	FNHZ01000004	-1	-1	-1	-1	+	-1	-1	-1	-1
+FNHZ01000004:71535:-1	28052.1495	Lachnospira pectinoschiza strain M83	FNHZ01000004	CDS	fig|28052.1495.peg.1720	70807	71649	-		LSU ribosomal protein L2p (L8e)	1712763	1713605
+FNHZ01000004:71544:1	28052.1495	Lachnospira pectinoschiza strain M83	FNHZ01000004	CDS	fig|28052.1495.peg.1720	70807	71649	-		LSU ribosomal protein L2p (L8e)	1712763	1713605
+FNHZ01000004:241583:-1	28052.1495	Lachnospira pectinoschiza strain M83	FNHZ01000004	CDS	fig|28052.1495.peg.1858	240520	241911	-		ATP synthase beta chain (EC 3.6.3.14)	1882476	1883867
+FNHZ01000005:29914:1	28052.1495	Lachnospira pectinoschiza strain M83	FNHZ01000005	-1	-1	-1	-1	+	-1	-1	-1	-1
+FNHZ01000005:29972:-1	28052.1495	Lachnospira pectinoschiza strain M83	FNHZ01000005	-1	-1	-1	-1	+	-1	-1	-1	-1
+FNHZ01000007:43545:-1	28052.1495	Lachnospira pectinoschiza strain M83	FNHZ01000007	CDS	fig|28052.1495.peg.2146	42300	45875	+		Pyruvate-flavodoxin oxidoreductase	2310722	2314297
+FNHZ01000007:43536:1	28052.1495	Lachnospira pectinoschiza strain M83	FNHZ01000007	CDS	fig|28052.1495.peg.2146	42300	45875	+		Pyruvate-flavodoxin oxidoreductase	2310722	2314297
+FNHZ01000007:71:1	28052.1495	Lachnospira pectinoschiza strain M83	FNHZ01000007	misc_RNA	fig|28052.1495.rna.60	1	173	+		23S ribosomal RNA . Bacterial LSU	2268423	2268595
+HF545616:1649680:1	1160721.7	Ruminococcus bicirculans strain 80/3	HF545616	CDS	fig|1160721.7.peg.1491	1649237	1650568	+		Arginine decarboxylase (EC 4.1.1.19); Lysine decarboxylase (EC 4.1.1.18)	1649237	1650568
+HF545616:1649675:-1	1160721.7	Ruminococcus bicirculans strain 80/3	HF545616	CDS	fig|1160721.7.peg.1491	1649237	1650568	+		Arginine decarboxylase (EC 4.1.1.19); Lysine decarboxylase (EC 4.1.1.18)	1649237	1650568
+HF545616:778182:-1	1160721.7	Ruminococcus bicirculans strain 80/3	HF545616	-1	-1	-1	-1	+	-1	-1	-1	-1
+HF545617:416659:1	1160721.7	Ruminococcus bicirculans strain 80/3	HF545617	-1	-1	-1	-1	+	-1	-1	-1	-1
+HF545617:343281:-1	1160721.7	Ruminococcus bicirculans strain 80/3	HF545617	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAJFOJ010000001:1593299:-1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	CDS	fig|622312.45.peg.1551	1592966	1593721	+		ABC transporter, ATP-binding protein (cluster 3, basic aa/glutamine/opines)	1592966	1593721
+JAJFOJ010000001:2377260:1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	CDS	fig|622312.45.peg.2330	2376719	2377279	+		ATP-dependent Clp protease proteolytic subunit ClpP (EC 3.4.21.92)	2376719	2377279
+JAJFOJ010000001:2226914:-1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	repeat_region	fig|622312.45.repeat.122	2221795	2228077	+		repeat region	2221795	2228077
+JAJFOJ010000001:2226914:-1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	misc_RNA	fig|622312.45.rna.59	2224121	2227015	+		23S ribosomal RNA	2224121	2227015
+JAJFOJ010000001:1780943:-1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	repeat_region	fig|622312.45.repeat.97	1779371	1781832	+		repeat region	1779371	1781832
+JAJFOJ010000001:1798119:-1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	CDS	fig|622312.45.peg.1761	1796966	1798210	+		Type II/IV secretion system ATP hydrolase TadA/VirB11/CpaF, TadA subfamily	1796966	1798210
+JAJFOJ010000001:2175125:1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	CDS	fig|622312.45.peg.2153	2174399	2175127	+		Two-component system sensor histidine kinase	2174399	2175127
+JAJFOJ010000001:2540916:1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	CDS	fig|622312.45.peg.2474	2540911	2541054	+		hypothetical protein	2540911	2541054
+JAJFOJ010000001:2540923:-1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	CDS	fig|622312.45.peg.2474	2540911	2541054	+		hypothetical protein	2540911	2541054
+JAJFOJ010000001:2540919:1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	CDS	fig|622312.45.peg.2474	2540911	2541054	+		hypothetical protein	2540911	2541054
+JAJFOJ010000001:1728439:1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	CDS	fig|622312.45.peg.1683	1727751	1728443	+		Two-component transcriptional response regulator, OmpR family	1727751	1728443
+JAJFOJ010000001:1810297:-1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	CDS	fig|622312.45.peg.1776	1810025	1811338	+		hypothetical protein	1810025	1811338
+JAJFOJ010000001:1603511:-1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	CDS	fig|622312.45.peg.1560	1603347	1604231	+		FIG00645039: hypothetical protein with HTH-domain	1603347	1604231
+JAJFOJ010000001:1603515:1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	CDS	fig|622312.45.peg.1560	1603347	1604231	+		FIG00645039: hypothetical protein with HTH-domain	1603347	1604231
+JAJFOJ010000001:1606970:1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	CDS	fig|622312.45.peg.1562	1605489	1607000	+		Arginine decarboxylase (EC 4.1.1.19); Lysine decarboxylase (EC 4.1.1.18); Ornithine decarboxylase (EC 4.1.1.17)	1605489	1607000
+JAJFOJ010000001:1606955:-1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	CDS	fig|622312.45.peg.1562	1605489	1607000	+		Arginine decarboxylase (EC 4.1.1.19); Lysine decarboxylase (EC 4.1.1.18); Ornithine decarboxylase (EC 4.1.1.17)	1605489	1607000
+JAJFOJ010000001:1978239:-1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	CDS	fig|622312.45.peg.1972	1977688	1980276	+		Two-component system sensor histidine kinase	1977688	1980276
+JAJFOJ010000001:2192363:-1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	CDS	fig|622312.45.peg.2166	2191786	2193357	+		hypothetical protein	2191786	2193357
+JAJFOJ010000001:2192360:1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	CDS	fig|622312.45.peg.2166	2191786	2193357	+		hypothetical protein	2191786	2193357
+JAJFOJ010000001:1980937:-1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	CDS	fig|622312.45.peg.1973	1980431	1980964	+		G:T/U mismatch-specific uracil/thymine DNA-glycosylase (EC 3.2.2.27)	1980431	1980964
+JAJFOJ010000001:110589:1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	CDS	fig|622312.45.peg.117	108958	111186	+		hypothetical protein	108958	111186
+JAJFOJ010000001:2487501:-1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	CDS	fig|622312.45.peg.2435	2487392	2488933	+	clpX	ATP-dependent Clp protease ATP-binding subunit ClpX	2487392	2488933
+JAJFOJ010000001:2487523:1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	CDS	fig|622312.45.peg.2435	2487392	2488933	+	clpX	ATP-dependent Clp protease ATP-binding subunit ClpX	2487392	2488933
+JAJFOJ010000001:114113:-1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAJFOJ010000001:200241:1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAJFOJ010000001:275664:1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAJFOJ010000001:275675:-1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAJFOJ010000001:373076:1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAJFOJ010000001:373078:-1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAJFOJ010000001:392894:1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAJFOJ010000001:674285:-1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAJFOJ010000001:674302:-1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAJFOJ010000001:877749:-1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAJFOJ010000001:1206450:1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAJFOJ010000001:1289373:1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAJFOJ010000001:1695295:-1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAJFOJ010000001:2091024:1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAJFOJ010000001:2213954:1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAJFOJ010000001:2378616:-1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAJFOJ010000001:2378620:1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAJFOJ010000001:2434094:-1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAJFOJ010000001:2451068:-1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAJFOJ010000001:181739:-1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAJFOJ010000001:362071:-1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAJFOJ010000001:1110538:1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAJFOJ010000001:883108:-1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAJFOJ010000001:886580:-1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAJFOJ010000001:2107094:-1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAJFOJ010000001:2175130:1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAJFOJ010000001:2213913:1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAJFOJ010000001:162519:-1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAJFOJ010000001:777441:1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAJFOJ010000001:1627163:-1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAJFOJ010000001:22731:-1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAJFOJ010000001:1698658:1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAJFOJ010000001:1424564:-1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAJFOJ010000001:1624771:-1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAJFOJ010000001:1624796:1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAJFOJ010000001:519218:-1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAJFOJ010000001:959368:-1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAJFOJ010000001:234847:-1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAJFOJ010000001:1986344:1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAJFOJ010000001:1986346:1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAJFOJ010000001:65769:1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	CDS	fig|622312.45.peg.81	64622	65863	-		ABC transporter, substrate-binding protein (cluster 11, riboflavin/purine nucleoside/unknown)	64622	65863
+JAJFOJ010000001:80445:-1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	CDS	fig|622312.45.peg.91	79607	81736	-	pknB	Serine/threonine protein kinase PrkC, regulator of stationary phase	79607	81736
+JAJFOJ010000001:167835:1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	CDS	fig|622312.45.peg.173	167757	168554	-		Thymidylate synthase (EC 2.1.1.45)	167757	168554
+JAJFOJ010000001:505473:1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	CDS	fig|622312.45.peg.477	505473	506849	-	scfB	SCIFF radical SAM maturase	505473	506849
+JAJFOJ010000001:933302:1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	CDS	fig|622312.45.peg.892	933293	934273	-		tRNA-dihydrouridine synthase BT3326	933293	934273
+JAJFOJ010000001:1189645:1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	CDS	fig|622312.45.peg.1158	1189618	1189740	-		D-alanyl-D-alanine carboxypeptidase (EC 3.4.16.4)	1189618	1189740
+JAJFOJ010000001:1417185:-1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	CDS	fig|622312.45.peg.1365	1416646	1417527	-		N-acetylmannosamine kinase (EC 2.7.1.60)	1416646	1417527
+JAJFOJ010000001:1417182:1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	CDS	fig|622312.45.peg.1365	1416646	1417527	-		N-acetylmannosamine kinase (EC 2.7.1.60)	1416646	1417527
+JAJFOJ010000001:786200:-1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	CDS	fig|622312.45.peg.745	785577	786200	-		FIG039767: hypothetical protein	785577	786200
+JAJFOJ010000001:801129:1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	CDS	fig|622312.45.peg.757	801121	801990	-		Thioredoxin reductase (EC 1.8.1.9)	801121	801990
+JAJFOJ010000001:187400:1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	CDS	fig|622312.45.peg.196	186544	187785	-		hypothetical protein	186544	187785
+JAJFOJ010000001:2063150:-1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	CDS	fig|622312.45.peg.2056	2063019	2063927	-		hypothetical protein	2063019	2063927
+JAJFOJ010000001:578501:-1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	CDS	fig|622312.45.peg.543	578254	578559	-		hypothetical protein	578254	578559
+JAJFOJ010000001:178542:-1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000001	CDS	fig|622312.45.peg.188	178418	178573	-		hypothetical protein	178418	178573
+JAJFOJ010000002:498534:-1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000002	CDS	fig|622312.45.peg.3175	497615	500365	+		hypothetical protein	3214300	3217050
+JAJFOJ010000002:498529:1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000002	CDS	fig|622312.45.peg.3175	497615	500365	+		hypothetical protein	3214300	3217050
+JAJFOJ010000002:340261:1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000002	CDS	fig|622312.45.peg.3027	339191	340543	+	ffh	Signal recognition particle protein Ffh	3055876	3057228
+JAJFOJ010000002:598722:-1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000002	CDS	fig|622312.45.peg.3264	598393	599076	+		hypothetical protein	3315078	3315761
+JAJFOJ010000002:598728:1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000002	CDS	fig|622312.45.peg.3264	598393	599076	+		hypothetical protein	3315078	3315761
+JAJFOJ010000002:302128:-1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000002	CDS	fig|622312.45.peg.2991	302036	302167	+		hypothetical protein	3018721	3018852
+JAJFOJ010000002:276994:-1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000002	CDS	fig|622312.45.peg.2961	276891	277028	+		hypothetical protein	2993576	2993713
+JAJFOJ010000002:746816:-1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000002	CDS	fig|622312.45.peg.3397	745887	747059	+		hypothetical protein	3462572	3463744
+JAJFOJ010000002:150884:-1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000002	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAJFOJ010000002:278882:-1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000002	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAJFOJ010000002:302892:-1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000002	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAJFOJ010000002:362681:-1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000002	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAJFOJ010000002:425312:-1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000002	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAJFOJ010000002:432867:-1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000002	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAJFOJ010000002:432882:1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000002	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAJFOJ010000002:432890:-1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000002	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAJFOJ010000002:432895:1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000002	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAJFOJ010000002:515774:-1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000002	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAJFOJ010000002:625714:1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000002	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAJFOJ010000002:625693:-1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000002	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAJFOJ010000002:755966:-1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000002	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAJFOJ010000002:991340:1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000002	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAJFOJ010000002:1021165:-1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000002	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAJFOJ010000002:1052476:-1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000002	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAJFOJ010000002:1137135:-1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000002	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAJFOJ010000002:1252312:-1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000002	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAJFOJ010000002:1346234:1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000002	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAJFOJ010000002:802784:1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000002	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAJFOJ010000002:241787:1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000002	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAJFOJ010000002:1340091:1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000002	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAJFOJ010000002:754630:-1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000002	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAJFOJ010000002:342442:1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000002	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAJFOJ010000002:342438:-1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000002	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAJFOJ010000002:353508:1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000002	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAJFOJ010000002:353501:-1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000002	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAJFOJ010000002:735873:1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000002	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAJFOJ010000002:1270727:1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000002	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAJFOJ010000002:890658:1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000002	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAJFOJ010000002:1274072:1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000002	CDS	fig|622312.45.peg.3907	1273654	1276056	-		alpha-galactosidase (EC 3.2.1.22)	3990339	3992741
+JAJFOJ010000002:1274090:1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000002	CDS	fig|622312.45.peg.3907	1273654	1276056	-		alpha-galactosidase (EC 3.2.1.22)	3990339	3992741
+JAJFOJ010000002:1313703:1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000002	CDS	fig|622312.45.peg.3945	1313559	1315646	-		Cell division protein FtsI [Peptidoglycan synthetase] (EC 2.4.1.129)	4030244	4032331
+JAJFOJ010000002:1318400:1	622312.45	Roseburia inulinivorans DSM 16841 strain FDAARGOS_1587 strain Not applicable	JAJFOJ010000002	CDS	fig|622312.45.peg.3952	1318324	1318890	-		FIG01020318: hypothetical protein	4035009	4035575
+JAQEGR010000001:156846:1	1150298.2613	Fusicatenibacter saccharivorans AM67-22ACA	JAQEGR010000001	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAQEGR010000001:156840:-1	1150298.2613	Fusicatenibacter saccharivorans AM67-22ACA	JAQEGR010000001	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAQEGR010000001:355500:-1	1150298.2613	Fusicatenibacter saccharivorans AM67-22ACA	JAQEGR010000001	CDS	fig|1150298.2613.peg.358	354967	355605	-		Ferredoxin	354967	355605
+JAQEGR010000002:145261:1	1150298.2613	Fusicatenibacter saccharivorans AM67-22ACA	JAQEGR010000002	CDS	fig|1150298.2613.peg.1642	145048	146103	+		hypothetical protein	1716149	1717204
+JAQEGR010000002:153844:1	1150298.2613	Fusicatenibacter saccharivorans AM67-22ACA	JAQEGR010000002	CDS	fig|1150298.2613.peg.1651	152630	153844	+		Ammonium transporter	1723731	1724945
+JAQEGR010000002:152041:-1	1150298.2613	Fusicatenibacter saccharivorans AM67-22ACA	JAQEGR010000002	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAQEGR010000002:77580:-1	1150298.2613	Fusicatenibacter saccharivorans AM67-22ACA	JAQEGR010000002	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAQEGR010000002:84414:1	1150298.2613	Fusicatenibacter saccharivorans AM67-22ACA	JAQEGR010000002	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAQEGR010000002:84411:-1	1150298.2613	Fusicatenibacter saccharivorans AM67-22ACA	JAQEGR010000002	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAQEGR010000002:262856:-1	1150298.2613	Fusicatenibacter saccharivorans AM67-22ACA	JAQEGR010000002	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAQEGR010000002:268087:1	1150298.2613	Fusicatenibacter saccharivorans AM67-22ACA	JAQEGR010000002	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAQEGR010000003:31838:-1	1150298.2613	Fusicatenibacter saccharivorans AM67-22ACA	JAQEGR010000003	CDS	fig|1150298.2613.peg.2153	31743	31859	+		hypothetical protein	2226002	2226118
+JAQEGR010000003:183240:-1	1150298.2613	Fusicatenibacter saccharivorans AM67-22ACA	JAQEGR010000003	CDS	fig|1150298.2613.peg.2306	181797	183269	+		hypothetical protein	2376056	2377528
+JAQEGR010000003:222217:-1	1150298.2613	Fusicatenibacter saccharivorans AM67-22ACA	JAQEGR010000003	CDS	fig|1150298.2613.peg.2337	221481	223166	+		Formate--tetrahydrofolate ligase (EC 6.3.4.3)	2415740	2417425
+JAQEGR010000003:4578:-1	1150298.2613	Fusicatenibacter saccharivorans AM67-22ACA	JAQEGR010000003	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAQEGR010000003:234973:-1	1150298.2613	Fusicatenibacter saccharivorans AM67-22ACA	JAQEGR010000003	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAQEGR010000004:202735:1	1150298.2613	Fusicatenibacter saccharivorans AM67-22ACA	JAQEGR010000004	CDS	fig|1150298.2613.peg.2651	202600	203151	+		Rhamnulose-1-phosphate aldolase (EC 4.1.2.19)	2721395	2721946
+JAQEGR010000004:179147:1	1150298.2613	Fusicatenibacter saccharivorans AM67-22ACA	JAQEGR010000004	CDS	fig|1150298.2613.peg.2629	178388	180139	+		hypothetical protein	2697183	2698934
+JAQEGR010000004:72170:-1	1150298.2613	Fusicatenibacter saccharivorans AM67-22ACA	JAQEGR010000004	CDS	fig|1150298.2613.peg.2519	72079	73644	+		Tyrosine-protein kinase (EC 2.7.10.2)	2590874	2592439
+JAQEGR010000004:27757:-1	1150298.2613	Fusicatenibacter saccharivorans AM67-22ACA	JAQEGR010000004	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAQEGR010000004:146643:-1	1150298.2613	Fusicatenibacter saccharivorans AM67-22ACA	JAQEGR010000004	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAQEGR010000004:64058:-1	1150298.2613	Fusicatenibacter saccharivorans AM67-22ACA	JAQEGR010000004	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAQEGR010000004:64047:1	1150298.2613	Fusicatenibacter saccharivorans AM67-22ACA	JAQEGR010000004	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAQEGR010000005:214616:1	1150298.2613	Fusicatenibacter saccharivorans AM67-22ACA	JAQEGR010000005	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAQEGR010000006:59944:-1	1150298.2613	Fusicatenibacter saccharivorans AM67-22ACA	JAQEGR010000006	CDS	fig|1150298.2613.peg.3011	59914	60066	+		hypothetical protein	3057224	3057376
+JAQEGR010000006:184576:1	1150298.2613	Fusicatenibacter saccharivorans AM67-22ACA	JAQEGR010000006	CDS	fig|1150298.2613.peg.3128	184562	186571	+		hypothetical protein	3181872	3183881
+JAQEGR010000006:84359:1	1150298.2613	Fusicatenibacter saccharivorans AM67-22ACA	JAQEGR010000006	CDS	fig|1150298.2613.peg.3034	83944	85335	+		Stage II sporulation protein P	3081254	3082645
+JAQEGR010000006:39966:-1	1150298.2613	Fusicatenibacter saccharivorans AM67-22ACA	JAQEGR010000006	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAQEGR010000006:161592:-1	1150298.2613	Fusicatenibacter saccharivorans AM67-22ACA	JAQEGR010000006	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAQEGR010000007:12716:1	1150298.2613	Fusicatenibacter saccharivorans AM67-22ACA	JAQEGR010000007	CDS	fig|1150298.2613.peg.3166	10913	12781	+		Beta-lactamase class C-like and penicillin binding proteins (PBPs) superfamily	3223975	3225843
+JAQEGR010000007:184550:-1	1150298.2613	Fusicatenibacter saccharivorans AM67-22ACA	JAQEGR010000007	CDS	fig|1150298.2613.peg.3336	183322	184872	+		Anthranilate synthase, aminase component (EC 4.1.3.27)	3396384	3397934
+JAQEGR010000008:64926:-1	1150298.2613	Fusicatenibacter saccharivorans AM67-22ACA	JAQEGR010000008	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAQEGR010000008:14911:-1	1150298.2613	Fusicatenibacter saccharivorans AM67-22ACA	JAQEGR010000008	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAQEGR010000008:40289:-1	1150298.2613	Fusicatenibacter saccharivorans AM67-22ACA	JAQEGR010000008	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAQEGR010000009:32084:1	1150298.2613	Fusicatenibacter saccharivorans AM67-22ACA	JAQEGR010000009	CDS	fig|1150298.2613.peg.3571	31303	32586	+		hypothetical protein	3631053	3632336
+JAQEGR010000009:115982:1	1150298.2613	Fusicatenibacter saccharivorans AM67-22ACA	JAQEGR010000009	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAQEGR010000010:134258:-1	1150298.2613	Fusicatenibacter saccharivorans AM67-22ACA	JAQEGR010000010	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAQEGR010000010:123113:-1	1150298.2613	Fusicatenibacter saccharivorans AM67-22ACA	JAQEGR010000010	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAQEGR010000011:145162:-1	1150298.2613	Fusicatenibacter saccharivorans AM67-22ACA	JAQEGR010000011	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAQEGR010000011:145128:-1	1150298.2613	Fusicatenibacter saccharivorans AM67-22ACA	JAQEGR010000011	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAQEGR010000011:145133:1	1150298.2613	Fusicatenibacter saccharivorans AM67-22ACA	JAQEGR010000011	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAQEGR010000011:102591:1	1150298.2613	Fusicatenibacter saccharivorans AM67-22ACA	JAQEGR010000011	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAQEGR010000012:27584:1	1150298.2613	Fusicatenibacter saccharivorans AM67-22ACA	JAQEGR010000012	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAQEGR010000013:103867:-1	1150298.2613	Fusicatenibacter saccharivorans AM67-22ACA	JAQEGR010000013	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAQEGR010000013:70000:-1	1150298.2613	Fusicatenibacter saccharivorans AM67-22ACA	JAQEGR010000013	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAQEGR010000013:83332:1	1150298.2613	Fusicatenibacter saccharivorans AM67-22ACA	JAQEGR010000013	CDS	fig|1150298.2613.peg.987	82701	84830	-		putative membrane protein	1012365	1014494
+JAQEGR010000014:38467:1	1150298.2613	Fusicatenibacter saccharivorans AM67-22ACA	JAQEGR010000014	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAQEGR010000015:3331:-1	1150298.2613	Fusicatenibacter saccharivorans AM67-22ACA	JAQEGR010000015	CDS	fig|1150298.2613.peg.1130	2758	3348	+		Adenine-specific methyltransferase (EC 2.1.1.72)	1163711	1164301
+JAQEGR010000016:72347:-1	1150298.2613	Fusicatenibacter saccharivorans AM67-22ACA	JAQEGR010000016	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAQEGR010000016:72373:-1	1150298.2613	Fusicatenibacter saccharivorans AM67-22ACA	JAQEGR010000016	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAQEGR010000016:465:-1	1150298.2613	Fusicatenibacter saccharivorans AM67-22ACA	JAQEGR010000016	CDS	fig|1150298.2613.peg.1218	402	554	-		hypothetical protein	1258797	1258949
+JAQEGR010000018:61348:1	1150298.2613	Fusicatenibacter saccharivorans AM67-22ACA	JAQEGR010000018	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAQEGR010000019:30161:1	1150298.2613	Fusicatenibacter saccharivorans AM67-22ACA	JAQEGR010000019	CDS	fig|1150298.2613.peg.1482	29322	31421	+		DNA topoisomerase III (EC 5.99.1.2)	1537479	1539578
+JAQEGR010000019:30155:-1	1150298.2613	Fusicatenibacter saccharivorans AM67-22ACA	JAQEGR010000019	CDS	fig|1150298.2613.peg.1482	29322	31421	+		DNA topoisomerase III (EC 5.99.1.2)	1537479	1539578
+JAQEGR010000023:37883:-1	1150298.2613	Fusicatenibacter saccharivorans AM67-22ACA	JAQEGR010000023	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAQEGR010000023:37893:1	1150298.2613	Fusicatenibacter saccharivorans AM67-22ACA	JAQEGR010000023	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAQEGR010000042:1538:-1	1150298.2613	Fusicatenibacter saccharivorans AM67-22ACA	JAQEGR010000042	CDS	fig|1150298.2613.peg.2683	1530	1658	-		hypothetical protein	2759370	2759498
+JAQENJ010000001:1043724:1	214856.2506	Alistipes finegoldii TM12-21A	JAQENJ010000001	CDS	fig|214856.2506.peg.875	1043569	1044195	+		hypothetical protein	1043569	1044195
+JAQENJ010000001:433141:-1	214856.2506	Alistipes finegoldii TM12-21A	JAQENJ010000001	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAQENJ010000001:675695:1	214856.2506	Alistipes finegoldii TM12-21A	JAQENJ010000001	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAQENJ010000002:36312:1	214856.2506	Alistipes finegoldii TM12-21A	JAQENJ010000002	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAQENJ010000002:153622:-1	214856.2506	Alistipes finegoldii TM12-21A	JAQENJ010000002	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAQENJ010000002:153617:1	214856.2506	Alistipes finegoldii TM12-21A	JAQENJ010000002	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAQENJ010000002:204485:-1	214856.2506	Alistipes finegoldii TM12-21A	JAQENJ010000002	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAQENJ010000002:240287:-1	214856.2506	Alistipes finegoldii TM12-21A	JAQENJ010000002	CDS	fig|214856.2506.peg.1383	239840	241084	-		hypothetical protein	1595130	1596374
+JAQENJ010000002:240283:1	214856.2506	Alistipes finegoldii TM12-21A	JAQENJ010000002	CDS	fig|214856.2506.peg.1383	239840	241084	-		hypothetical protein	1595130	1596374
+JAQENJ010000003:205357:1	214856.2506	Alistipes finegoldii TM12-21A	JAQENJ010000003	CDS	fig|214856.2506.peg.1822	205143	205973	-		hypothetical protein	2064579	2065409
+JAQENJ010000006:200420:1	214856.2506	Alistipes finegoldii TM12-21A	JAQENJ010000006	CDS	fig|214856.2506.peg.2734	198008	200437	-		ATP-dependent protease La (EC 3.4.21.53) Type I	3041904	3044333
+JAQENJ010000007:185236:-1	214856.2506	Alistipes finegoldii TM12-21A	JAQENJ010000007	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAQENJ010000009:101837:-1	214856.2506	Alistipes finegoldii TM12-21A	JAQENJ010000009	CDS	fig|214856.2506.peg.3177	100929	101837	-		Branched-chain phosphotransacylase (EC 2.3.1.- )	3533466	3534374
+JAQENJ010000011:10917:-1	214856.2506	Alistipes finegoldii TM12-21A	JAQENJ010000011	CDS	fig|214856.2506.peg.982	10251	11066	-		hypothetical protein	1151863	1152678
+LR027880:47199:1	536231.75	Roseburia intestinalis L1-82	LR027880	CDS	fig|536231.75.peg.44	47172	48545	+		protein of unknown function DUF1214	47172	48545
+LR027880:47199:1	536231.75	Roseburia intestinalis L1-82	LR027880	sig_peptide	fig|536231.75.sig_peptide.2	47172	47240	+		predicted cleavage at residue 23	47172	47240
+LR027880:91843:-1	536231.75	Roseburia intestinalis L1-82	LR027880	CDS	fig|536231.75.peg.82	91372	92766	+		hypothetical protein	91372	92766
+LR027880:91848:1	536231.75	Roseburia intestinalis L1-82	LR027880	CDS	fig|536231.75.peg.82	91372	92766	+		hypothetical protein	91372	92766
+LR027880:139104:1	536231.75	Roseburia intestinalis L1-82	LR027880	CDS	fig|536231.75.peg.131	138915	139541	+		hypothetical protein	138915	139541
+LR027880:340365:-1	536231.75	Roseburia intestinalis L1-82	LR027880	CDS	fig|536231.75.peg.328	339954	340367	+	mec	Sulfer carrier protein activating protease	339954	340367
+LR027880:1605397:-1	536231.75	Roseburia intestinalis L1-82	LR027880	CDS	fig|536231.75.peg.1555	1604608	1606092	+	pknD	hypothetical protein	1604608	1606092
+LR027880:1577173:-1	536231.75	Roseburia intestinalis L1-82	LR027880	CDS	fig|536231.75.peg.1528	1576957	1577226	+		FIG00514334: hypothetical protein	1576957	1577226
+LR027880:433140:1	536231.75	Roseburia intestinalis L1-82	LR027880	CDS	fig|536231.75.peg.427	433113	433286	+		hypothetical protein	433113	433286
+LR027880:1612877:-1	536231.75	Roseburia intestinalis L1-82	LR027880	CDS	fig|536231.75.peg.1561	1612857	1613537	+		hypothetical protein	1612857	1613537
+LR027880:916790:1	536231.75	Roseburia intestinalis L1-82	LR027880	CDS	fig|536231.75.peg.897	916529	917239	+	rsxB_1	Ferredoxin 3 fused to uncharacterized domain	916529	917239
+LR027880:916793:-1	536231.75	Roseburia intestinalis L1-82	LR027880	CDS	fig|536231.75.peg.897	916529	917239	+	rsxB_1	Ferredoxin 3 fused to uncharacterized domain	916529	917239
+LR027880:1048192:-1	536231.75	Roseburia intestinalis L1-82	LR027880	CDS	fig|536231.75.peg.1009	1047808	1048233	+		hypothetical protein	1047808	1048233
+LR027880:1478125:-1	536231.75	Roseburia intestinalis L1-82	LR027880	CDS	fig|536231.75.peg.1428	1478108	1481956	+		hypothetical protein	1478108	1481956
+LR027880:777267:-1	536231.75	Roseburia intestinalis L1-82	LR027880	CDS	fig|536231.75.peg.782	776390	777268	+	rfbA	Glucose-1-phosphate thymidylyltransferase (EC 2.7.7.24)	776390	777268
+LR027880:1923673:1	536231.75	Roseburia intestinalis L1-82	LR027880	CDS	fig|536231.75.peg.1873	1923054	1924832	+		Two-component system sensor histidine kinase	1923054	1924832
+LR027880:2037731:1	536231.75	Roseburia intestinalis L1-82	LR027880	CDS	fig|536231.75.peg.1973	2034531	2038925	+		hypothetical protein	2034531	2038925
+LR027880:2131201:-1	536231.75	Roseburia intestinalis L1-82	LR027880	CDS	fig|536231.75.peg.2074	2131088	2131213	+		hypothetical protein	2131088	2131213
+LR027880:229588:-1	536231.75	Roseburia intestinalis L1-82	LR027880	-1	-1	-1	-1	+	-1	-1	-1	-1
+LR027880:1965447:-1	536231.75	Roseburia intestinalis L1-82	LR027880	-1	-1	-1	-1	+	-1	-1	-1	-1
+LR027880:523987:-1	536231.75	Roseburia intestinalis L1-82	LR027880	-1	-1	-1	-1	+	-1	-1	-1	-1
+LR027880:125927:-1	536231.75	Roseburia intestinalis L1-82	LR027880	-1	-1	-1	-1	+	-1	-1	-1	-1
+LR027880:430345:-1	536231.75	Roseburia intestinalis L1-82	LR027880	-1	-1	-1	-1	+	-1	-1	-1	-1
+LR027880:709068:-1	536231.75	Roseburia intestinalis L1-82	LR027880	-1	-1	-1	-1	+	-1	-1	-1	-1
+LR027880:2083384:-1	536231.75	Roseburia intestinalis L1-82	LR027880	-1	-1	-1	-1	+	-1	-1	-1	-1
+LR027880:2299969:1	536231.75	Roseburia intestinalis L1-82	LR027880	-1	-1	-1	-1	+	-1	-1	-1	-1
+LR027880:4481942:1	536231.75	Roseburia intestinalis L1-82	LR027880	-1	-1	-1	-1	+	-1	-1	-1	-1
+LR027880:138891:-1	536231.75	Roseburia intestinalis L1-82	LR027880	-1	-1	-1	-1	+	-1	-1	-1	-1
+LR027880:138898:1	536231.75	Roseburia intestinalis L1-82	LR027880	-1	-1	-1	-1	+	-1	-1	-1	-1
+LR027880:138910:-1	536231.75	Roseburia intestinalis L1-82	LR027880	-1	-1	-1	-1	+	-1	-1	-1	-1
+LR027880:2084865:1	536231.75	Roseburia intestinalis L1-82	LR027880	-1	-1	-1	-1	+	-1	-1	-1	-1
+LR027880:3702835:-1	536231.75	Roseburia intestinalis L1-82	LR027880	-1	-1	-1	-1	+	-1	-1	-1	-1
+LR027880:776385:-1	536231.75	Roseburia intestinalis L1-82	LR027880	-1	-1	-1	-1	+	-1	-1	-1	-1
+LR027880:4050528:-1	536231.75	Roseburia intestinalis L1-82	LR027880	-1	-1	-1	-1	+	-1	-1	-1	-1
+LR027880:4050532:1	536231.75	Roseburia intestinalis L1-82	LR027880	-1	-1	-1	-1	+	-1	-1	-1	-1
+LR027880:1384200:1	536231.75	Roseburia intestinalis L1-82	LR027880	CDS	fig|536231.75.peg.1345	1384160	1384306	-		hypothetical protein	1384160	1384306
+LR027880:3046874:1	536231.75	Roseburia intestinalis L1-82	LR027880	CDS	fig|536231.75.peg.3002	3046419	3048407	-	recQ	ATP-dependent DNA helicase RecQ	3046419	3048407
+LR027880:3046870:-1	536231.75	Roseburia intestinalis L1-82	LR027880	CDS	fig|536231.75.peg.3002	3046419	3048407	-	recQ	ATP-dependent DNA helicase RecQ	3046419	3048407
+LR027880:3677761:-1	536231.75	Roseburia intestinalis L1-82	LR027880	CDS	fig|536231.75.peg.3570	3675223	3677916	-	smc_6	hypothetical protein	3675223	3677916
+LR027880:4063646:-1	536231.75	Roseburia intestinalis L1-82	LR027880	CDS	fig|536231.75.peg.3934	4063578	4063703	-		hypothetical protein	4063578	4063703
+LR027880:4069474:-1	536231.75	Roseburia intestinalis L1-82	LR027880	CDS	fig|536231.75.peg.3939	4069228	4069929	-	gph_3	Phosphoglycolate phosphatase (EC 3.1.3.18)	4069228	4069929
+LR027880:2311510:-1	536231.75	Roseburia intestinalis L1-82	LR027880	CDS	fig|536231.75.peg.2243	2310918	2313878	-	infB	Translation initiation factor 2	2310918	2313878
+LR027880:2311515:1	536231.75	Roseburia intestinalis L1-82	LR027880	CDS	fig|536231.75.peg.2243	2310918	2313878	-	infB	Translation initiation factor 2	2310918	2313878
+LR027880:3677719:-1	536231.75	Roseburia intestinalis L1-82	LR027880	CDS	fig|536231.75.peg.3570	3675223	3677916	-	smc_6	hypothetical protein	3675223	3677916
+LR027880:2130037:1	536231.75	Roseburia intestinalis L1-82	LR027880	CDS	fig|536231.75.peg.2072	2129515	2130303	-		Uncharacterized protein, YkwD family	2129515	2130303
+LR027880:2385498:-1	536231.75	Roseburia intestinalis L1-82	LR027880	CDS	fig|536231.75.peg.2318	2385211	2385966	-		Flagellar basal-body rod modification protein FlgD	2385211	2385966
+LR027880:2385495:1	536231.75	Roseburia intestinalis L1-82	LR027880	CDS	fig|536231.75.peg.2318	2385211	2385966	-		Flagellar basal-body rod modification protein FlgD	2385211	2385966
+LR027880:3615348:1	536231.75	Roseburia intestinalis L1-82	LR027880	CDS	fig|536231.75.peg.3512	3614881	3616209	-	cwlO	hypothetical protein	3614881	3616209
+LR027880:4331481:1	536231.75	Roseburia intestinalis L1-82	LR027880	CDS	fig|536231.75.peg.4179	4330172	4331566	-		Multiple sugar ABC transporter, substrate-binding protein MsmE	4330172	4331566
+LR027880:4331481:1	536231.75	Roseburia intestinalis L1-82	LR027880	sig_peptide	fig|536231.75.sig_peptide.229	4331462	4331566	-		predicted cleavage at residue 35	4331462	4331566
+LR027880:4419513:-1	536231.75	Roseburia intestinalis L1-82	LR027880	CDS	fig|536231.75.peg.4270	4419475	4419615	-		hypothetical protein	4419475	4419615
+LR027880:1567714:-1	536231.75	Roseburia intestinalis L1-82	LR027880	CDS	fig|536231.75.peg.1516	1566972	1567793	-	immR_2	Transcriptional regulator	1566972	1567793
+NC_003228:372661:-1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	CDS	fig|272559.17.peg.309	370553	372952	+		alpha-L-arabinofuranosidase (EC 3.2.1.55)	370553	372952
+NC_003228:372667:1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	CDS	fig|272559.17.peg.309	370553	372952	+		alpha-L-arabinofuranosidase (EC 3.2.1.55)	370553	372952
+NC_003228:2112612:-1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	CDS	fig|272559.17.peg.1783	2111487	2112704	+		N-acetylneuraminate mutarotase	2111487	2112704
+NC_003228:4670353:1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	CDS	fig|272559.17.peg.4049	4670328	4670540	+		hypothetical protein	4670328	4670540
+NC_003228:4670468:1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	CDS	fig|272559.17.peg.4049	4670328	4670540	+		hypothetical protein	4670328	4670540
+NC_003228:1006650:1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	CDS	fig|272559.17.peg.802	1006611	1006724	+		hypothetical protein	1006611	1006724
+NC_003228:1324949:1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	CDS	fig|272559.17.peg.1051	1323557	1324951	+		Predicted ATPase (AAA+ superfamily)	1323557	1324951
+NC_003228:1871574:-1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	CDS	fig|272559.17.peg.1568	1870953	1872200	+		RND efflux system, membrane fusion protein	1870953	1872200
+NC_003228:1871579:1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	CDS	fig|272559.17.peg.1568	1870953	1872200	+		RND efflux system, membrane fusion protein	1870953	1872200
+NC_003228:1989870:1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	CDS	fig|272559.17.peg.1667	1989541	1992090	+		putative capsule polysaccharide export protein	1989541	1992090
+NC_003228:2315412:1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	CDS	fig|272559.17.peg.1960	2315402	2316394	+		Acetyltransferase	2315402	2316394
+NC_003228:2315427:-1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	CDS	fig|272559.17.peg.1960	2315402	2316394	+		Acetyltransferase	2315402	2316394
+NC_003228:2315424:1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	CDS	fig|272559.17.peg.1960	2315402	2316394	+		Acetyltransferase	2315402	2316394
+NC_003228:4096703:1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	CDS	fig|272559.17.peg.3538	4095292	4096815	+		hypothetical protein	4095292	4096815
+NC_003228:23081:1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	-1	-1	-1	-1	+	-1	-1	-1	-1
+NC_003228:1630172:1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	-1	-1	-1	-1	+	-1	-1	-1	-1
+NC_003228:2540436:1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	-1	-1	-1	-1	+	-1	-1	-1	-1
+NC_003228:4759547:-1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	-1	-1	-1	-1	+	-1	-1	-1	-1
+NC_003228:4840761:-1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	-1	-1	-1	-1	+	-1	-1	-1	-1
+NC_003228:1164274:1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	-1	-1	-1	-1	+	-1	-1	-1	-1
+NC_003228:2069046:-1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	-1	-1	-1	-1	+	-1	-1	-1	-1
+NC_003228:2128044:1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	-1	-1	-1	-1	+	-1	-1	-1	-1
+NC_003228:4158098:1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	-1	-1	-1	-1	+	-1	-1	-1	-1
+NC_003228:246416:1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	-1	-1	-1	-1	+	-1	-1	-1	-1
+NC_003228:416586:1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	-1	-1	-1	-1	+	-1	-1	-1	-1
+NC_003228:492462:1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	-1	-1	-1	-1	+	-1	-1	-1	-1
+NC_003228:586843:-1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	-1	-1	-1	-1	+	-1	-1	-1	-1
+NC_003228:987492:1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	-1	-1	-1	-1	+	-1	-1	-1	-1
+NC_003228:1012384:1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	-1	-1	-1	-1	+	-1	-1	-1	-1
+NC_003228:1153894:1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	-1	-1	-1	-1	+	-1	-1	-1	-1
+NC_003228:1153900:-1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	-1	-1	-1	-1	+	-1	-1	-1	-1
+NC_003228:1181154:1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	-1	-1	-1	-1	+	-1	-1	-1	-1
+NC_003228:1324956:-1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	-1	-1	-1	-1	+	-1	-1	-1	-1
+NC_003228:1432768:1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	-1	-1	-1	-1	+	-1	-1	-1	-1
+NC_003228:1432802:1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	-1	-1	-1	-1	+	-1	-1	-1	-1
+NC_003228:1634136:-1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	-1	-1	-1	-1	+	-1	-1	-1	-1
+NC_003228:1805708:-1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	-1	-1	-1	-1	+	-1	-1	-1	-1
+NC_003228:2541497:1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	-1	-1	-1	-1	+	-1	-1	-1	-1
+NC_003228:2541504:-1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	-1	-1	-1	-1	+	-1	-1	-1	-1
+NC_003228:2546667:1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	-1	-1	-1	-1	+	-1	-1	-1	-1
+NC_003228:2546738:1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	-1	-1	-1	-1	+	-1	-1	-1	-1
+NC_003228:2546674:-1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	-1	-1	-1	-1	+	-1	-1	-1	-1
+NC_003228:2774830:-1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	-1	-1	-1	-1	+	-1	-1	-1	-1
+NC_003228:3621316:1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	-1	-1	-1	-1	+	-1	-1	-1	-1
+NC_003228:3915278:1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	-1	-1	-1	-1	+	-1	-1	-1	-1
+NC_003228:3948731:-1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	-1	-1	-1	-1	+	-1	-1	-1	-1
+NC_003228:4010413:-1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	-1	-1	-1	-1	+	-1	-1	-1	-1
+NC_003228:4057873:1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	-1	-1	-1	-1	+	-1	-1	-1	-1
+NC_003228:4303314:-1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	-1	-1	-1	-1	+	-1	-1	-1	-1
+NC_003228:4731274:-1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	-1	-1	-1	-1	+	-1	-1	-1	-1
+NC_003228:4808480:1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	-1	-1	-1	-1	+	-1	-1	-1	-1
+NC_003228:4976768:1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	-1	-1	-1	-1	+	-1	-1	-1	-1
+NC_003228:5052344:1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	-1	-1	-1	-1	+	-1	-1	-1	-1
+NC_003228:5131130:1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	-1	-1	-1	-1	+	-1	-1	-1	-1
+NC_003228:5197083:-1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	-1	-1	-1	-1	+	-1	-1	-1	-1
+NC_003228:352593:1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	-1	-1	-1	-1	+	-1	-1	-1	-1
+NC_003228:418338:1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	-1	-1	-1	-1	+	-1	-1	-1	-1
+NC_003228:513414:-1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	-1	-1	-1	-1	+	-1	-1	-1	-1
+NC_003228:643527:-1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	-1	-1	-1	-1	+	-1	-1	-1	-1
+NC_003228:714066:-1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	-1	-1	-1	-1	+	-1	-1	-1	-1
+NC_003228:714070:1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	-1	-1	-1	-1	+	-1	-1	-1	-1
+NC_003228:752598:-1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	-1	-1	-1	-1	+	-1	-1	-1	-1
+NC_003228:752979:1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	-1	-1	-1	-1	+	-1	-1	-1	-1
+NC_003228:1969466:1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	-1	-1	-1	-1	+	-1	-1	-1	-1
+NC_003228:2926286:1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	-1	-1	-1	-1	+	-1	-1	-1	-1
+NC_003228:3394782:1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	-1	-1	-1	-1	+	-1	-1	-1	-1
+NC_003228:3477683:1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	-1	-1	-1	-1	+	-1	-1	-1	-1
+NC_003228:4312115:1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	-1	-1	-1	-1	+	-1	-1	-1	-1
+NC_003228:1420706:-1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	-1	-1	-1	-1	+	-1	-1	-1	-1
+NC_003228:1333181:-1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	-1	-1	-1	-1	+	-1	-1	-1	-1
+NC_003228:2235450:-1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	-1	-1	-1	-1	+	-1	-1	-1	-1
+NC_003228:787174:1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	CDS	fig|272559.17.peg.640	787148	787369	-		hypothetical protein	787148	787369
+NC_003228:4079142:-1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	CDS	fig|272559.17.peg.3523	4078957	4079748	-		Glycosyl transferase, family 2	4078957	4079748
+NC_003228:4921720:1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	CDS	fig|272559.17.peg.4289	4920640	4922322	-		Putative carboxy-terminal processing protease (EC 3.4.21.102)	4920640	4922322
+NC_003228:2460468:-1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	CDS	fig|272559.17.peg.2083	2459021	2460469	-		sodium/iodide co-transporter	2459021	2460469
+NC_003228:3707134:1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	CDS	fig|272559.17.peg.3203	3706842	3708029	-		hypothetical protein	3706842	3708029
+NC_003228:3743131:1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	CDS	fig|272559.17.peg.3234	3742739	3743194	-		Lipoprotein	3742739	3743194
+NC_003228:4507501:-1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	CDS	fig|272559.17.peg.3900	4506985	4507875	-		hypothetical protein	4506985	4507875
+NC_003228:4510319:1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	CDS	fig|272559.17.peg.3901	4507925	4510399	-		hypothetical protein	4507925	4510399
+NC_003228:4510309:-1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	CDS	fig|272559.17.peg.3901	4507925	4510399	-		hypothetical protein	4507925	4510399
+NC_003228:3886845:1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	CDS	fig|272559.17.peg.3359	3886836	3890708	-		DNA-binding response regulator, AraC family	3886836	3890708
+NC_003228:4231921:-1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	CDS	fig|272559.17.peg.3659	4231792	4232112	-		Proline dehydrogenase (EC 1.5.5.2) / Delta-1-pyrroline-5-carboxylate dehydrogenase (EC 1.2.1.88)	4231792	4232112
+NC_003228:4974924:1	272559.17	Bacteroides fragilis NCTC 9343 strain ATCC 25285	NC_003228	CDS	fig|272559.17.peg.4330	4974270	4975457	-		hypothetical protein	4974270	4975457
+NC_008618:737677:-1	367928.6	Bifidobacterium adolescentis ATCC 15703	NC_008618	CDS	fig|367928.6.peg.640	737058	738371	+	clpX	ATP-dependent Clp protease ATP-binding subunit ClpX	737058	738371
+NC_009614:1361746:-1	435590.9	Bacteroides vulgatus ATCC 8482	NC_009614	CDS	fig|435590.9.peg.1061	1361319	1361963	+		hypothetical protein	1361319	1361963
+NC_009614:1361743:1	435590.9	Bacteroides vulgatus ATCC 8482	NC_009614	CDS	fig|435590.9.peg.1061	1361319	1361963	+		hypothetical protein	1361319	1361963
+NC_009614:1917437:1	435590.9	Bacteroides vulgatus ATCC 8482	NC_009614	CDS	fig|435590.9.peg.1501	1917421	1918254	+		hypothetical protein	1917421	1918254
+NC_009614:1517885:1	435590.9	Bacteroides vulgatus ATCC 8482	NC_009614	CDS	fig|435590.9.peg.1172	1517767	1517886	+		hypothetical protein	1517767	1517886
+NC_009614:2587616:-1	435590.9	Bacteroides vulgatus ATCC 8482	NC_009614	CDS	fig|435590.9.peg.2070	2587550	2587705	+		hypothetical protein	2587550	2587705
+NC_009614:2620301:1	435590.9	Bacteroides vulgatus ATCC 8482	NC_009614	CDS	fig|435590.9.peg.2094	2620058	2620684	+		rhamnogalacturonan acetylesterase	2620058	2620684
+NC_009614:1917347:1	435590.9	Bacteroides vulgatus ATCC 8482	NC_009614	-1	-1	-1	-1	+	-1	-1	-1	-1
+NC_009614:1918264:-1	435590.9	Bacteroides vulgatus ATCC 8482	NC_009614	-1	-1	-1	-1	+	-1	-1	-1	-1
+NC_009614:636999:-1	435590.9	Bacteroides vulgatus ATCC 8482	NC_009614	-1	-1	-1	-1	+	-1	-1	-1	-1
+NC_009614:781036:1	435590.9	Bacteroides vulgatus ATCC 8482	NC_009614	-1	-1	-1	-1	+	-1	-1	-1	-1
+NC_009614:3327476:1	435590.9	Bacteroides vulgatus ATCC 8482	NC_009614	-1	-1	-1	-1	+	-1	-1	-1	-1
+NC_009614:3430835:-1	435590.9	Bacteroides vulgatus ATCC 8482	NC_009614	-1	-1	-1	-1	+	-1	-1	-1	-1
+NC_009614:4115987:-1	435590.9	Bacteroides vulgatus ATCC 8482	NC_009614	-1	-1	-1	-1	+	-1	-1	-1	-1
+NC_009614:4799053:-1	435590.9	Bacteroides vulgatus ATCC 8482	NC_009614	-1	-1	-1	-1	+	-1	-1	-1	-1
+NC_009614:4872566:-1	435590.9	Bacteroides vulgatus ATCC 8482	NC_009614	-1	-1	-1	-1	+	-1	-1	-1	-1
+NC_009614:3296499:-1	435590.9	Bacteroides vulgatus ATCC 8482	NC_009614	-1	-1	-1	-1	+	-1	-1	-1	-1
+NC_009614:3296495:1	435590.9	Bacteroides vulgatus ATCC 8482	NC_009614	-1	-1	-1	-1	+	-1	-1	-1	-1
+NC_009614:4341849:1	435590.9	Bacteroides vulgatus ATCC 8482	NC_009614	-1	-1	-1	-1	+	-1	-1	-1	-1
+NC_009614:4668994:-1	435590.9	Bacteroides vulgatus ATCC 8482	NC_009614	-1	-1	-1	-1	+	-1	-1	-1	-1
+NC_009614:637000:-1	435590.9	Bacteroides vulgatus ATCC 8482	NC_009614	-1	-1	-1	-1	+	-1	-1	-1	-1
+NC_009614:4510944:-1	435590.9	Bacteroides vulgatus ATCC 8482	NC_009614	-1	-1	-1	-1	+	-1	-1	-1	-1
+NC_009614:1422254:1	435590.9	Bacteroides vulgatus ATCC 8482	NC_009614	CDS	fig|435590.9.peg.1108	1422242	1422361	-		hypothetical protein	1422242	1422361
+NC_009614:2543689:1	435590.9	Bacteroides vulgatus ATCC 8482	NC_009614	CDS	fig|435590.9.peg.2031	2543619	2543846	-		hypothetical protein	2543619	2543846
+NZ_DS483482:369931:1	411485.1	Faecalibacterium prausnitzii M21/2	NZ_DS483482	CDS	fig|411485.10.peg.390	369223	369966	+		Chaperone protein DnaJ	441341	442084
+NZ_DS483482:240533:1	411485.1	Faecalibacterium prausnitzii M21/2	NZ_DS483482	CDS	fig|411485.10.peg.280	240486	241367	-		Aldose 1-epimerase	312604	313485
+NZ_DS483493:26217:-1	411485.1	Faecalibacterium prausnitzii M21/2	NZ_DS483493	-1	-1	-1	-1	+	-1.0	-1	-1	-1
+NZ_DS483495:66247:-1	411485.1	Faecalibacterium prausnitzii M21/2	NZ_DS483495	CDS	fig|411485.10.peg.911	66200	66319	+		hypothetical protein	991498	991617
+NZ_DS483495:74476:1	411485.1	Faecalibacterium prausnitzii M21/2	NZ_DS483495	CDS	fig|411485.10.peg.918	72182	74653	-		Translation initiation factor 2	997480	999951
+NZ_DS483497:14253:1	411485.1	Faecalibacterium prausnitzii M21/2	NZ_DS483497	-1	-1	-1	-1	+	-1.0	-1	-1	-1
+NZ_DS483498:90408:-1	411485.1	Faecalibacterium prausnitzii M21/2	NZ_DS483498	-1	-1	-1	-1	+	-1.0	-1	-1	-1
+NZ_DS483500:87352:-1	411485.1	Faecalibacterium prausnitzii M21/2	NZ_DS483500	CDS	fig|411485.10.peg.1410	86788	87792	+		TRAP-type C4-dicarboxylate transport system, periplasmic component	1557654	1558658
+NZ_DS483500:87347:1	411485.1	Faecalibacterium prausnitzii M21/2	NZ_DS483500	CDS	fig|411485.10.peg.1410	86788	87792	+		TRAP-type C4-dicarboxylate transport system, periplasmic component	1557654	1558658
+NZ_DS483501:93447:-1	411485.1	Faecalibacterium prausnitzii M21/2	NZ_DS483501	CDS	fig|411485.10.peg.1652	93143	94474	+		Seryl-tRNA synthetase (EC 6.1.1.11)	1860454	1861785
+NZ_DS483501:93463:1	411485.1	Faecalibacterium prausnitzii M21/2	NZ_DS483501	CDS	fig|411485.10.peg.1652	93143	94474	+		Seryl-tRNA synthetase (EC 6.1.1.11)	1860454	1861785
+NZ_DS483503:699074:1	411485.1	Faecalibacterium prausnitzii M21/2	NZ_DS483503	CDS	fig|411485.10.peg.2506	698620	699507	+		Glucose-1-phosphate thymidylyltransferase (EC 2.7.7.24)	2826383	2827270
+NZ_DS483503:699078:-1	411485.1	Faecalibacterium prausnitzii M21/2	NZ_DS483503	CDS	fig|411485.10.peg.2506	698620	699507	+		Glucose-1-phosphate thymidylyltransferase (EC 2.7.7.24)	2826383	2827270
+NZ_DS483503:291150:1	411485.1	Faecalibacterium prausnitzii M21/2	NZ_DS483503	-1	-1	-1	-1	+	-1.0	-1	-1	-1
+NZ_DS483503:901367:1	411485.1	Faecalibacterium prausnitzii M21/2	NZ_DS483503	-1	-1	-1	-1	+	-1.0	-1	-1	-1
+NZ_DS483503:901360:-1	411485.1	Faecalibacterium prausnitzii M21/2	NZ_DS483503	-1	-1	-1	-1	+	-1.0	-1	-1	-1
+NZ_DS483503:503693:1	411485.1	Faecalibacterium prausnitzii M21/2	NZ_DS483503	-1	-1	-1	-1	+	-1.0	-1	-1	-1
+NZ_DS483503:525462:1	411485.1	Faecalibacterium prausnitzii M21/2	NZ_DS483503	CDS	fig|411485.10.peg.2367	525221	526903	-		Phosphomannomutase (EC 5.4.2.8)	2652984	2654666
+NZ_DS499580:146708:1	445970.5	Alistipes putredinis DSM 17216	NZ_DS499580	CDS	fig|445970.5.peg.1843	145053	147098	-		Toprim domain protein	1988475	1990520
+NZ_DS499662:123208:1	449673.7	Bacteroides stercoris ATCC 43183	NZ_DS499662	-1	-1	-1	-1	+	-1.0	-1	-1	-1
+NZ_DS499671:8615:-1	449673.7	Bacteroides stercoris ATCC 43183	NZ_DS499671	-1	-1	-1	-1	+	-1.0	-1	-1	-1
+NZ_DS499672:123930:-1	449673.7	Bacteroides stercoris ATCC 43183	NZ_DS499672	-1	-1	-1	-1	+	-1.0	-1	-1	-1
+NZ_DS499673:10594:-1	449673.7	Bacteroides stercoris ATCC 43183	NZ_DS499673	-1	-1	-1	-1	+	-1.0	-1	-1	-1
+NZ_DS499673:32081:-1	449673.7	Bacteroides stercoris ATCC 43183	NZ_DS499673	-1	-1	-1	-1	+	-1.0	-1	-1	-1
+NZ_DS499673:463012:1	449673.7	Bacteroides stercoris ATCC 43183	NZ_DS499673	CDS	fig|449673.7.peg.1701	462707	463330	-		Conjugative transposon protein TraG	1914091	1914714
+NZ_DS499673:463018:-1	449673.7	Bacteroides stercoris ATCC 43183	NZ_DS499673	CDS	fig|449673.7.peg.1701	462707	463330	-		Conjugative transposon protein TraG	1914091	1914714
+NZ_DS499674:456690:1	449673.7	Bacteroides stercoris ATCC 43183	NZ_DS499674	-1	-1	-1	-1	+	-1	-1	-1	-1
+NZ_DS499674:333076:1	449673.7	Bacteroides stercoris ATCC 43183	NZ_DS499674	-1	-1	-1	-1	+	-1	-1	-1	-1
+NZ_DS499676:481440:-1	449673.7	Bacteroides stercoris ATCC 43183	NZ_DS499676	-1	-1	-1	-1	+	-1	-1	-1	-1
+NZ_DS990119:419614:-1	484018.6	Bacteroides plebeius DSM 17135	NZ_DS990119	CDS	fig|484018.6.peg.564	418736	420610	+		hypothetical protein	714121	715995
+NZ_DS990119:419610:1	484018.6	Bacteroides plebeius DSM 17135	NZ_DS990119	CDS	fig|484018.6.peg.564	418736	420610	+		hypothetical protein	714121	715995
+NZ_DS990119:170332:-1	484018.6	Bacteroides plebeius DSM 17135	NZ_DS990119	-1	-1	-1	-1	+	-1	-1	-1	-1
+NZ_DS990135:103434:-1	484018.6	Bacteroides plebeius DSM 17135	NZ_DS990135	-1	-1	-1	-1	+	-1	-1	-1	-1
+NZ_DS990135:150036:-1	484018.6	Bacteroides plebeius DSM 17135	NZ_DS990135	CDS	fig|484018.6.peg.3591	150009	150122	-		hypothetical protein	4418211	4418324
+QRIH01000031:636:1	33039.31	[Ruminococcus] torques strain AM22-16	QRIH01000031	-1	-1	-1	-1	+	-1	-1	-1	-1
+QRIH01000031:639:-1	33039.31	[Ruminococcus] torques strain AM22-16	QRIH01000031	-1	-1	-1	-1	+	-1	-1	-1	-1
+QRIH01000036:26327:1	33039.31	[Ruminococcus] torques strain AM22-16	QRIH01000036	CDS	fig|33039.31.peg.1849	25885	26328	+	ssb	Single-stranded DNA-binding protein	2559707	2560150
+QRIH01000036:26336:1	33039.31	[Ruminococcus] torques strain AM22-16	QRIH01000036	-1	-1	-1	-1	+	-1	-1	-1	-1
+QRIH01000040:23903:1	33039.31	[Ruminococcus] torques strain AM22-16	QRIH01000040	-1	-1	-1	-1	+	-1	-1	-1	-1
+QRIH01000040:23935:1	33039.31	[Ruminococcus] torques strain AM22-16	QRIH01000040	-1	-1	-1	-1	+	-1	-1	-1	-1
+UFTK01000001:468527:1	46503.89	Parabacteroides merdae strain NCTC13052	UFTK01000001	-1	-1	-1	-1	+	-1	-1	-1	-1
+UFTK01000001:3343593:-1	46503.89	Parabacteroides merdae strain NCTC13052	UFTK01000001	-1	-1	-1	-1	+	-1	-1	-1	-1
+UFTK01000001:3343987:-1	46503.89	Parabacteroides merdae strain NCTC13052	UFTK01000001	-1	-1	-1	-1	+	-1	-1	-1	-1
+UFTK01000001:3306242:-1	46503.89	Parabacteroides merdae strain NCTC13052	UFTK01000001	-1	-1	-1	-1	+	-1	-1	-1	-1
+UFTK01000001:114572:-1	46503.89	Parabacteroides merdae strain NCTC13052	UFTK01000001	-1	-1	-1	-1	+	-1	-1	-1	-1
+UFTK01000001:504384:1	46503.89	Parabacteroides merdae strain NCTC13052	UFTK01000001	-1	-1	-1	-1	+	-1	-1	-1	-1
+UFTK01000001:3928236:1	46503.89	Parabacteroides merdae strain NCTC13052	UFTK01000001	-1	-1	-1	-1	+	-1	-1	-1	-1
+UFTK01000001:1363517:1	46503.89	Parabacteroides merdae strain NCTC13052	UFTK01000001	CDS	fig|46503.89.peg.1538	1363046	1363552	-		FKBP-type peptidyl-prolyl cis-trans isomerase FkpA precursor (EC 5.2.1.8)	1363046	1363552
+UFTK01000001:423985:1	46503.89	Parabacteroides merdae strain NCTC13052	UFTK01000001	CDS	fig|46503.89.peg.757	422680	424080	-	wcaJ_1	Capsular polysaccharide biosynthesis protein	422680	424080
+UFTK01000001:299145:-1	46503.89	Parabacteroides merdae strain NCTC13052	UFTK01000001	CDS	fig|46503.89.peg.643	298935	299207	-		hypothetical protein	298935	299207
+UFTK01000002:160167:-1	46503.89	Parabacteroides merdae strain NCTC13052	UFTK01000002	CDS	fig|46503.89.peg.140	160006	161298	-	xerD_8	Integrase	4202556	4203848
+UFTK01000002:159363:1	46503.89	Parabacteroides merdae strain NCTC13052	UFTK01000002	CDS	fig|46503.89.peg.139	158912	159760	-		TnpC	4201462	4202310
+UFTK01000002:159360:-1	46503.89	Parabacteroides merdae strain NCTC13052	UFTK01000002	CDS	fig|46503.89.peg.139	158912	159760	-		TnpC	4201462	4202310
