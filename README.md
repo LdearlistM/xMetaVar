@@ -4,11 +4,9 @@
 
 <!-- TODO[image]: replace ./images/graphabstract.png with the final Fig. 1 overview from the revised manuscript -->
 
-# xMetaVar
-
 ### Scalable harmonization and interpretation of multi-layer microbial genomic variation across metagenomic cohorts
 
-[![Backend Image](https://img.shields.io/badge/backend%20image-ghcr.io%2Fldearlistm%2Fxmetavar%3A1.0.0-2496ED?logo=docker)](https://github.com/ldearlistm/xMetaVar/pkgs/container/xmetavar)
+[![Backend Image](https://img.shields.io/badge/backend%20image-ghcr.io%2Fldearlistm%2Fxmetavar%3A1.0.1-2496ED?logo=docker)](https://github.com/ldearlistm/xMetaVar/pkgs/container/xmetavar)
 [![Frontend Image](https://img.shields.io/badge/frontend%20image-ghcr.io%2Fldearlistm%2Fxmetavar--frontend%3A1.0-2496ED?logo=docker)](https://github.com/ldearlistm/xMetaVar/pkgs/container/xmetavar-frontend)
 [![Web Server](https://img.shields.io/badge/web%20server-biosino.org%2FiMAC-success)](https://www.biosino.org/iMAC/xmetavar)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
@@ -54,12 +52,14 @@ xMetaVar adopts a **two-stage local–web design** that separates computationall
 
   | Variant layer | Caller | Representation |
   | :-- | :-- | :-- |
-  | SNVs (de novo) | MIDAS v3 | Minor-allele-frequency matrix |
-  | Predefined SNP genotypes | GT-Pro | Reference/alternative allele counts |
+  | SNVs (de novo) | MIDAS v3 | Minor-allele-frequency matrix — **default SNV layer** |
+  | Predefined SNP genotypes *(optional)* | GT-Pro | Reference/alternative allele counts over a predefined SNP catalog (catalog downloaded separately) |
   | Short InDels | QuickVariants (BWA-MEM) | Binary presence/absence matrix |
   | dSV / vSV signals | SGVFinder2 (ICRA) | Deletion states / variable-segment scores |
   | Inversions | PhaseFinder | Orientation states |
   | Gene-level CNVs | MIDAS gene module | Normalized gene copy number |
+
+> **A note on the two SNP layers.** De novo SNV profiling is performed by **MIDAS by default** and covers the standard SNV analysis needs. **GT-Pro** is offered as an *optional, complementary* layer for users who specifically want genotyping against its predefined SNP catalog. Because that catalog is large and distributed under its own release channel, it is **not bundled** in the xMetaVar reference database; to run the `snp_gtpro` target, download the GT-Pro database following its [official guide](https://github.com/zjshi/gt-pro) and set `GT_Pro_db`/`GT_dict_path` in `config.yaml`. If you do not need predefined-catalog genotyping, the MIDAS SNV output is sufficient and no extra download is required.
 
 - **Harmonized, type-aware outputs** — native matrices preserve module-specific evidence; standardized matrices use variant-class-specific encoding for integrated cohort analysis.
 - **Locus traceability** — every feature keeps its variant class, species, reference coordinate/interval, and gene/product annotation, so a cohort-level hit can always be traced back to its genomic context.
@@ -78,7 +78,7 @@ xMetaVar adopts a **two-stage local–web design** that separates computationall
 | Try analysis & visualization with **no installation** | [Public web server](https://www.biosino.org/iMAC/xmetavar) (use bundled demo data) | None |
 | Call variants from **your own FASTQ reads** on a server/HPC | [Part I: local Docker workflow](#part-i--local-variant-calling-workflow) | Backend image + database |
 | Explore the matrices you produced locally | Upload them to the [public web server](https://www.biosino.org/iMAC/xmetavar) | None |
-| Host your **own private instance** of the web interface | [Part III: self-hosted frontend](#part-iii--self-host-the-web-frontend) | Frontend image + `public/` + `database/` |
+| Host your **own private instance** of the web interface | [Part III: self-hosted frontend](#part-iii--self-host-the-web-frontend) | Frontend image + `public/` |
 
 ---
 
@@ -92,31 +92,47 @@ The workflow runs on Linux (or any host with a Docker engine). Recommended resou
 
 | Resource | Minimum | Recommended |
 | :-- | :-- | :-- |
-| CPU cores | 8 | 16–32 (embarrassingly parallel across samples/rules) |
-| RAM | 32 GB | 64 GB+ for large cohorts / many parallel species |
-| Disk | ~60 GB | Input FASTQ + database (~7 GB unpacked) + intermediate/results; reserve headroom |
+| CPU cores | 8 (allocate in multiples of 8) | 16–32; more cores process more samples/species in parallel, but also raise the concurrent memory demand |
+| RAM | 16 GB | 64 GB+ for large cohorts / many parallel species |
 
-> Benchmark reference: with 16 cores, wall-clock time was ~3.0 h for 2 samples and ~12.5 h for 8 samples; peak memory ranged 22–52 GB. Adding cores shortens wall time (4 samples: 13.9 h @ 8 cores → 2.95 h @ 32 cores).
+Benchmark reference, measured on a Linux Slurm server across nested sample subsets:
+
+| Cores | Samples | Input size (GB) | Read pairs (M) | Total time (h) | Avg CPU used (cores) | Avg mem (GB) | Peak mem (GB) |
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| 8  | 4 | 8.59  | 62.66  | 13.86 | 2.56  | 3.45  | 22.41 |
+| 16 | 2 | 4.32  | 31.63  | 3.01  | 5.46  | 4.14  | 22.93 |
+| 16 | 4 | 8.59  | 62.66  | 6.16  | 5.52  | 9.00  | 43.10 |
+| 16 | 8 | 17.61 | 128.11 | 12.53 | 5.50  | 8.69  | 38.24 |
+| 32 | 4 | 8.59  | 62.66  | 2.95  | 11.54 | 31.16 | 52.32 |
 
 ### 1.2 Install Docker
 
-Install the Docker Engine (and the Compose plugin if you plan to self-host the frontend). No Conda, Snakemake or bioinformatics tool needs to be installed on the host — everything is inside the image.
+Install the Docker Engine. No Conda, Snakemake or bioinformatics tool needs to be installed on the host — everything is inside the image.
 
 ### 1.3 Pull the backend image
 
 ```bash
-docker pull ghcr.io/ldearlistm/xmetavar:1.0.0
+docker pull ghcr.io/ldearlistm/xmetavar:1.0.1
 ```
 
 The image bundles Snakemake v8.25.3 and all module Conda environments. Verify it runs:
 
 ```bash
-docker run --rm ghcr.io/ldearlistm/xmetavar:1.0.0 --help
+docker run --rm ghcr.io/ldearlistm/xmetavar:1.0.1 --help
 ```
 
 ### 1.4 Obtain the reference database
 
-See [Reference database](#reference-database) below. Unpack it so that a single `database/` directory contains the `kneaddata/`, `midasv3/`, `gt-pro/`, `QuickVariant/`, `SGVFinder2/`, `PhaseFinder/` subfolders and `43_species_features.tsv`.
+Download the pre-compiled xMetaVar reference database from Figshare and unpack it:
+
+- **Download:** [Database for xMetaVar — Figshare](https://doi.org/10.6084/m9.figshare.30846347) (4.60 GB, `xMetaVar_database.tar.xz`)
+- **Unpack:**
+
+  ```bash
+  tar -xvf xMetaVar_database.tar.xz
+  ```
+
+- Mount the unpacked `database/` directory as described in [Section 3.1](#31-mount-mapping). This database is required **only for the local variant-calling workflow (Part I)** — neither the public web server nor a self-hosted web frontend needs it. See [Reference database](#reference-database) for panel details and custom references.
 
 ### 1.5 Quick test with bundled example data
 
@@ -168,7 +184,7 @@ SampleA	/pipeline/rawdata/SampleA.fastq.gz
 
 ### 2.3 The configuration file (`config.yaml`)
 
-A ready-to-use template is at [`test/config.yaml`](./test/config.yaml). Key fields:
+A ready-to-use template is provided at [`test/config.yaml`](./test/config.yaml). **It works out of the box and normally needs no editing** — just make sure the database paths match where you mounted `database/`. For your own data, the two fields you typically adjust are `sequencing_type` (`"PE"` or `"SE"`, to match the sample sheet) and `skip_qc` (set `true` only when supplying already host-depleted reads). Key fields:
 
 | Field | Meaning |
 | :-- | :-- |
@@ -177,7 +193,7 @@ A ready-to-use template is at [`test/config.yaml`](./test/config.yaml). Key fiel
 | `kneaddata_db` / `contaminant_db_prefix` | Host-depletion reference (e.g. `hg_38`); host build GRCh38 or T2T-CHM13 |
 | `trimmomatic_path` | Trimmomatic adapters/tools path |
 | `midasv3_db` | MIDAS v3 local database |
-| `GT_Pro_db` / `GT_dict_path` | GT-Pro catalog and SNP dictionary |
+| `GT_Pro_db` / `GT_dict_path` | GT-Pro catalog and SNP dictionary *(optional layer; download the catalog separately per the note above)* |
 | `QuickVariant_db` | Merged reference FASTA for BWA/QuickVariants |
 | `SGVFinder2_db` | SGVFinder2 reference |
 | `PhaseFinder_db` | PhaseFinder invertible-region reference |
@@ -215,10 +231,10 @@ docker run --rm \
   -v "$(pwd)/samples.tsv:/pipeline/samples.tsv:ro" \
   -e XMETAVAR_CORES=16 \
   -e XMETAVAR_CHOWN_TO="$(id -u):$(id -g)" \
-  ghcr.io/ldearlistm/xmetavar:1.0.0 all
+  ghcr.io/ldearlistm/xmetavar:1.0.1 all
 ```
 
-`all` runs every variant module and then prepares the full deliverable set.
+`all` runs the complete workflow and then prepares the full deliverable set, with MIDAS as the default SNV layer. The complementary GT-Pro layer is optional and only runs if you have downloaded its separate catalog (see the Features note); most users can simply omit `snp_gtpro`.
 
 ### 3.3 Modular target keys
 
@@ -226,7 +242,7 @@ Replace `all` with one or more target keys to run only selected layers:
 
 | Target key | Produces |
 | :-- | :-- |
-| `snp_gtpro` | GT-Pro predefined SNP table |
+| `snp_gtpro` | GT-Pro predefined SNP table *(optional; requires the separately downloaded GT-Pro catalog — see Features note)* |
 | `snp_midas` | MIDAS SNV outputs + done-flag |
 | `indel` | QuickVariants InDel annotation matrix |
 | `sv_sgvfinder` | SGVFinder2 dSV **and** vSV annotations |
@@ -239,33 +255,22 @@ Example — run only InDel + SV layers on 8 cores:
 
 ```bash
 docker run --rm [mounts...] -e XMETAVAR_CORES=8 \
-  ghcr.io/ldearlistm/xmetavar:1.0.0 indel sv_sgvfinder sv_inversion sv_midas
+  ghcr.io/ldearlistm/xmetavar:1.0.1 indel sv_sgvfinder sv_inversion sv_midas
 ```
 
 > `all` cannot be combined with specific keys. Keys may be combined freely with each other.
 
-### 3.4 Environment variables (the wrapper API)
+### 3.4 Cores and extra Snakemake arguments
 
-The entrypoint is a wrapper around Snakemake. Control it through environment variables rather than Snakemake flags:
+- Control parallelism with the `XMETAVAR_CORES` environment variable (default 16; choose a multiple of 8). **Do not pass `--cores`/`-c`/`--jobs`/`-j` directly** — the wrapper manages these and rejects them.
+- Pass any additional Snakemake arguments after a `--` separator, for example:
 
-| Variable | Default | Meaning |
-| :-- | :-- | :-- |
-| `XMETAVAR_CORES` | `16` | Snakemake `--cores` (**do not pass `--cores/-c/--jobs/-j` yourself**) |
-| `XMETAVAR_CONFIGFILE` | `/pipeline/config.yaml` | Config path |
-| `XMETAVAR_RESULTS_DIR` | `/pipeline/results` | Results path |
-| `XMETAVAR_CONDA_PREFIX` | `/pipeline/.snakemake/conda` | Conda env cache |
-| `XMETAVAR_FIX_PERMISSIONS` | `1` | `chmod/chown` results on exit |
-| `XMETAVAR_RESULT_CHMOD` | `a+rwX` | Permission mode applied on exit |
-| `XMETAVAR_CHOWN_TO` | *(unset)* | Optional `uid:gid` owner for results |
+  ```bash
+  docker run --rm [mounts...] -e XMETAVAR_CORES=16 \
+    ghcr.io/ldearlistm/xmetavar:1.0.1 all -- --printshellcmds --rerun-incomplete --keep-going
+  ```
 
-Pass raw Snakemake arguments after `--`, e.g.:
-
-```bash
-docker run --rm [mounts...] -e XMETAVAR_CORES=16 \
-  ghcr.io/ldearlistm/xmetavar:1.0.0 all -- --printshellcmds --rerun-incomplete --keep-going
-```
-
-> The wrapper rejects `--cores/-c/--jobs/-j`, `--configfile`, `--use-conda` and `--conda-prefix` because it manages them for you — use the environment variables instead.
+- On shared systems, add `-e XMETAVAR_CHOWN_TO="$(id -u):$(id -g)"` so result files remain owned by your host user.
 
 ### 3.5 HPC / Slurm
 
@@ -274,12 +279,12 @@ Wrap the `docker run` command in a batch script (template: [`test/example_pipeli
 ```bash
 # step 1: variant modules
 docker run --rm [mounts...] -e XMETAVAR_CORES=16 -e XMETAVAR_CHOWN_TO="$(id -u):$(id -g)" \
-  ghcr.io/ldearlistm/xmetavar:1.0.0 snp_midas indel sv_sgvfinder sv_inversion sv_midas \
+  ghcr.io/ldearlistm/xmetavar:1.0.1 snp_midas indel sv_sgvfinder sv_inversion sv_midas \
   -- --printshellcmds --rerun-incomplete --keep-going
 
 # step 2: assemble deliverables from the results above
 docker run --rm [same mounts...] -e XMETAVAR_CORES=16 \
-  ghcr.io/ldearlistm/xmetavar:1.0.0 deliverables -- --rerun-incomplete --keep-going
+  ghcr.io/ldearlistm/xmetavar:1.0.1 deliverables -- --rerun-incomplete --keep-going
 ```
 
 ---
@@ -291,7 +296,7 @@ Results are written under `results/02-variant-calling/` (plus `results/logs/`). 
 | Layer | File (relative to `results/`) |
 | :-- | :-- |
 | SNP – GT-Pro | `02-variant-calling/SNP/GT-Pro/across-sample/snp.tsv` |
-| SNP – MIDAS | `02-variant-calling/SNP/MIDAS/across_sample/snps/snps_summary.tsv` (+ `logs/MIDASv3/snp_done.txt`) |
+| SNP – MIDAS | `02-variant-calling/SNP/MIDAS/across_sample/snps/merge.snps_freqs.tsv`, `merge.snps_info.tsv` |
 | InDel | `02-variant-calling/INDEL/across-sample/indel_anno.tsv` |
 | dSV / vSV | `02-variant-calling/SV/dSV-vSV/across-sample/dsgv_anno.tsv`, `vsgv_anno.tsv` |
 | Inversion | `02-variant-calling/SV/Inversion/across-sample/inversion_anno.tsv` |
@@ -313,7 +318,6 @@ To visualize these matrices (landscape summaries, group comparisons, UpSet cross
 - **PE vs SE mismatch:** the sample-sheet columns and `sequencing_type` must agree; a mismatch fails at input validation, not mid-run.
 - **Permission-denied on `results/`:** set `-e XMETAVAR_CHOWN_TO="$(id -u):$(id -g)"` so outputs are owned by the host user.
 - **Depth matters by layer:** SNVs/inversions stay robust at low depth; predefined SNPs/InDels need moderate depth; dSV/vSV require higher coverage. Treat vSV as an exploratory, coverage-sensitive signal.
-- **"Missing" vs "absent":** a non-evaluable feature (species absent/too shallow) is tracked separately from a true, evaluable non-event — do not equate the two when filtering.
 - **Cores have no effect?** You likely passed `--cores` directly; the wrapper blocks it. Use `XMETAVAR_CORES`.
 
 <!-- TODO: expand with real recurring issues from your users as they come up. -->
@@ -343,7 +347,7 @@ For the full click-by-click guide (upload format, module walkthrough, demo datas
 
 # Part III — Self-host the web frontend
 
-The web interface is distributed as a separate, lightweight image (it does **not** perform read-level variant calling). Two deployment modes are supported.
+The web interface is distributed as a separate, lightweight image. It serves the interactive interpretation layer and does **not** perform read-level variant calling, so it needs **no reference database** — only the static `public/` assets.
 
 ### Prerequisites
 
@@ -351,14 +355,10 @@ The web interface is distributed as a separate, lightweight image (it does **not
   ```bash
   docker pull ghcr.io/ldearlistm/xmetavar-frontend:1.0
   ```
-- Prepare two data folders on the host:
-  - `public/` — static web assets, JBrowse reference data and the bundled example set (tracked in this repository).
-  - `database/` — the reference/annotation data needed for locus display (download from [Figshare](https://doi.org/10.6084/m9.figshare.30846347); see [Reference database](#reference-database)).
-- An empty `shared_data/` is created at runtime for user sessions/results.
+- Prepare the `public/` folder on the host — static web assets, JBrowse reference data and the bundled example set (tracked in this repository).
+- An empty `shared_data/` directory is created at runtime for user sessions/results.
 
-### Option A — Personal / local use (single container)
-
-No `cleaner` sidecar is needed for a single local user:
+### Start the frontend
 
 ```bash
 docker run -d \
@@ -368,81 +368,32 @@ docker run -d \
   -e NODE_ENV=production \
   -e PORT=3000 \
   -v "$(pwd)/public:/app/public:ro" \
-  -v "$(pwd)/database:/app/database:ro" \
   -v "$(pwd)/shared_data:/app/shared_data:rw" \
   ghcr.io/ldearlistm/xmetavar-frontend:1.0
 ```
 
 Open <http://localhost:3000>.
 
-### Option B — Multi-user server (frontend + periodic cleaner)
-
-For shared deployments, add the `cleaner` sidecar that periodically removes stale files from `shared_data` (default: delete files/empty dirs older than 3 days every 24 h). Use Docker Compose:
-
-```yaml
-services:
-  frontend:
-    image: ghcr.io/ldearlistm/xmetavar-frontend:1.0
-    container_name: xmetavar-frontend
-    restart: always
-    ports:
-      - "3000:3000"
-    environment:
-      NODE_ENV: production
-      HOSTNAME: 0.0.0.0
-      PORT: 3000
-      MAX_CONCURRENT_ANALYSES: "6"
-    volumes:
-      - ./frontend/shared_data:/app/shared_data
-      - ./frontend/public:/app/public
-      # TODO[deploy]: confirm the exact in-container database mount path for the frontend
-      - ./database:/app/database:ro
-    cpus: 48
-    mem_limit: 44g
-    command: ["node", "server.js"]
-    logging:
-      driver: json-file
-      options: { max-size: "50m", max-file: "5" }
-
-  cleaner:
-    # Build locally from the cleaner Dockerfile (tiny Alpine image, not published to the registry)
-    image: xmetavar-cleaner:v0
-    container_name: xmetavar-cleaner
-    restart: always
-    volumes:
-      - ./frontend/shared_data:/data_to_clean:rw
-    logging:
-      driver: json-file
-      options: { max-size: "20m", max-file: "3" }
-```
-
-```bash
-docker compose up -d
-```
-
-> The `cleaner` image is intentionally tiny (Alpine + a shell loop) and is only relevant for shared servers; build it locally — it does not need to be published. Tune `cpus`/`mem_limit`/`MAX_CONCURRENT_ANALYSES` to your host.
-
-<!-- TODO[deploy]: (1) confirm exact frontend in-container mount paths for public/database/shared_data against server.js; (2) add the cleaner Dockerfile/build command; (3) state which database subset the frontend actually needs (full vs annotation-only). -->
+<!-- TODO[deploy]: confirm the exact in-container mount paths for public/shared_data against server.js. -->
 
 ---
 
 ## Reference database
 
-The default framework covers **43 prevalent human-gut bacterial species** (selected from curatedMetagenomicData at mean relative abundance > 0.5% and prevalence > 50%), with representative genomes and gene annotations from BV-BRC cross-checked against NCBI RefSeq. Module-specific indices (Bowtie 2, GT-Pro, MIDAS, BWA, SGVFinder2, PhaseFinder) are pre-built on this common framework.
+> The reference database is required **only by the local variant-calling workflow (Part I)**. The public web server and a self-hosted web frontend do not need it.
 
-- **Download (pre-compiled):** [Figshare — 10.6084/m9.figshare.30846347](https://doi.org/10.6084/m9.figshare.30846347)
-- **Archive:** `xMetaVar_database.tar.xz`
-- **Unpack:**
-  ```bash
-  tar -xvf xMetaVar_database.tar.xz
-  ```
-- After unpacking, point every `*_db` / `*_path` field in `config.yaml` at the matching subfolder under `/pipeline/database/...` (in-container paths).
+The default framework covers **43 prevalent human-gut bacterial species** (selected from curatedMetagenomicData at mean relative abundance > 0.5% and prevalence > 50%), with representative genomes and gene annotations from BV-BRC cross-checked against NCBI RefSeq. Module-specific indices (Bowtie 2, MIDAS, BWA, SGVFinder2, PhaseFinder) are pre-built on this common framework and shipped as a single archive:
+
+- **Download (pre-compiled):** [Database for xMetaVar — Figshare](https://doi.org/10.6084/m9.figshare.30846347) (4.60 GB, `xMetaVar_database.tar.xz`)
+- **Unpack:** `tar -xvf xMetaVar_database.tar.xz`, then mount the resulting `database/` directory to `/pipeline/database` ([Section 3.1](#31-mount-mapping)) and keep the `*_db`/`*_path` fields in `config.yaml` consistent with it.
+
+**GT-Pro catalog not included.** As noted in Features, the optional GT-Pro predefined-SNP catalog is not part of this archive. To use the `snp_gtpro` layer, download it from the [GT-Pro repository](https://github.com/zjshi/gt-pro) following its official instructions and set `GT_Pro_db`/`GT_dict_path` in `config.yaml`.
 
 ### Custom reference panel
 
 xMetaVar also supports a custom panel: provide representative genomes + GFF annotations and build module-specific indices following each tool's official procedure, then update `config.yaml`. Catalog-based modules (GT-Pro, PhaseFinder) keep their predefined locus definitions and act as complementary layers.
 
-<!-- TODO[database]: verify the Figshare archive's top-level layout and checksums (md5/sha256), and record the exact unpacked size here. -->
+<!-- TODO[database]: record the archive checksums (md5/sha256) and exact unpacked size. -->
 
 ---
 
