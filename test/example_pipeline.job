@@ -6,6 +6,7 @@
 #SBATCH -o xt.%j.out
 #SBATCH -e xt.%j.err
 
+set -euo pipefail
 source ~/.bashrc
 
 docker run --rm \
@@ -14,4 +15,16 @@ docker run --rm \
   -v "/localpath/to/config.yaml:/pipeline/config.yaml:ro" \
   -v "/localpath/to/samples.tsv:/pipeline/samples.tsv:ro" \
   -v "/localpath/to/database:/pipeline/database:rw" \
-  xmetavar:1.0.0 all --cores 16
+  -e XMETAVAR_CORES=16 \
+  -e XMETAVAR_CHOWN_TO="$(id -u):$(id -g)" \
+  xmetavar:1.0.0 snp_midas indel sv_sgvfinder sv_inversion sv_midas --printshellcmds --rerun-incomplete --keep-going -n
+
+docker run --rm \
+  -v "/localpath/to/rawdata:/pipeline/rawdata:ro" \
+  -v "/localpath/to/results:/pipeline/results:rw" \
+  -v "/localpath/to/config.yaml:/pipeline/config.yaml:ro" \
+  -v "/localpath/to/samples.tsv:/pipeline/samples.tsv:ro" \
+  -v "/localpath/to/database:/pipeline/database:rw" \
+  -e XMETAVAR_CORES=16 \
+  -e XMETAVAR_CHOWN_TO="$(id -u):$(id -g)" \
+  xmetavar:1.0.0 deliverables --printshellcmds --rerun-incomplete --keep-going -n
