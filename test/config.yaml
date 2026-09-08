@@ -4,7 +4,7 @@ results_dir: "/pipeline/results"
 kneaddata_db: /pipeline/database/kneaddata/hg_38
 contaminant_db_prefix: "hg_38"
 trimmomatic_path: /pipeline/database/trim_tools
-trimmomatic_options: 'SLIDINGWINDOW:4:20 MINLEN:50 LEADING:3 TRAILING:3'
+# trimmomatic_options: 'SLIDINGWINDOW:4:20 MINLEN:50 LEADING:3 TRAILING:3'
 
 midasdb_name: localdb
 midasv3_db: /pipeline/database/midasv3/midasdb_localdb
