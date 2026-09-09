@@ -1,0 +1,102 @@
+Site	genome_id	genome_name	accession	feature_type	patric_id	start	end	strand	gene	product	global_start	global_end
+CP042285:2339608:1	823.3647	Parabacteroides distasonis strain APCS2/PD	CP042285	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP042285:431016:1	823.3647	Parabacteroides distasonis strain APCS2/PD	CP042285	CDS	fig|823.3647.peg.370	430995	431387	-		FIG00936922: hypothetical protein	435143	435535
+CP046176:2339045:1	357276.1035	Bacteroides dorei strain DSM 17855	CP046176	CDS	fig|357276.1035.peg.2041	2339007	2339129	+		hypothetical protein	2339007	2339129
+CP046176:2339048:1	357276.1035	Bacteroides dorei strain DSM 17855	CP046176	CDS	fig|357276.1035.peg.2041	2339007	2339129	+		hypothetical protein	2339007	2339129
+CP046176:2445846:-1	357276.1035	Bacteroides dorei strain DSM 17855	CP046176	CDS	fig|357276.1035.peg.2174	2445553	2445858	+	traM	Conjugative transposon protein TraM	2445553	2445858
+CP046176:2445858:1	357276.1035	Bacteroides dorei strain DSM 17855	CP046176	CDS	fig|357276.1035.peg.2174	2445553	2445858	+	traM	Conjugative transposon protein TraM	2445553	2445858
+CP046176:344517:-1	357276.1035	Bacteroides dorei strain DSM 17855	CP046176	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP046176:2338689:-1	357276.1035	Bacteroides dorei strain DSM 17855	CP046176	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP046176:2339154:-1	357276.1035	Bacteroides dorei strain DSM 17855	CP046176	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP046176:2374916:-1	357276.1035	Bacteroides dorei strain DSM 17855	CP046176	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP046176:2445871:-1	357276.1035	Bacteroides dorei strain DSM 17855	CP046176	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP046176:2462048:1	357276.1035	Bacteroides dorei strain DSM 17855	CP046176	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP046176:2462080:1	357276.1035	Bacteroides dorei strain DSM 17855	CP046176	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP046176:2348287:-1	357276.1035	Bacteroides dorei strain DSM 17855	CP046176	CDS	fig|357276.1035.peg.2052	2348191	2348319	-		hypothetical protein	2348191	2348319
+CP046176:2352605:1	357276.1035	Bacteroides dorei strain DSM 17855	CP046176	CDS	fig|357276.1035.peg.2056	2351871	2352881	-		Putative mobilization protein BF0133	2351871	2352881
+CP046176:2352600:-1	357276.1035	Bacteroides dorei strain DSM 17855	CP046176	CDS	fig|357276.1035.peg.2056	2351871	2352881	-		Putative mobilization protein BF0133	2351871	2352881
+CP046176:2462035:-1	357276.1035	Bacteroides dorei strain DSM 17855	CP046176	CDS	fig|357276.1035.peg.2197	2459033	2462035	-		hypothetical protein	2459033	2462035
+CP072255:434802:1	997890.6	Bacteroides uniformis CL03T12C37	CP072255	CDS	fig|997890.6.peg.371	434358	434822	+		hypothetical protein	434358	434822
+CP072255:2167093:-1	997890.6	Bacteroides uniformis CL03T12C37	CP072255	repeat_region	fig|997890.6.repeat.27	2167084	2172531	+		repeat region	2167084	2172531
+CP072255:701999:1	997890.6	Bacteroides uniformis CL03T12C37	CP072255	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP072255:769544:-1	997890.6	Bacteroides uniformis CL03T12C37	CP072255	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP072255:1249683:1	997890.6	Bacteroides uniformis CL03T12C37	CP072255	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP072255:2717194:-1	997890.6	Bacteroides uniformis CL03T12C37	CP072255	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP072255:3223704:-1	997890.6	Bacteroides uniformis CL03T12C37	CP072255	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP072255:3134806:1	997890.6	Bacteroides uniformis CL03T12C37	CP072255	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP072255:3285340:1	997890.6	Bacteroides uniformis CL03T12C37	CP072255	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP072255:3533706:-1	997890.6	Bacteroides uniformis CL03T12C37	CP072255	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP072255:3943834:1	997890.6	Bacteroides uniformis CL03T12C37	CP072255	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP072255:4543354:-1	997890.6	Bacteroides uniformis CL03T12C37	CP072255	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP072255:4669917:-1	997890.6	Bacteroides uniformis CL03T12C37	CP072255	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP072255:4740401:-1	997890.6	Bacteroides uniformis CL03T12C37	CP072255	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP072255:940171:1	997890.6	Bacteroides uniformis CL03T12C37	CP072255	CDS	fig|997890.6.peg.829	939371	940543	-	dnaJ_2	Chaperone protein DnaJ	939371	940543
+CP072255:940175:1	997890.6	Bacteroides uniformis CL03T12C37	CP072255	CDS	fig|997890.6.peg.829	939371	940543	-	dnaJ_2	Chaperone protein DnaJ	939371	940543
+CP072255:1833457:1	997890.6	Bacteroides uniformis CL03T12C37	CP072255	CDS	fig|997890.6.peg.1707	1833450	1834043	-		Thiazole tautomerase TenI (EC 5.3.99.10)	1833450	1834043
+CP072255:2319625:-1	997890.6	Bacteroides uniformis CL03T12C37	CP072255	CDS	fig|997890.6.peg.2160	2319289	2320146	-		DNA-damage-inducible protein d	2319289	2320146
+CP072258:3344187:-1	997873.77	Bacteroides caccae CL03T12C61	CP072258	CDS	fig|997873.77.peg.2924	3342835	3344199	+		Conjugative transposon protein TraG	3342835	3344199
+CP072258:3098979:-1	997873.77	Bacteroides caccae CL03T12C61	CP072258	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP072258:3342090:1	997873.77	Bacteroides caccae CL03T12C61	CP072258	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP072260:4067:-1	997873.77	Bacteroides caccae CL03T12C61	CP072260	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP072260:4059:1	997873.77	Bacteroides caccae CL03T12C61	CP072260	CDS	fig|997873.77.peg.4902	3905	4060	-		hypothetical protein	5496718	5496873
+CP102258:1155553:-1	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	CDS	fig|28111.542.peg.995	1154355	1155554	+		Cellobiose epimerase (EC 5.1.3.11)	1154355	1155554
+CP102258:2547922:-1	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	CDS	fig|28111.542.peg.2243	2547795	2548004	+		hypothetical protein	2547795	2548004
+CP102258:2768437:-1	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	CDS	fig|28111.542.peg.2435	2768339	2768464	+		hypothetical protein	2768339	2768464
+CP102258:3740648:-1	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	CDS	fig|28111.542.peg.3278	3738837	3740651	+	recQ	ATP-dependent DNA helicase RecQ	3738837	3740651
+CP102258:4011203:1	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	CDS	fig|28111.542.peg.3571	4011059	4012288	+		Cation efflux system protein	4011059	4012288
+CP102258:40135:-1	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102258:45831:1	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102258:103176:1	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102258:179818:-1	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102258:179840:-1	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102258:284735:-1	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102258:354878:-1	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102258:303672:1	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102258:618228:-1	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102258:684360:1	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102258:682814:-1	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102258:684391:1	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102258:718365:-1	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102258:863128:-1	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102258:911833:-1	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102258:940127:-1	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102258:940123:1	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102258:1047764:-1	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102258:1241315:-1	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102258:1371206:1	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102258:1345004:-1	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102258:1474733:1	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102258:1561974:-1	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102258:1903618:-1	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102258:2116176:-1	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102258:2181848:-1	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102258:2181854:1	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102258:2380985:-1	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102258:2411905:-1	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102258:2380982:1	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102258:2803868:1	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102258:2838980:-1	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102258:2844364:1	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102258:2959142:-1	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102258:3060133:1	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102258:2981912:-1	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102258:3132963:-1	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102258:3249599:1	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102258:3511796:1	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102258:3565847:1	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102258:3570832:-1	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102258:3690202:-1	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102258:4057771:1	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102258:555571:1	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	CDS	fig|28111.542.peg.517	555568	555741	-		hypothetical protein	555568	555741
+CP102258:2116655:-1	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	CDS	fig|28111.542.peg.1854	2116275	2116967	-		hypothetical protein	2116275	2116967
+CP102258:2871043:1	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	CDS	fig|28111.542.peg.2534	2871012	2871164	-		hypothetical protein	2871012	2871164
+CP102258:3061674:1	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	CDS	fig|28111.542.peg.2706	3061666	3061785	-		hypothetical protein	3061666	3061785
+CP102258:3198171:-1	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	CDS	fig|28111.542.peg.2824	3197095	3198210	-		putative protein involved in capsular polysaccharide biosynthesis	3197095	3198210
+CYXV01000001:104572:-1	301302.3	Roseburia faecis	CYXV01000001	-1	-1	-1	-1	+	-1	-1	-1	-1
+JAQEGR010000024:26864:1	1150298.2613	Fusicatenibacter saccharivorans AM67-22ACA	JAQEGR010000024	CDS	fig|1150298.2613.peg.2007	26774	26959	-		hypothetical protein	2090372	2090557
+NZ_DS483480:1323:-1	411485.10	Faecalibacterium prausnitzii M21/2	NZ_DS483480	-1	-1	-1	-1	+	-1	-1	-1	-1
+NZ_DS483494:525:1	411485.10	Faecalibacterium prausnitzii M21/2	NZ_DS483494	CDS	fig|411485.10.peg.759	518	883	-		Antitoxin HigA / unknown domain	819844	820209
+NZ_DS499671:190916:1	449673.7	Bacteroides stercoris ATCC 43183	NZ_DS499671	-1	-1	-1	-1	+	-1	-1	-1	-1
+NZ_DS499674:329216:-1	449673.7	Bacteroides stercoris ATCC 43183	NZ_DS499674	-1	-1	-1	-1	+	-1	-1	-1	-1
+NZ_DS990130:157597:-1	484018.6	Bacteroides plebeius DSM 17135	NZ_DS990130	-1	-1	-1	-1	+	-1	-1	-1	-1
+UFTK01000001:2706556:-1	46503.89	Parabacteroides merdae strain NCTC13052	UFTK01000001	-1	-1	-1	-1	+	-1	-1	-1	-1

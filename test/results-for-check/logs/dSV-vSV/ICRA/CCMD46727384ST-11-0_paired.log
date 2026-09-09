@@ -1,0 +1,139 @@
+2026-08-09 02:36:06 [INFO] Starting SGVFinder2 ICRA script.
+2026-08-09 02:36:06 [INFO] Input R1: /pipeline/results/01-QC/CCMD46727384ST-11-0/CCMD46727384ST-11-0_paired_1.fastq
+2026-08-09 02:36:06 [INFO] Input R2: /pipeline/results/01-QC/CCMD46727384ST-11-0/CCMD46727384ST-11-0_paired_2.fastq
+2026-08-09 02:36:06 [INFO] Database path prefix: /pipeline/database/SGVFinder2/SV_db
+2026-08-09 02:36:06 [INFO] Output directory: /pipeline/results/02-variant-calling/SV/dSV-vSV/ICRA
+2026-08-09 02:36:06 [INFO] Target SMP output file: /pipeline/results/02-variant-calling/SV/dSV-vSV/ICRA/CCMD46727384ST-11-0.smp
+2026-08-09 02:36:06 [INFO] Running SGVFinder2 single_file.
+2026-08-09 02:36:06 [INFO] Running ICRA on paired-end reads!
+2026-08-09 02:36:06 [INFO] Forward- /pipeline/results/01-QC/CCMD46727384ST-11-0/CCMD46727384ST-11-0_paired_1.fastq
+2026-08-09 02:36:06 [INFO] Reverse- /pipeline/results/01-QC/CCMD46727384ST-11-0/CCMD46727384ST-11-0_paired_2.fastq
+2026-08-09 02:36:06 [INFO] --------------------------------------------
+
+2026-08-09 02:40:28 [INFO] Average read length for CCMD46727384ST-11-0_paired_1.fastq set to 132
+2026-08-09 02:40:32 [INFO] _initialize: Parameter init complete. Time: 0:00:04.848964
+2026-08-09 02:40:33 [INFO] Iteration 2 - Time: 0:00:00.281783, dPi = 3.62e-02, nPi = 30
+2026-08-09 02:40:33 [INFO] Iteration 3 - Time: 0:00:00.605010, dPi = 1.70e-02, nPi = 30
+2026-08-09 02:40:33 [INFO] Iteration 4 - Time: 0:00:00.798970, dPi = 9.01e-03, nPi = 30
+2026-08-09 02:40:33 [INFO] Iteration 5 - Time: 0:00:01.073673, dPi = 7.87e-03, nPi = 30
+2026-08-09 02:40:34 [INFO] Iteration 6 - Time: 0:00:01.254405, dPi = 6.67e-04, nPi = 30
+2026-08-09 02:40:34 [INFO] Iteration 7 - Time: 0:00:01.515862, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:34 [INFO] Iteration 8 - Time: 0:00:01.697453, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:34 [INFO] Iteration 9 - Time: 0:00:01.875048, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:35 [INFO] Iteration 10 - Time: 0:00:02.130997, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:35 [INFO] Iteration 11 - Time: 0:00:02.310728, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:35 [INFO] Iteration 12 - Time: 0:00:02.571934, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:35 [INFO] Iteration 13 - Time: 0:00:02.747647, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:35 [INFO] Iteration 14 - Time: 0:00:02.997338, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:36 [INFO] Iteration 15 - Time: 0:00:03.256786, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:36 [INFO] Iteration 16 - Time: 0:00:03.511434, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:36 [INFO] Iteration 17 - Time: 0:00:03.685635, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:36 [INFO] Iteration 18 - Time: 0:00:03.938212, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:36 [INFO] Iteration 19 - Time: 0:00:04.111666, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:37 [INFO] Iteration 20 - Time: 0:00:04.367550, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:37 [INFO] Iteration 21 - Time: 0:00:04.637852, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:37 [INFO] Iteration 22 - Time: 0:00:04.895125, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:37 [INFO] Iteration 23 - Time: 0:00:05.071954, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:38 [INFO] Iteration 24 - Time: 0:00:05.330640, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:38 [INFO] Iteration 25 - Time: 0:00:05.503317, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:38 [INFO] Iteration 26 - Time: 0:00:05.757631, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:38 [INFO] Iteration 27 - Time: 0:00:05.931838, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:39 [INFO] Iteration 28 - Time: 0:00:06.188436, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:39 [INFO] Iteration 29 - Time: 0:00:06.362036, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:39 [INFO] Iteration 30 - Time: 0:00:06.617257, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:39 [INFO] Iteration 31 - Time: 0:00:06.793589, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:39 [INFO] Iteration 32 - Time: 0:00:07.055188, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:40 [INFO] Iteration 33 - Time: 0:00:07.230289, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:40 [INFO] Iteration 34 - Time: 0:00:07.497134, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:40 [INFO] Iteration 35 - Time: 0:00:07.672467, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:40 [INFO] Iteration 36 - Time: 0:00:07.942429, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:41 [INFO] Iteration 37 - Time: 0:00:08.116763, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:41 [INFO] Iteration 38 - Time: 0:00:08.378942, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:41 [INFO] Iteration 39 - Time: 0:00:08.554496, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:41 [INFO] Iteration 40 - Time: 0:00:08.818591, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:41 [INFO] Iteration 41 - Time: 0:00:08.994975, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:42 [INFO] Iteration 42 - Time: 0:00:09.261748, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:42 [INFO] Iteration 43 - Time: 0:00:09.436077, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:42 [INFO] Iteration 44 - Time: 0:00:09.699998, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:42 [INFO] Iteration 45 - Time: 0:00:09.875267, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:43 [INFO] Iteration 46 - Time: 0:00:10.139222, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:43 [INFO] Iteration 47 - Time: 0:00:10.314698, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:43 [INFO] Iteration 48 - Time: 0:00:10.584678, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:43 [INFO] Iteration 49 - Time: 0:00:10.763994, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:43 [INFO] Iteration 50 - Time: 0:00:11.037848, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:44 [INFO] Iteration 51 - Time: 0:00:11.216271, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:44 [INFO] Iteration 52 - Time: 0:00:11.485478, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:44 [INFO] Iteration 53 - Time: 0:00:11.663203, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:44 [INFO] Iteration 54 - Time: 0:00:11.935973, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:45 [INFO] Iteration 55 - Time: 0:00:12.117550, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:45 [INFO] Iteration 56 - Time: 0:00:12.403108, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:45 [INFO] Iteration 57 - Time: 0:00:12.581292, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:45 [INFO] Iteration 58 - Time: 0:00:12.851510, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:45 [INFO] Iteration 59 - Time: 0:00:13.030112, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:46 [INFO] Iteration 60 - Time: 0:00:13.302807, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:46 [INFO] Iteration 61 - Time: 0:00:13.482290, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:46 [INFO] Iteration 62 - Time: 0:00:13.664294, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:46 [INFO] Iteration 63 - Time: 0:00:13.923780, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:47 [INFO] Iteration 64 - Time: 0:00:14.343204, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:47 [INFO] Iteration 65 - Time: 0:00:14.601116, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:47 [INFO] Iteration 66 - Time: 0:00:14.782982, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:47 [INFO] Iteration 67 - Time: 0:00:15.042949, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:48 [INFO] Iteration 68 - Time: 0:00:15.224533, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:48 [INFO] Iteration 69 - Time: 0:00:15.484772, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:48 [INFO] Iteration 70 - Time: 0:00:15.666663, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:48 [INFO] Iteration 71 - Time: 0:00:15.924598, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:48 [INFO] Iteration 72 - Time: 0:00:16.106385, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:49 [INFO] Iteration 73 - Time: 0:00:16.368537, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:49 [INFO] Iteration 74 - Time: 0:00:16.552731, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:49 [INFO] Iteration 75 - Time: 0:00:16.815133, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:49 [INFO] Iteration 76 - Time: 0:00:16.999283, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:50 [INFO] Iteration 77 - Time: 0:00:17.262256, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:50 [INFO] Iteration 78 - Time: 0:00:17.447747, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:50 [INFO] Iteration 79 - Time: 0:00:17.715147, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:50 [INFO] Iteration 80 - Time: 0:00:17.900258, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:51 [INFO] Iteration 81 - Time: 0:00:18.164120, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:51 [INFO] Iteration 82 - Time: 0:00:18.346095, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:51 [INFO] Iteration 83 - Time: 0:00:18.609179, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:51 [INFO] Iteration 84 - Time: 0:00:18.792214, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:51 [INFO] Iteration 85 - Time: 0:00:19.059316, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:52 [INFO] Iteration 86 - Time: 0:00:19.241841, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:52 [INFO] Iteration 87 - Time: 0:00:19.506369, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:52 [INFO] Iteration 88 - Time: 0:00:19.690860, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:52 [INFO] Iteration 89 - Time: 0:00:19.955818, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:53 [INFO] Iteration 90 - Time: 0:00:20.139760, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:53 [INFO] Iteration 91 - Time: 0:00:20.405582, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:53 [INFO] Iteration 92 - Time: 0:00:20.588698, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:53 [INFO] Iteration 93 - Time: 0:00:20.854445, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:53 [INFO] Iteration 94 - Time: 0:00:21.036696, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:54 [INFO] Iteration 95 - Time: 0:00:21.306008, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:54 [INFO] Iteration 96 - Time: 0:00:21.489358, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:54 [INFO] Iteration 97 - Time: 0:00:21.756700, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:54 [INFO] Iteration 98 - Time: 0:00:21.939526, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:55 [INFO] Iteration 99 - Time: 0:00:22.221093, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:55 [INFO] Iteration 100 - Time: 0:00:22.411669, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:55 [INFO] Iteration 101 - Time: 0:00:22.677090, dPi = 6.60e-04, nPi = 30
+2026-08-09 02:40:55 [INFO] Final result - Time: 0:00:22.677246
+2026-08-09 02:40:56 [INFO] this is the len of delta:
+2026-08-09 02:40:56 [INFO] 302359
+2026-08-09 02:40:57 [INFO] single_file completed. Intermediate outputs: jspi=/pipeline/results/02-variant-calling/SV/dSV-vSV/ICRA/CCMD46727384ST-11-0_paired.jspi, jsdel=/pipeline/results/02-variant-calling/SV/dSV-vSV/ICRA/CCMD46727384ST-11-0_paired.jsdel
+2026-08-09 02:40:57 [INFO] Running safe SGVFinder2 get_sample_map replacement.
+2026-08-09 02:40:57 [INFO] Running safe_get_sample_map.
+2026-08-09 02:40:57 [INFO] x_coverage: 0.01
+2026-08-09 02:40:57 [INFO] rate_param: 10
+2026-08-09 02:40:57 [INFO] bin_size: 1000
+2026-08-09 02:40:57 [INFO] Loading jsdel file: /pipeline/results/02-variant-calling/SV/dSV-vSV/ICRA/CCMD46727384ST-11-0_paired.jsdel
+2026-08-09 02:40:58 [INFO] Average read length from jsdel: 132
+2026-08-09 02:40:58 [INFO] Number of delta records: 302359
+2026-08-09 02:40:58 [INFO] Clipped ind1 count: 0
+2026-08-09 02:40:58 [INFO] Clipped ind2 count: 0
+2026-08-09 02:40:58 [INFO] Skipped dest_id count: 0
+2026-08-09 02:40:58 [INFO] Number of retained destination maps: 2
+2026-08-09 02:40:58 [INFO] safe_get_sample_map completed.
+2026-08-09 02:40:58 [INFO] Saving sample map to pickle file: /pipeline/results/02-variant-calling/SV/dSV-vSV/ICRA/CCMD46727384ST-11-0.smp
+2026-08-09 02:40:58 [INFO] Sample map successfully saved.
+2026-08-09 02:40:58 [INFO] Cleaning SGVFinder2 ICRA intermediate files.
+2026-08-09 02:40:58 [INFO] Removed intermediate file: /pipeline/results/02-variant-calling/SV/dSV-vSV/ICRA/CCMD46727384ST-11-0_paired.pmp
+2026-08-09 02:40:58 [INFO] Removed intermediate file: /pipeline/results/02-variant-calling/SV/dSV-vSV/ICRA/CCMD46727384ST-11-0_paired.jsdel
+2026-08-09 02:40:58 [INFO] Removed intermediate file: /pipeline/results/02-variant-calling/SV/dSV-vSV/ICRA/CCMD46727384ST-11-0_paired.bam
+2026-08-09 02:40:58 [INFO] Removed intermediate file: /pipeline/results/02-variant-calling/SV/dSV-vSV/ICRA/CCMD46727384ST-11-0_paired.jspi
+2026-08-09 02:40:58 [INFO] ICRA script finished successfully.

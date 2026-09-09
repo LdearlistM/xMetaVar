@@ -1,0 +1,27 @@
+QuickVariants version 1.1.0
+1 reference files:
+Reference path = /pipeline/database/QuickVariant/merged_reference.fna
+1 sets of queries: 
+reorder(/pipeline/results/02-variant-calling/INDEL/single-sample/CCMD46727384ST-11-0.sam)
+Loading reference
+Warning: skipping alignment where CIGAR string (indel information) is '*', including ERR2726451.4299#0	181	NZ_DS499580	466912	0	*	=	466912	0	TCGAAGATCATGCGCAACGCTTGGTATCTGAAACGCGCCAACGCCTCAATGTCGTTCTCGGCCTGCCTGAAGAAAGCGTGGCGCAACGAGAAGATGG	JFJJFFAAJJJJFFJJJJJJJJJJJJJJJFFFJJJJJJJJJJJJJJJFFJFJJJJJFJAAJJJJJJJJJJFJJJJJJJJJJJAJJJJJJJJJJJJJJ	MC:Z:80S18M1D41M	AS:i:0	XS:i:0
+Warning: skipping supplemental alignments, including ERR2726451.12120#0	2131	CP102267	4426738	33	66H34M39H	CP102277	2751922	0	AAGAAACGGCGGCTCTGATTTCTCAAAACCGCCG	JJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJ	NM:i:0	MD:Z:34	MC:Z:133M	AS:i:34	XS:i:28	SA:Z:CP102277,2752017,-,54M85S,60,1;	XA:Z:CP027002,+2824990,40S33M66S,1;
+Starting to process query 2047 at 11s (186 q/s), 1 active workers, 0 ready jobs
+Starting to process query 68503 at 12s (5708 q/s), 1 active workers, 30 ready jobs
+Starting to process query 121024 at 13s (9309 q/s), 4 active workers, 39 ready jobs
+Starting to process query 280894 at 14s (20063 q/s), 4 active workers, 39 ready jobs
+26994 warnings reading /pipeline/results/02-variant-calling/INDEL/single-sample/CCMD46727384ST-11-0.sam
+Writing vcf results at 15.068s
+Saved /pipeline/results/02-variant-calling/INDEL/single-sample/CCMD46727384ST-11-0.vcf
+
+Statistics: 
+ Query pair separation distance: avg: 2.716935E7 stddev: 2.4001533E8
+ Alignment rate                : 100% of query sequences (875969/875969)
+ Coverage                      : 26% of the reference (43428539/161584520) was matched
+
+Timing:
+ Time reading queries          : 2650ms
+ Time launching workers        : 5ms
+ Time waiting for workers      : 639ms
+
+Done in 31.872s.

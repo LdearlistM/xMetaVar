@@ -1,0 +1,10 @@
+2026-08-09 02:41:57 INFO: Starting indel ratio merging for 2 samples.
+2026-08-09 02:41:57 INFO: Sample IDs: ['CCMD19168690ST-11-0', 'CCMD46727384ST-11-0']
+2026-08-09 02:41:57 INFO: Processing file for sample CCMD19168690ST-11-0: /pipeline/results/02-variant-calling/INDEL/single-sample/CCMD19168690ST-11-0.indel.tsv
+2026-08-09 02:41:57 INFO: Successfully processed 1149 sites for sample CCMD19168690ST-11-0
+2026-08-09 02:41:57 INFO: Processing file for sample CCMD46727384ST-11-0: /pipeline/results/02-variant-calling/INDEL/single-sample/CCMD46727384ST-11-0.indel.tsv
+2026-08-09 02:41:57 INFO: Successfully processed 930 sites for sample CCMD46727384ST-11-0
+2026-08-09 02:41:57 INFO: Finished reading all input files. Creating combined DataFrame.
+2026-08-09 02:41:57 INFO: Initial combined DataFrame shape (Sites x Samples): (1978, 2)
+2026-08-09 02:41:57 INFO: Filtered DataFrame shape (Sites x Samples) after keeping sites in >=2 samples: (101, 2)
+2026-08-09 02:41:57 INFO: Successfully wrote results to /pipeline/results/02-variant-calling/INDEL/across-sample/indel.tsv

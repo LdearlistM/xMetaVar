@@ -1,0 +1,3 @@
+sample_name	species_id	genome_length	covered_bases	total_depth	aligned_reads	mapped_reads	fraction_covered	mean_depth
+CCMD19168690ST-11-0	100037	4206509	3352569	19228562	163909	154245	0.797	5.735
+CCMD46727384ST-11-0	100037	4206509	3408260	19821846	160441	152771	0.810	5.816

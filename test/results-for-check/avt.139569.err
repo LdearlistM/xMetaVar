@@ -1,0 +1,57 @@
+Config file config.yaml is extended by additional config specified via the command line.
+Assuming unrestricted shared filesystem usage.
+host: 4d1cfc1d6e0e
+Building DAG of jobs...
+Your conda installation is not configured to use strict channel priorities. This is however important for having robust and correct environments (for details, see https://conda-forge.org/docs/user/tipsandtricks.html). Please consider to configure strict priorities by executing 'conda config --set channel_priority strict'.
+Using shell: /bin/bash
+Provided cores: 16
+Rules claiming more threads will be scaled down.
+Job stats:
+job                              count
+-----------------------------  -------
+deliverables                         1
+prepare_xmetavar_deliverables        1
+total                                2
+
+Select jobs to execute...
+Execute 1 jobs...
+
+[Sun Aug  9 02:47:04 2026]
+localrule prepare_xmetavar_deliverables:
+    input: /pipeline/results/02-variant-calling/SNP/MIDAS/across_sample/merge.snps_freqs.tsv, /pipeline/results/02-variant-calling/SNP/MIDAS/across_sample/merge.snps_info.tsv, /pipeline/results/02-variant-calling/INDEL/across-sample/indel.tsv, /pipeline/results/02-variant-calling/INDEL/across-sample/indel_anno.tsv, /pipeline/results/02-variant-calling/SV/dSV-vSV/across-sample/dsgv.csv, /pipeline/results/02-variant-calling/SV/dSV-vSV/across-sample/dsgv_anno.tsv, /pipeline/results/02-variant-calling/SV/dSV-vSV/across-sample/vsgv.csv, /pipeline/results/02-variant-calling/SV/dSV-vSV/across-sample/vsgv_anno.tsv, /pipeline/results/02-variant-calling/SV/CNV/across_sample/merge.genes_copynum.tsv, /pipeline/results/02-variant-calling/SV/Inversion/across-sample/inversion.tsv, /pipeline/results/02-variant-calling/SV/Inversion/across-sample/inversion_anno.tsv, /pipeline/samples.tsv
+    output: /pipeline/results/03-webserver-inputs/snps_freqs.tsv, /pipeline/results/03-webserver-inputs/snps_info.tsv, /pipeline/results/03-webserver-inputs/indel.tsv, /pipeline/results/03-webserver-inputs/indel_anno.tsv, /pipeline/results/03-webserver-inputs/dsgv.csv, /pipeline/results/03-webserver-inputs/dsgv_anno.tsv, /pipeline/results/03-webserver-inputs/vsgv.csv, /pipeline/results/03-webserver-inputs/vsgv_anno.tsv, /pipeline/results/03-webserver-inputs/genes_copynum.tsv, /pipeline/results/03-webserver-inputs/inversion.tsv, /pipeline/results/03-webserver-inputs/inversion_anno.tsv, /pipeline/results/04-summary/type_matrices/SNP.tsv, /pipeline/results/04-summary/type_matrices/INDEL.tsv, /pipeline/results/04-summary/type_matrices/dSV.tsv, /pipeline/results/04-summary/type_matrices/vSV.tsv, /pipeline/results/04-summary/type_matrices/Inversion.tsv, /pipeline/results/04-summary/type_matrices/CNV.tsv, /pipeline/results/04-summary/output_manifest.tsv, /pipeline/results/04-summary/variant_feature_manifest.tsv, /pipeline/results/04-summary/xmetavar_feature_matrix.tsv, /pipeline/results/04-summary/xmetavar_scaled_matrix.tsv, /pipeline/results/04-summary/sample_variant_burden.tsv, /pipeline/results/04-summary/matrix_overview.tsv, /pipeline/results/05-report/xmetavar_report.html, /pipeline/results/05-report/xmetavar_report.md
+    log: /pipeline/results/logs/xmetavar/prepare_deliverables.log
+    jobid: 1
+    reason: Missing output files: /pipeline/results/04-summary/type_matrices/CNV.tsv, /pipeline/results/04-summary/type_matrices/INDEL.tsv, /pipeline/results/04-summary/variant_feature_manifest.tsv, /pipeline/results/03-webserver-inputs/inversion_anno.tsv, /pipeline/results/04-summary/sample_variant_burden.tsv, /pipeline/results/05-report/xmetavar_report.md, /pipeline/results/03-webserver-inputs/indel_anno.tsv, /pipeline/results/03-webserver-inputs/snps_info.tsv, /pipeline/results/03-webserver-inputs/vsgv_anno.tsv, /pipeline/results/04-summary/output_manifest.tsv, /pipeline/results/04-summary/xmetavar_scaled_matrix.tsv, /pipeline/results/03-webserver-inputs/indel.tsv, /pipeline/results/04-summary/type_matrices/vSV.tsv, /pipeline/results/05-report/xmetavar_report.html, /pipeline/results/03-webserver-inputs/genes_copynum.tsv, /pipeline/results/04-summary/xmetavar_feature_matrix.tsv, /pipeline/results/04-summary/matrix_overview.tsv, /pipeline/results/04-summary/type_matrices/SNP.tsv, /pipeline/results/03-webserver-inputs/snps_freqs.tsv, /pipeline/results/04-summary/type_matrices/dSV.tsv, /pipeline/results/03-webserver-inputs/vsgv.csv, /pipeline/results/03-webserver-inputs/dsgv.csv, /pipeline/results/04-summary/type_matrices/Inversion.tsv, /pipeline/results/03-webserver-inputs/dsgv_anno.tsv, /pipeline/results/03-webserver-inputs/inversion.tsv
+    resources: tmpdir=/tmp
+
+
+        (
+            python /pipeline/scripts/prepare_xmetavar_deliverables.py                 --results-dir /pipeline/results                 --samples-tsv /pipeline/samples.tsv                 --sequencing-type PE                 --webserver-dir /pipeline/results/03-webserver-inputs                 --summary-dir /pipeline/results/04-summary                 --report-dir /pipeline/results/05-report                 --vsv-event-abs-threshold 2.0                 --cnv-event-copy-threshold 0.5                 --allow-missing
+
+            if [[ -n "/pipeline/results/03-webserver-inputs/snps_freqs.tsv /pipeline/results/03-webserver-inputs/snps_info.tsv /pipeline/results/03-webserver-inputs/indel.tsv /pipeline/results/03-webserver-inputs/indel_anno.tsv /pipeline/results/03-webserver-inputs/dsgv.csv /pipeline/results/03-webserver-inputs/dsgv_anno.tsv /pipeline/results/03-webserver-inputs/vsgv.csv /pipeline/results/03-webserver-inputs/vsgv_anno.tsv /pipeline/results/03-webserver-inputs/genes_copynum.tsv /pipeline/results/03-webserver-inputs/inversion.tsv /pipeline/results/03-webserver-inputs/inversion_anno.tsv" ]]; then
+                for f in /pipeline/results/03-webserver-inputs/snps_freqs.tsv /pipeline/results/03-webserver-inputs/snps_info.tsv /pipeline/results/03-webserver-inputs/indel.tsv /pipeline/results/03-webserver-inputs/indel_anno.tsv /pipeline/results/03-webserver-inputs/dsgv.csv /pipeline/results/03-webserver-inputs/dsgv_anno.tsv /pipeline/results/03-webserver-inputs/vsgv.csv /pipeline/results/03-webserver-inputs/vsgv_anno.tsv /pipeline/results/03-webserver-inputs/genes_copynum.tsv /pipeline/results/03-webserver-inputs/inversion.tsv /pipeline/results/03-webserver-inputs/inversion_anno.tsv; do
+                    mkdir -p "$(dirname "$f")"
+                    [[ -e "$f" ]] || : > "$f"
+                done
+            fi
+        ) > /pipeline/results/logs/xmetavar/prepare_deliverables.log 2>&1
+        
+Activating conda environment: .snakemake/conda/6d0f440ac4144d9731adccf20a121355_
+[Sun Aug  9 02:47:40 2026]
+Finished job 1.
+1 of 2 steps (50%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Sun Aug  9 02:47:40 2026]
+localrule deliverables:
+    input: /pipeline/results/03-webserver-inputs/snps_freqs.tsv, /pipeline/results/03-webserver-inputs/snps_info.tsv, /pipeline/results/03-webserver-inputs/indel.tsv, /pipeline/results/03-webserver-inputs/indel_anno.tsv, /pipeline/results/03-webserver-inputs/dsgv.csv, /pipeline/results/03-webserver-inputs/dsgv_anno.tsv, /pipeline/results/03-webserver-inputs/vsgv.csv, /pipeline/results/03-webserver-inputs/vsgv_anno.tsv, /pipeline/results/03-webserver-inputs/genes_copynum.tsv, /pipeline/results/03-webserver-inputs/inversion.tsv, /pipeline/results/03-webserver-inputs/inversion_anno.tsv, /pipeline/results/04-summary/type_matrices/SNP.tsv, /pipeline/results/04-summary/type_matrices/INDEL.tsv, /pipeline/results/04-summary/type_matrices/dSV.tsv, /pipeline/results/04-summary/type_matrices/vSV.tsv, /pipeline/results/04-summary/type_matrices/Inversion.tsv, /pipeline/results/04-summary/type_matrices/CNV.tsv, /pipeline/results/04-summary/output_manifest.tsv, /pipeline/results/04-summary/variant_feature_manifest.tsv, /pipeline/results/04-summary/xmetavar_feature_matrix.tsv, /pipeline/results/04-summary/xmetavar_scaled_matrix.tsv, /pipeline/results/04-summary/sample_variant_burden.tsv, /pipeline/results/04-summary/matrix_overview.tsv, /pipeline/results/05-report/xmetavar_report.html, /pipeline/results/05-report/xmetavar_report.md
+    jobid: 0
+    reason: Input files updated by another job: /pipeline/results/04-summary/type_matrices/CNV.tsv, /pipeline/results/04-summary/type_matrices/INDEL.tsv, /pipeline/results/04-summary/variant_feature_manifest.tsv, /pipeline/results/03-webserver-inputs/inversion_anno.tsv, /pipeline/results/04-summary/sample_variant_burden.tsv, /pipeline/results/05-report/xmetavar_report.md, /pipeline/results/03-webserver-inputs/indel_anno.tsv, /pipeline/results/03-webserver-inputs/snps_info.tsv, /pipeline/results/03-webserver-inputs/vsgv_anno.tsv, /pipeline/results/04-summary/output_manifest.tsv, /pipeline/results/04-summary/xmetavar_scaled_matrix.tsv, /pipeline/results/03-webserver-inputs/indel.tsv, /pipeline/results/04-summary/type_matrices/vSV.tsv, /pipeline/results/03-webserver-inputs/dsgv_anno.tsv, /pipeline/results/05-report/xmetavar_report.html, /pipeline/results/03-webserver-inputs/genes_copynum.tsv, /pipeline/results/04-summary/xmetavar_feature_matrix.tsv, /pipeline/results/04-summary/matrix_overview.tsv, /pipeline/results/04-summary/type_matrices/SNP.tsv, /pipeline/results/03-webserver-inputs/snps_freqs.tsv, /pipeline/results/04-summary/type_matrices/dSV.tsv, /pipeline/results/03-webserver-inputs/vsgv.csv, /pipeline/results/03-webserver-inputs/dsgv.csv, /pipeline/results/04-summary/type_matrices/Inversion.tsv, /pipeline/results/03-webserver-inputs/inversion.tsv
+    resources: tmpdir=/tmp
+
+[Sun Aug  9 02:47:40 2026]
+Finished job 0.
+2 of 2 steps (100%) done
+Complete log: .snakemake/log/2026-08-09T024656.668137.snakemake.log

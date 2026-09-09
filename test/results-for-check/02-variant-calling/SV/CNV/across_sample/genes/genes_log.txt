@@ -1,0 +1,16 @@
+Across samples pan-gene CNV merging in subcommand merge_genes with args
+{
+    "subcommand": "merge_genes",
+    "debug": false,
+    "midas_outdir": "/pipeline/results/02-variant-calling/SV/CNV/across_sample",
+    "samples_list": "/pipeline/results/02-variant-calling/SV/CNV/samples_list.tsv",
+    "species_list": null,
+    "genome_depth": 0.4,
+    "sample_counts": 2,
+    "midasdb_name": "localdb",
+    "midasdb_dir": "/pipeline/database/midasv3/midasdb_localdb",
+    "min_copy": 0.35,
+    "cluster_level_in": "99",
+    "cluster_level_out": "80",
+    "num_cores": 8
+}

@@ -1,0 +1,24 @@
+2026-08-09 02:41:09 [INFO] Starting SGVFinder2 merge script.
+2026-08-09 02:41:09 [INFO] Input directory: /pipeline/results/02-variant-calling/SV/dSV-vSV/ICRA
+2026-08-09 02:41:09 [INFO] Output directory: /pipeline/results/02-variant-calling/SV/dSV-vSV/across-sample
+2026-08-09 02:41:09 [INFO] Frames path: /pipeline/results/02-variant-calling/SV/dSV-vSV/single-species
+2026-08-09 02:41:09 [INFO] Log file: /pipeline/results/logs/dSV-vSV/across-sample/merge.log
+2026-08-09 02:41:09 [INFO] Running work_on_collection on /pipeline/results/02-variant-calling/SV/dSV-vSV/ICRA
+2026-08-09 02:41:09 [INFO] Found 2 finished samples...
+2026-08-09 02:41:11 [INFO] Doing var regions XXXXXXX
+2026-08-09 02:41:18 [INFO] Doing var regions XXXXXXX
+2026-08-09 02:41:22 [INFO] work_on_collection completed.
+2026-08-09 02:41:22 [INFO] Removing _paired suffix from vsgv index.
+2026-08-09 02:41:22 [INFO] Removing _paired suffix from dsgv index.
+2026-08-09 02:41:22 [INFO] Writing vsgv.csv to /pipeline/results/02-variant-calling/SV/dSV-vSV/across-sample
+2026-08-09 02:41:22 [INFO] Writing dsgv.csv to /pipeline/results/02-variant-calling/SV/dSV-vSV/across-sample
+2026-08-09 02:41:22 [INFO] Processing .df files in: /pipeline/results/02-variant-calling/SV/dSV-vSV/single-species
+2026-08-09 02:41:22 [INFO]   Attempting to convert 28111.542.df to 28111.542.csv...
+2026-08-09 02:41:22 [INFO]     Successfully read 28111.542.df.
+2026-08-09 02:41:22 [INFO]     Successfully wrote 28111.542.csv.
+2026-08-09 02:41:22 [INFO]     Successfully removed 28111.542.df.
+2026-08-09 02:41:22 [INFO]   Attempting to convert 997890.6.df to 997890.6.csv...
+2026-08-09 02:41:22 [INFO]     Successfully read 997890.6.df.
+2026-08-09 02:41:22 [INFO]     Successfully wrote 997890.6.csv.
+2026-08-09 02:41:22 [INFO]     Successfully removed 997890.6.df.
+2026-08-09 02:41:22 [INFO] Finished processing .df files. Converted: 2, Errors: 0

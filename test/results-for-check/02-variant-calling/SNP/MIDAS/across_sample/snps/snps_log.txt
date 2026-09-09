@@ -1,0 +1,25 @@
+Across samples population SNV calling in subcommand merge_snps with args
+{
+    "subcommand": "merge_snps",
+    "debug": false,
+    "midas_outdir": "/pipeline/results/02-variant-calling/SNP/MIDAS/across_sample",
+    "samples_list": "/pipeline/results/02-variant-calling/SNP/MIDAS/samples_list.tsv",
+    "midasdb_name": "localdb",
+    "midasdb_dir": "/pipeline/database/midasv3/midasdb_localdb",
+    "species_list": null,
+    "genome_depth": 5.0,
+    "genome_coverage": 0.7,
+    "sample_counts": 2,
+    "site_depth": 5,
+    "site_ratio": 3.0,
+    "site_prev": 0.9,
+    "snv_type": "common",
+    "snp_pooled_method": "prevalence",
+    "snp_maf": 0.05,
+    "snp_type": "bi, tri, quad",
+    "locus_type": "any",
+    "num_cores": 8,
+    "chunk_size": 100000,
+    "advanced": false,
+    "robust_chunk": false
+}

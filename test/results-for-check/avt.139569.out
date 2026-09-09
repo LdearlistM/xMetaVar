@@ -1,0 +1,10 @@
+Recognized target key: 'deliverables'.
+--- Starting Snakemake ---
+Final targets: deliverables
+Config arguments: --config deliverables_allow_missing=true
+Extra arguments: --printshellcmds --rerun-incomplete --keep-going
+Cores: 16
+Config: /pipeline/config.yaml
+Results: /pipeline/results
+Conda prefix: /pipeline/.snakemake/conda
+--- Setting result permissions before exit (status 0)... ---

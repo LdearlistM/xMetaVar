@@ -1,0 +1,14 @@
+Recognized target key: 'snp_midas'.
+Recognized target key: 'indel'.
+Recognized target key: 'sv_sgvfinder'.
+Recognized target key: 'sv_inversion'.
+Recognized target key: 'sv_midas'.
+--- Starting Snakemake ---
+Final targets: /pipeline/results/logs/MIDASv3/snp_done.txt /pipeline/results/02-variant-calling/SNP/MIDAS/across_sample/snps/snps_summary.tsv /pipeline/results/02-variant-calling/INDEL/across-sample/indel_anno.tsv /pipeline/results/02-variant-calling/SV/dSV-vSV/across-sample/dsgv_anno.tsv /pipeline/results/02-variant-calling/SV/dSV-vSV/across-sample/vsgv_anno.tsv /pipeline/results/02-variant-calling/SV/Inversion/across-sample/inversion_anno.tsv /pipeline/results/logs/MIDASv3/cnv_done.txt /pipeline/results/02-variant-calling/SV/CNV/across_sample/merge.genes_copynum.tsv
+Config arguments: (none)
+Extra arguments: --printshellcmds --rerun-incomplete --keep-going
+Cores: 16
+Config: /pipeline/config.yaml
+Results: /pipeline/results
+Conda prefix: /pipeline/.snakemake/conda
+--- Setting result permissions before exit (status 0)... ---

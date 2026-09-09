@@ -1,0 +1,963 @@
+Config file config.yaml is extended by additional config specified via the command line.
+Assuming unrestricted shared filesystem usage.
+host: b4fa82f4ae05
+Building DAG of jobs...
+Your conda installation is not configured to use strict channel priorities. This is however important for having robust and correct environments (for details, see https://conda-forge.org/docs/user/tipsandtricks.html). Please consider to configure strict priorities by executing 'conda config --set channel_priority strict'.
+Using shell: /bin/bash
+Provided cores: 16
+Rules claiming more threads will be scaled down.
+Job stats:
+job                          count
+-------------------------  -------
+PhaseFinder                      2
+PhaseFinder_anno                 1
+PhaseFinder_merge                1
+QuickVariant_anno                1
+QuickVariant_indel               1
+QuickVariant_merge               1
+QuickVariant_mv                  2
+QuickVariant_vcf                 2
+SGVFinder2_ICRA                  2
+SGVFinder2_anno_dsgv             1
+SGVFinder2_anno_vsgv             1
+SGVFinder2_merge                 1
+bwa_mem                          2
+finalize_cnv_analysis            1
+finalize_snp_analysis            1
+generate_samples_list_cnv        1
+generate_samples_list_snp        1
+midas_build_bowtie2db            1
+midas_merge_genes                1
+midas_merge_snps                 1
+midas_merge_species_cnv          1
+midas_merge_species_snp          1
+midas_run_genes                  2
+midas_run_snps                   2
+midas_run_species_cnv            2
+midas_run_species_snp            2
+quality_control_pe               2
+total                           37
+
+Select jobs to execute...
+Execute 2 jobs...
+
+[Sun Aug  9 02:29:27 2026]
+localrule quality_control_pe:
+    input: /pipeline/rawdata/CCMD46727384ST-11-0_1.fastq.gz, /pipeline/rawdata/CCMD46727384ST-11-0_2.fastq.gz
+    output: /pipeline/results/01-QC/CCMD46727384ST-11-0/CCMD46727384ST-11-0_paired_1.fastq, /pipeline/results/01-QC/CCMD46727384ST-11-0/CCMD46727384ST-11-0_paired_2.fastq
+    log: /pipeline/results/logs/kneaddata/CCMD46727384ST-11-0_pe.log
+    jobid: 8
+    reason: Missing output files: /pipeline/results/01-QC/CCMD46727384ST-11-0/CCMD46727384ST-11-0_paired_1.fastq, /pipeline/results/01-QC/CCMD46727384ST-11-0/CCMD46727384ST-11-0_paired_2.fastq
+    wildcards: sample=CCMD46727384ST-11-0
+    threads: 8
+    resources: tmpdir=/tmp
+
+
+        (
+            kneaddata -i1 /pipeline/rawdata/CCMD46727384ST-11-0_1.fastq.gz -i2 /pipeline/rawdata/CCMD46727384ST-11-0_2.fastq.gz -o /pipeline/results/01-QC/CCMD46727384ST-11-0 -db /pipeline/database/kneaddata/hg_38                     -t 8 --output-prefix CCMD46727384ST-11-0                     --trimmomatic /pipeline/database/trim_tools                                          --bypass-trf --reorder --remove-intermediate-output
+        ) > /pipeline/results/logs/kneaddata/CCMD46727384ST-11-0_pe.log 2>&1
+        (
+            rm -f /pipeline/results/01-QC/CCMD46727384ST-11-0/CCMD46727384ST-11-0_hg_38*.fastq || true ;             rm -f /pipeline/results/01-QC/CCMD46727384ST-11-0/CCMD46727384ST-11-0_unmatched*.fastq || true
+        ) >> /pipeline/results/logs/kneaddata/CCMD46727384ST-11-0_pe.log 2>&1
+        
+Activating conda environment: .snakemake/conda/768fca4fd16074b244be554185400263_
+
+[Sun Aug  9 02:29:27 2026]
+localrule quality_control_pe:
+    input: /pipeline/rawdata/CCMD19168690ST-11-0_1.fastq.gz, /pipeline/rawdata/CCMD19168690ST-11-0_2.fastq.gz
+    output: /pipeline/results/01-QC/CCMD19168690ST-11-0/CCMD19168690ST-11-0_paired_1.fastq, /pipeline/results/01-QC/CCMD19168690ST-11-0/CCMD19168690ST-11-0_paired_2.fastq
+    log: /pipeline/results/logs/kneaddata/CCMD19168690ST-11-0_pe.log
+    jobid: 3
+    reason: Missing output files: /pipeline/results/01-QC/CCMD19168690ST-11-0/CCMD19168690ST-11-0_paired_1.fastq, /pipeline/results/01-QC/CCMD19168690ST-11-0/CCMD19168690ST-11-0_paired_2.fastq
+    wildcards: sample=CCMD19168690ST-11-0
+    threads: 8
+    resources: tmpdir=/tmp
+
+
+        (
+            kneaddata -i1 /pipeline/rawdata/CCMD19168690ST-11-0_1.fastq.gz -i2 /pipeline/rawdata/CCMD19168690ST-11-0_2.fastq.gz -o /pipeline/results/01-QC/CCMD19168690ST-11-0 -db /pipeline/database/kneaddata/hg_38                     -t 8 --output-prefix CCMD19168690ST-11-0                     --trimmomatic /pipeline/database/trim_tools                                          --bypass-trf --reorder --remove-intermediate-output
+        ) > /pipeline/results/logs/kneaddata/CCMD19168690ST-11-0_pe.log 2>&1
+        (
+            rm -f /pipeline/results/01-QC/CCMD19168690ST-11-0/CCMD19168690ST-11-0_hg_38*.fastq || true ;             rm -f /pipeline/results/01-QC/CCMD19168690ST-11-0/CCMD19168690ST-11-0_unmatched*.fastq || true
+        ) >> /pipeline/results/logs/kneaddata/CCMD19168690ST-11-0_pe.log 2>&1
+        
+Activating conda environment: .snakemake/conda/768fca4fd16074b244be554185400263_
+[Sun Aug  9 02:32:49 2026]
+Finished job 3.
+1 of 37 steps (3%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Sun Aug  9 02:32:49 2026]
+localrule SGVFinder2_ICRA:
+    input: /pipeline/results/01-QC/CCMD19168690ST-11-0/CCMD19168690ST-11-0_paired_1.fastq, /pipeline/results/01-QC/CCMD19168690ST-11-0/CCMD19168690ST-11-0_paired_2.fastq, /pipeline/database/SGVFinder2/SV_db.1.bt2
+    output: /pipeline/results/02-variant-calling/SV/dSV-vSV/ICRA/CCMD19168690ST-11-0.smp
+    log: /pipeline/results/logs/dSV-vSV/ICRA/CCMD19168690ST-11-0_paired.log
+    jobid: 12
+    benchmark: /pipeline/results/benchmarks/02-variant-calling/SV/dSV-vSV/ICRA/CCMD19168690ST-11-0_paired.smp.tsv
+    reason: Missing output files: /pipeline/results/02-variant-calling/SV/dSV-vSV/ICRA/CCMD19168690ST-11-0.smp; Input files updated by another job: /pipeline/results/01-QC/CCMD19168690ST-11-0/CCMD19168690ST-11-0_paired_1.fastq, /pipeline/results/01-QC/CCMD19168690ST-11-0/CCMD19168690ST-11-0_paired_2.fastq
+    wildcards: sample=CCMD19168690ST-11-0
+    threads: 8
+    resources: tmpdir=/tmp
+
+Activating conda environment: .snakemake/conda/f7f697b5166f90f45fc3491867d995f8_
+Activating conda environment: .snakemake/conda/f7f697b5166f90f45fc3491867d995f8_
+[Sun Aug  9 02:33:00 2026]
+Finished job 8.
+2 of 37 steps (5%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Sun Aug  9 02:33:00 2026]
+localrule PhaseFinder:
+    input: /pipeline/results/01-QC/CCMD46727384ST-11-0/CCMD46727384ST-11-0_paired_1.fastq, /pipeline/results/01-QC/CCMD46727384ST-11-0/CCMD46727384ST-11-0_paired_2.fastq
+    output: /pipeline/results/02-variant-calling/SV/Inversion/single-sample/CCMD46727384ST-11-0.inv.tsv
+    log: /pipeline/results/logs/Inversion/single-sample/CCMD46727384ST-11-0.log
+    jobid: 18
+    reason: Missing output files: /pipeline/results/02-variant-calling/SV/Inversion/single-sample/CCMD46727384ST-11-0.inv.tsv; Input files updated by another job: /pipeline/results/01-QC/CCMD46727384ST-11-0/CCMD46727384ST-11-0_paired_1.fastq, /pipeline/results/01-QC/CCMD46727384ST-11-0/CCMD46727384ST-11-0_paired_2.fastq
+    wildcards: sample=CCMD46727384ST-11-0
+    threads: 8
+    resources: tmpdir=/tmp
+
+
+        (
+            python /pipeline/scripts/PhaseFinder.py ratio                 -i /pipeline/database/PhaseFinder/Phasefinder_reference.fasta                 -1 /pipeline/results/01-QC/CCMD46727384ST-11-0/CCMD46727384ST-11-0_paired_1.fastq -2 /pipeline/results/01-QC/CCMD46727384ST-11-0/CCMD46727384ST-11-0_paired_2.fastq                 -p 8 -o /pipeline/results/02-variant-calling/SV/Inversion/single-sample/CCMD46727384ST-11-0 &&             awk 'NR==1 || (($4 != "NA" && $4 >= 0.01 && $3 > 5) && ($7 != "NA" && $7 >= 0.01 && $6 > 3))' /pipeline/results/02-variant-calling/SV/Inversion/single-sample/CCMD46727384ST-11-0.ratio.txt > /pipeline/results/02-variant-calling/SV/Inversion/single-sample/CCMD46727384ST-11-0.inv.tsv &&             rm -f /pipeline/results/02-variant-calling/SV/Inversion/single-sample/CCMD46727384ST-11-0.ratio.txt
+        ) > /pipeline/results/logs/Inversion/single-sample/CCMD46727384ST-11-0.log 2>&1
+        
+Activating conda environment: .snakemake/conda/6bd68eacc32d12100390487035c703d0_
+[Sun Aug  9 02:34:27 2026]
+Finished job 18.
+3 of 37 steps (8%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Sun Aug  9 02:34:27 2026]
+localrule midas_run_species_cnv:
+    input: /pipeline/results/01-QC/CCMD46727384ST-11-0/CCMD46727384ST-11-0_paired_1.fastq, /pipeline/results/01-QC/CCMD46727384ST-11-0/CCMD46727384ST-11-0_paired_2.fastq
+    output: /pipeline/results/02-variant-calling/SV/CNV/single_sample/CCMD46727384ST-11-0/species/species_profile.tsv
+    log: /pipeline/results/logs/MIDASv3/CNV/run-species/CCMD46727384ST-11-0.log
+    jobid: 26
+    benchmark: /pipeline/results/benchmarks/02-variant-calling/SV/CNV/single_sample/CCMD46727384ST-11-0.tsv
+    reason: Missing output files: /pipeline/results/02-variant-calling/SV/CNV/single_sample/CCMD46727384ST-11-0/species/species_profile.tsv; Input files updated by another job: /pipeline/results/01-QC/CCMD46727384ST-11-0/CCMD46727384ST-11-0_paired_1.fastq, /pipeline/results/01-QC/CCMD46727384ST-11-0/CCMD46727384ST-11-0_paired_2.fastq
+    wildcards: sample=CCMD46727384ST-11-0
+    threads: 8
+    resources: tmpdir=/tmp
+
+
+        (
+        midas run_species --sample_name CCMD46727384ST-11-0             -1 /pipeline/results/01-QC/CCMD46727384ST-11-0/CCMD46727384ST-11-0_paired_1.fastq -2 /pipeline/results/01-QC/CCMD46727384ST-11-0/CCMD46727384ST-11-0_paired_2.fastq             --midasdb_name localdb --midasdb_dir /pipeline/database/midasv3/midasdb_localdb             --num_cores 8 /pipeline/results/02-variant-calling/SV/CNV/single_sample
+        ) > /pipeline/results/logs/MIDASv3/CNV/run-species/CCMD46727384ST-11-0.log 2>&1
+        
+Activating conda environment: .snakemake/conda/d761d96befc1f6ebdf21c5180a791095_
+[Sun Aug  9 02:36:04 2026]
+Finished job 26.
+4 of 37 steps (11%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Sun Aug  9 02:36:05 2026]
+localrule SGVFinder2_ICRA:
+    input: /pipeline/results/01-QC/CCMD46727384ST-11-0/CCMD46727384ST-11-0_paired_1.fastq, /pipeline/results/01-QC/CCMD46727384ST-11-0/CCMD46727384ST-11-0_paired_2.fastq, /pipeline/database/SGVFinder2/SV_db.1.bt2
+    output: /pipeline/results/02-variant-calling/SV/dSV-vSV/ICRA/CCMD46727384ST-11-0.smp
+    log: /pipeline/results/logs/dSV-vSV/ICRA/CCMD46727384ST-11-0_paired.log
+    jobid: 13
+    benchmark: /pipeline/results/benchmarks/02-variant-calling/SV/dSV-vSV/ICRA/CCMD46727384ST-11-0_paired.smp.tsv
+    reason: Missing output files: /pipeline/results/02-variant-calling/SV/dSV-vSV/ICRA/CCMD46727384ST-11-0.smp; Input files updated by another job: /pipeline/results/01-QC/CCMD46727384ST-11-0/CCMD46727384ST-11-0_paired_1.fastq, /pipeline/results/01-QC/CCMD46727384ST-11-0/CCMD46727384ST-11-0_paired_2.fastq
+    wildcards: sample=CCMD46727384ST-11-0
+    threads: 8
+    resources: tmpdir=/tmp
+
+Activating conda environment: .snakemake/conda/f7f697b5166f90f45fc3491867d995f8_
+Activating conda environment: .snakemake/conda/f7f697b5166f90f45fc3491867d995f8_
+[Sun Aug  9 02:38:21 2026]
+Finished job 12.
+5 of 37 steps (14%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Sun Aug  9 02:38:21 2026]
+localrule midas_run_species_snp:
+    input: /pipeline/results/01-QC/CCMD19168690ST-11-0/CCMD19168690ST-11-0_paired_1.fastq, /pipeline/results/01-QC/CCMD19168690ST-11-0/CCMD19168690ST-11-0_paired_2.fastq
+    output: /pipeline/results/02-variant-calling/SNP/MIDAS/single_sample/CCMD19168690ST-11-0/species/species_profile.tsv
+    log: /pipeline/results/logs/MIDASv3/SNP/run-species/CCMD19168690ST-11-0.log
+    jobid: 6
+    benchmark: /pipeline/results/benchmarks/02-variant-calling/SNP/MIDAS/single_sample/CCMD19168690ST-11-0.tsv
+    reason: Missing output files: /pipeline/results/02-variant-calling/SNP/MIDAS/single_sample/CCMD19168690ST-11-0/species/species_profile.tsv; Input files updated by another job: /pipeline/results/01-QC/CCMD19168690ST-11-0/CCMD19168690ST-11-0_paired_1.fastq, /pipeline/results/01-QC/CCMD19168690ST-11-0/CCMD19168690ST-11-0_paired_2.fastq
+    wildcards: sample=CCMD19168690ST-11-0
+    threads: 8
+    resources: tmpdir=/tmp
+
+
+        (
+        midas run_species --sample_name CCMD19168690ST-11-0             -1 /pipeline/results/01-QC/CCMD19168690ST-11-0/CCMD19168690ST-11-0_paired_1.fastq -2 /pipeline/results/01-QC/CCMD19168690ST-11-0/CCMD19168690ST-11-0_paired_2.fastq             --midasdb_name localdb --midasdb_dir /pipeline/database/midasv3/midasdb_localdb             --num_cores 8 /pipeline/results/02-variant-calling/SNP/MIDAS/single_sample
+        ) > /pipeline/results/logs/MIDASv3/SNP/run-species/CCMD19168690ST-11-0.log 2>&1
+        
+Activating conda environment: .snakemake/conda/d761d96befc1f6ebdf21c5180a791095_
+[Sun Aug  9 02:38:30 2026]
+Finished job 6.
+6 of 37 steps (16%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Sun Aug  9 02:38:30 2026]
+localrule bwa_mem:
+    input: /pipeline/results/01-QC/CCMD19168690ST-11-0/CCMD19168690ST-11-0_paired_1.fastq, /pipeline/results/01-QC/CCMD19168690ST-11-0/CCMD19168690ST-11-0_paired_2.fastq, /pipeline/database/QuickVariant/merged_reference.fna
+    output: /pipeline/results/02-variant-calling/INDEL/single-sample/CCMD19168690ST-11-0.sam
+    log: /pipeline/results/logs/QuickVariant/single-sample/CCMD19168690ST-11-0.sam.log
+    jobid: 33
+    benchmark: /pipeline/results/benchmarks/02-variant-calling/INDEL/single-sample/CCMD19168690ST-11-0.sam.tsv
+    reason: Missing output files: /pipeline/results/02-variant-calling/INDEL/single-sample/CCMD19168690ST-11-0.sam; Input files updated by another job: /pipeline/results/01-QC/CCMD19168690ST-11-0/CCMD19168690ST-11-0_paired_1.fastq, /pipeline/results/01-QC/CCMD19168690ST-11-0/CCMD19168690ST-11-0_paired_2.fastq
+    wildcards: sample=CCMD19168690ST-11-0
+    threads: 8
+    resources: tmpdir=/tmp
+
+(bwa mem -t 8 /pipeline/database/QuickVariant/merged_reference.fna /pipeline/results/01-QC/CCMD19168690ST-11-0/CCMD19168690ST-11-0_paired_1.fastq /pipeline/results/01-QC/CCMD19168690ST-11-0/CCMD19168690ST-11-0_paired_2.fastq > /pipeline/results/02-variant-calling/INDEL/single-sample/CCMD19168690ST-11-0.sam) > /pipeline/results/logs/QuickVariant/single-sample/CCMD19168690ST-11-0.sam.log 2>&1
+Activating conda environment: .snakemake/conda/3856c020ed08e8ecf4e9e50b1f40cf2e_
+[Sun Aug  9 02:39:04 2026]
+Finished job 33.
+7 of 37 steps (19%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Sun Aug  9 02:39:04 2026]
+localrule midas_run_species_cnv:
+    input: /pipeline/results/01-QC/CCMD19168690ST-11-0/CCMD19168690ST-11-0_paired_1.fastq, /pipeline/results/01-QC/CCMD19168690ST-11-0/CCMD19168690ST-11-0_paired_2.fastq
+    output: /pipeline/results/02-variant-calling/SV/CNV/single_sample/CCMD19168690ST-11-0/species/species_profile.tsv
+    log: /pipeline/results/logs/MIDASv3/CNV/run-species/CCMD19168690ST-11-0.log
+    jobid: 25
+    benchmark: /pipeline/results/benchmarks/02-variant-calling/SV/CNV/single_sample/CCMD19168690ST-11-0.tsv
+    reason: Missing output files: /pipeline/results/02-variant-calling/SV/CNV/single_sample/CCMD19168690ST-11-0/species/species_profile.tsv; Input files updated by another job: /pipeline/results/01-QC/CCMD19168690ST-11-0/CCMD19168690ST-11-0_paired_1.fastq, /pipeline/results/01-QC/CCMD19168690ST-11-0/CCMD19168690ST-11-0_paired_2.fastq
+    wildcards: sample=CCMD19168690ST-11-0
+    threads: 8
+    resources: tmpdir=/tmp
+
+
+        (
+        midas run_species --sample_name CCMD19168690ST-11-0             -1 /pipeline/results/01-QC/CCMD19168690ST-11-0/CCMD19168690ST-11-0_paired_1.fastq -2 /pipeline/results/01-QC/CCMD19168690ST-11-0/CCMD19168690ST-11-0_paired_2.fastq             --midasdb_name localdb --midasdb_dir /pipeline/database/midasv3/midasdb_localdb             --num_cores 8 /pipeline/results/02-variant-calling/SV/CNV/single_sample
+        ) > /pipeline/results/logs/MIDASv3/CNV/run-species/CCMD19168690ST-11-0.log 2>&1
+        
+Activating conda environment: .snakemake/conda/d761d96befc1f6ebdf21c5180a791095_
+[Sun Aug  9 02:39:11 2026]
+Finished job 25.
+8 of 37 steps (22%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Sun Aug  9 02:39:11 2026]
+localrule bwa_mem:
+    input: /pipeline/results/01-QC/CCMD46727384ST-11-0/CCMD46727384ST-11-0_paired_1.fastq, /pipeline/results/01-QC/CCMD46727384ST-11-0/CCMD46727384ST-11-0_paired_2.fastq, /pipeline/database/QuickVariant/merged_reference.fna
+    output: /pipeline/results/02-variant-calling/INDEL/single-sample/CCMD46727384ST-11-0.sam
+    log: /pipeline/results/logs/QuickVariant/single-sample/CCMD46727384ST-11-0.sam.log
+    jobid: 35
+    benchmark: /pipeline/results/benchmarks/02-variant-calling/INDEL/single-sample/CCMD46727384ST-11-0.sam.tsv
+    reason: Missing output files: /pipeline/results/02-variant-calling/INDEL/single-sample/CCMD46727384ST-11-0.sam; Input files updated by another job: /pipeline/results/01-QC/CCMD46727384ST-11-0/CCMD46727384ST-11-0_paired_1.fastq, /pipeline/results/01-QC/CCMD46727384ST-11-0/CCMD46727384ST-11-0_paired_2.fastq
+    wildcards: sample=CCMD46727384ST-11-0
+    threads: 8
+    resources: tmpdir=/tmp
+
+(bwa mem -t 8 /pipeline/database/QuickVariant/merged_reference.fna /pipeline/results/01-QC/CCMD46727384ST-11-0/CCMD46727384ST-11-0_paired_1.fastq /pipeline/results/01-QC/CCMD46727384ST-11-0/CCMD46727384ST-11-0_paired_2.fastq > /pipeline/results/02-variant-calling/INDEL/single-sample/CCMD46727384ST-11-0.sam) > /pipeline/results/logs/QuickVariant/single-sample/CCMD46727384ST-11-0.sam.log 2>&1
+Activating conda environment: .snakemake/conda/3856c020ed08e8ecf4e9e50b1f40cf2e_
+[Sun Aug  9 02:39:39 2026]
+Finished job 35.
+9 of 37 steps (24%) done
+Select jobs to execute...
+Execute 2 jobs...
+
+[Sun Aug  9 02:39:39 2026]
+localrule QuickVariant_vcf:
+    input: /pipeline/results/02-variant-calling/INDEL/single-sample/CCMD19168690ST-11-0.sam, /pipeline/database/QuickVariant/merged_reference.fna
+    output: /pipeline/results/02-variant-calling/INDEL/single-sample/CCMD19168690ST-11-0.vcf
+    log: /pipeline/results/logs/QuickVariant/single-sample/CCMD19168690ST-11-0.vcf.log
+    jobid: 32
+    benchmark: /pipeline/results/benchmarks/02-variant-calling/INDEL/single-sample/CCMD19168690ST-11-0.vcf.tsv
+    reason: Missing output files: /pipeline/results/02-variant-calling/INDEL/single-sample/CCMD19168690ST-11-0.vcf; Input files updated by another job: /pipeline/results/02-variant-calling/INDEL/single-sample/CCMD19168690ST-11-0.sam
+    wildcards: sample=CCMD19168690ST-11-0
+    threads: 4
+    resources: tmpdir=/tmp
+
+(java -jar /pipeline/.snakemake/conda/6d0f440ac4144d9731adccf20a121355_/bin/quick-variants-1.1.0.jar --out-vcf /pipeline/results/02-variant-calling/INDEL/single-sample/CCMD19168690ST-11-0.vcf --reference /pipeline/database/QuickVariant/merged_reference.fna --in-sam /pipeline/results/02-variant-calling/INDEL/single-sample/CCMD19168690ST-11-0.sam --vcf-exclude-non-mutations --num-threads 4) > /pipeline/results/logs/QuickVariant/single-sample/CCMD19168690ST-11-0.vcf.log 2>&1
+Activating conda environment: .snakemake/conda/6d0f440ac4144d9731adccf20a121355_
+
+[Sun Aug  9 02:39:39 2026]
+localrule QuickVariant_vcf:
+    input: /pipeline/results/02-variant-calling/INDEL/single-sample/CCMD46727384ST-11-0.sam, /pipeline/database/QuickVariant/merged_reference.fna
+    output: /pipeline/results/02-variant-calling/INDEL/single-sample/CCMD46727384ST-11-0.vcf
+    log: /pipeline/results/logs/QuickVariant/single-sample/CCMD46727384ST-11-0.vcf.log
+    jobid: 34
+    benchmark: /pipeline/results/benchmarks/02-variant-calling/INDEL/single-sample/CCMD46727384ST-11-0.vcf.tsv
+    reason: Missing output files: /pipeline/results/02-variant-calling/INDEL/single-sample/CCMD46727384ST-11-0.vcf; Input files updated by another job: /pipeline/results/02-variant-calling/INDEL/single-sample/CCMD46727384ST-11-0.sam
+    wildcards: sample=CCMD46727384ST-11-0
+    threads: 4
+    resources: tmpdir=/tmp
+
+(java -jar /pipeline/.snakemake/conda/6d0f440ac4144d9731adccf20a121355_/bin/quick-variants-1.1.0.jar --out-vcf /pipeline/results/02-variant-calling/INDEL/single-sample/CCMD46727384ST-11-0.vcf --reference /pipeline/database/QuickVariant/merged_reference.fna --in-sam /pipeline/results/02-variant-calling/INDEL/single-sample/CCMD46727384ST-11-0.sam --vcf-exclude-non-mutations --num-threads 4) > /pipeline/results/logs/QuickVariant/single-sample/CCMD46727384ST-11-0.vcf.log 2>&1
+Activating conda environment: .snakemake/conda/6d0f440ac4144d9731adccf20a121355_
+[Sun Aug  9 02:40:13 2026]
+Finished job 32.
+10 of 37 steps (27%) done
+Removing temporary output /pipeline/results/02-variant-calling/INDEL/single-sample/CCMD19168690ST-11-0.sam.
+Select jobs to execute...
+Execute 1 jobs...
+
+[Sun Aug  9 02:40:13 2026]
+localrule generate_samples_list_cnv:
+    input: /pipeline/results/02-variant-calling/SV/CNV/single_sample/CCMD19168690ST-11-0/species/species_profile.tsv, /pipeline/results/02-variant-calling/SV/CNV/single_sample/CCMD46727384ST-11-0/species/species_profile.tsv
+    output: /pipeline/results/02-variant-calling/SV/CNV/samples_list.tsv
+    jobid: 24
+    benchmark: /pipeline/results/benchmarks/02-variant-calling/SV/CNV/samples_list.tsv
+    reason: Missing output files: /pipeline/results/02-variant-calling/SV/CNV/samples_list.tsv; Input files updated by another job: /pipeline/results/02-variant-calling/SV/CNV/single_sample/CCMD19168690ST-11-0/species/species_profile.tsv, /pipeline/results/02-variant-calling/SV/CNV/single_sample/CCMD46727384ST-11-0/species/species_profile.tsv
+    resources: tmpdir=/tmp
+
+host: b4fa82f4ae05
+[Sun Aug  9 02:40:14 2026]
+Finished job 24.
+11 of 37 steps (30%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Sun Aug  9 02:40:14 2026]
+localrule midas_merge_species_cnv:
+    input: /pipeline/results/02-variant-calling/SV/CNV/samples_list.tsv
+    output: /pipeline/results/02-variant-calling/SV/CNV/across_sample/species/species_prevalence.tsv
+    log: /pipeline/results/logs/MIDASv3/CNV/merge-species/species.log
+    jobid: 23
+    benchmark: /pipeline/results/benchmarks/02-variant-calling/SV/CNV/across_sample/merge_species.tsv
+    reason: Missing output files: /pipeline/results/02-variant-calling/SV/CNV/across_sample/species/species_prevalence.tsv; Input files updated by another job: /pipeline/results/02-variant-calling/SV/CNV/samples_list.tsv
+    resources: tmpdir=/tmp
+
+(midas merge_species --samples_list /pipeline/results/02-variant-calling/SV/CNV/samples_list.tsv --min_cov 2 /pipeline/results/02-variant-calling/SV/CNV/across_sample) > /pipeline/results/logs/MIDASv3/CNV/merge-species/species.log 2>&1
+Activating conda environment: .snakemake/conda/d761d96befc1f6ebdf21c5180a791095_
+[Sun Aug  9 02:40:15 2026]
+Finished job 23.
+12 of 37 steps (32%) done
+Select jobs to execute...
+Waiting for more resources.
+[Sun Aug  9 02:40:16 2026]
+Finished job 34.
+13 of 37 steps (35%) done
+Removing temporary output /pipeline/results/02-variant-calling/INDEL/single-sample/CCMD46727384ST-11-0.sam.
+Execute 1 jobs...
+
+[Sun Aug  9 02:40:16 2026]
+localrule midas_build_bowtie2db:
+    input: /pipeline/results/02-variant-calling/SV/CNV/across_sample/species/species_prevalence.tsv
+    output: /pipeline/results/02-variant-calling/SV/CNV/across_sample/bt2_indexes/pangenomes.species
+    log: /pipeline/results/logs/MIDASv3/build-bowtie2db/bt2-db-build-pangenomes.log
+    jobid: 22
+    benchmark: /pipeline/results/benchmarks/02-variant-calling/SV/CNV/across_sample/build_bowtie2db.tsv
+    reason: Missing output files: /pipeline/results/02-variant-calling/SV/CNV/across_sample/bt2_indexes/pangenomes.species; Input files updated by another job: /pipeline/results/02-variant-calling/SV/CNV/across_sample/species/species_prevalence.tsv
+    threads: 8
+    resources: tmpdir=/tmp
+
+(midas build_bowtie2db --midasdb_name localdb --midasdb_dir /pipeline/database/midasv3/midasdb_localdb --bt2_indexes_name pangenomes --bt2_indexes_dir /pipeline/results/02-variant-calling/SV/CNV/across_sample/bt2_indexes --species_profile /pipeline/results/02-variant-calling/SV/CNV/across_sample/species/species_prevalence.tsv --num_cores 8 --select_by sample_counts --select_threshold 1) > /pipeline/results/logs/MIDASv3/build-bowtie2db/bt2-db-build-pangenomes.log 2>&1
+Activating conda environment: .snakemake/conda/d761d96befc1f6ebdf21c5180a791095_
+[Sun Aug  9 02:40:26 2026]
+Finished job 22.
+14 of 37 steps (38%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Sun Aug  9 02:40:26 2026]
+localrule midas_run_genes:
+    input: /pipeline/results/01-QC/CCMD19168690ST-11-0/CCMD19168690ST-11-0_paired_1.fastq, /pipeline/results/01-QC/CCMD19168690ST-11-0/CCMD19168690ST-11-0_paired_2.fastq, /pipeline/results/02-variant-calling/SV/CNV/across_sample/bt2_indexes/pangenomes.species
+    output: /pipeline/results/02-variant-calling/SV/CNV/single_sample/CCMD19168690ST-11-0/genes/genes_summary.tsv
+    log: /pipeline/results/logs/MIDASv3/run-genes/CCMD19168690ST-11-0.log
+    jobid: 21
+    benchmark: /pipeline/results/benchmarks/02-variant-calling/SV/CNV/single_sample/CCMD19168690ST-11-0_genes.tsv
+    reason: Missing output files: /pipeline/results/02-variant-calling/SV/CNV/single_sample/CCMD19168690ST-11-0/genes/genes_summary.tsv; Input files updated by another job: /pipeline/results/02-variant-calling/SV/CNV/across_sample/bt2_indexes/pangenomes.species, /pipeline/results/01-QC/CCMD19168690ST-11-0/CCMD19168690ST-11-0_paired_1.fastq, /pipeline/results/01-QC/CCMD19168690ST-11-0/CCMD19168690ST-11-0_paired_2.fastq
+    wildcards: sample=CCMD19168690ST-11-0
+    threads: 8
+    resources: tmpdir=/tmp
+
+
+        (
+        midas run_genes --sample_name CCMD19168690ST-11-0             -1 /pipeline/results/01-QC/CCMD19168690ST-11-0/CCMD19168690ST-11-0_paired_1.fastq -2 /pipeline/results/01-QC/CCMD19168690ST-11-0/CCMD19168690ST-11-0_paired_2.fastq             --midasdb_name localdb --midasdb_dir /pipeline/database/midasv3/midasdb_localdb             --num_cores 8 --select_threshold=-1             --prebuilt_bowtie2_indexes /pipeline/results/02-variant-calling/SV/CNV/across_sample/bt2_indexes/pangenomes             --prebuilt_bowtie2_species /pipeline/results/02-variant-calling/SV/CNV/across_sample/bt2_indexes/pangenomes.species             /pipeline/results/02-variant-calling/SV/CNV/single_sample
+        ) > /pipeline/results/logs/MIDASv3/run-genes/CCMD19168690ST-11-0.log 2>&1
+        
+Activating conda environment: .snakemake/conda/d761d96befc1f6ebdf21c5180a791095_
+[Sun Aug  9 02:40:42 2026]
+Finished job 21.
+15 of 37 steps (41%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Sun Aug  9 02:40:42 2026]
+localrule PhaseFinder:
+    input: /pipeline/results/01-QC/CCMD19168690ST-11-0/CCMD19168690ST-11-0_paired_1.fastq, /pipeline/results/01-QC/CCMD19168690ST-11-0/CCMD19168690ST-11-0_paired_2.fastq
+    output: /pipeline/results/02-variant-calling/SV/Inversion/single-sample/CCMD19168690ST-11-0.inv.tsv
+    log: /pipeline/results/logs/Inversion/single-sample/CCMD19168690ST-11-0.log
+    jobid: 17
+    reason: Missing output files: /pipeline/results/02-variant-calling/SV/Inversion/single-sample/CCMD19168690ST-11-0.inv.tsv; Input files updated by another job: /pipeline/results/01-QC/CCMD19168690ST-11-0/CCMD19168690ST-11-0_paired_1.fastq, /pipeline/results/01-QC/CCMD19168690ST-11-0/CCMD19168690ST-11-0_paired_2.fastq
+    wildcards: sample=CCMD19168690ST-11-0
+    threads: 8
+    resources: tmpdir=/tmp
+
+
+        (
+            python /pipeline/scripts/PhaseFinder.py ratio                 -i /pipeline/database/PhaseFinder/Phasefinder_reference.fasta                 -1 /pipeline/results/01-QC/CCMD19168690ST-11-0/CCMD19168690ST-11-0_paired_1.fastq -2 /pipeline/results/01-QC/CCMD19168690ST-11-0/CCMD19168690ST-11-0_paired_2.fastq                 -p 8 -o /pipeline/results/02-variant-calling/SV/Inversion/single-sample/CCMD19168690ST-11-0 &&             awk 'NR==1 || (($4 != "NA" && $4 >= 0.01 && $3 > 5) && ($7 != "NA" && $7 >= 0.01 && $6 > 3))' /pipeline/results/02-variant-calling/SV/Inversion/single-sample/CCMD19168690ST-11-0.ratio.txt > /pipeline/results/02-variant-calling/SV/Inversion/single-sample/CCMD19168690ST-11-0.inv.tsv &&             rm -f /pipeline/results/02-variant-calling/SV/Inversion/single-sample/CCMD19168690ST-11-0.ratio.txt
+        ) > /pipeline/results/logs/Inversion/single-sample/CCMD19168690ST-11-0.log 2>&1
+        
+Activating conda environment: .snakemake/conda/6bd68eacc32d12100390487035c703d0_
+[Sun Aug  9 02:40:59 2026]
+Finished job 13.
+16 of 37 steps (43%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Sun Aug  9 02:40:59 2026]
+localrule midas_run_species_snp:
+    input: /pipeline/results/01-QC/CCMD46727384ST-11-0/CCMD46727384ST-11-0_paired_1.fastq, /pipeline/results/01-QC/CCMD46727384ST-11-0/CCMD46727384ST-11-0_paired_2.fastq
+    output: /pipeline/results/02-variant-calling/SNP/MIDAS/single_sample/CCMD46727384ST-11-0/species/species_profile.tsv
+    log: /pipeline/results/logs/MIDASv3/SNP/run-species/CCMD46727384ST-11-0.log
+    jobid: 7
+    benchmark: /pipeline/results/benchmarks/02-variant-calling/SNP/MIDAS/single_sample/CCMD46727384ST-11-0.tsv
+    reason: Missing output files: /pipeline/results/02-variant-calling/SNP/MIDAS/single_sample/CCMD46727384ST-11-0/species/species_profile.tsv; Input files updated by another job: /pipeline/results/01-QC/CCMD46727384ST-11-0/CCMD46727384ST-11-0_paired_1.fastq, /pipeline/results/01-QC/CCMD46727384ST-11-0/CCMD46727384ST-11-0_paired_2.fastq
+    wildcards: sample=CCMD46727384ST-11-0
+    threads: 8
+    resources: tmpdir=/tmp
+
+
+        (
+        midas run_species --sample_name CCMD46727384ST-11-0             -1 /pipeline/results/01-QC/CCMD46727384ST-11-0/CCMD46727384ST-11-0_paired_1.fastq -2 /pipeline/results/01-QC/CCMD46727384ST-11-0/CCMD46727384ST-11-0_paired_2.fastq             --midasdb_name localdb --midasdb_dir /pipeline/database/midasv3/midasdb_localdb             --num_cores 8 /pipeline/results/02-variant-calling/SNP/MIDAS/single_sample
+        ) > /pipeline/results/logs/MIDASv3/SNP/run-species/CCMD46727384ST-11-0.log 2>&1
+        
+Activating conda environment: .snakemake/conda/d761d96befc1f6ebdf21c5180a791095_
+[Sun Aug  9 02:41:03 2026]
+Finished job 17.
+17 of 37 steps (46%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Sun Aug  9 02:41:03 2026]
+localrule midas_run_genes:
+    input: /pipeline/results/01-QC/CCMD46727384ST-11-0/CCMD46727384ST-11-0_paired_1.fastq, /pipeline/results/01-QC/CCMD46727384ST-11-0/CCMD46727384ST-11-0_paired_2.fastq, /pipeline/results/02-variant-calling/SV/CNV/across_sample/bt2_indexes/pangenomes.species
+    output: /pipeline/results/02-variant-calling/SV/CNV/single_sample/CCMD46727384ST-11-0/genes/genes_summary.tsv
+    log: /pipeline/results/logs/MIDASv3/run-genes/CCMD46727384ST-11-0.log
+    jobid: 27
+    benchmark: /pipeline/results/benchmarks/02-variant-calling/SV/CNV/single_sample/CCMD46727384ST-11-0_genes.tsv
+    reason: Missing output files: /pipeline/results/02-variant-calling/SV/CNV/single_sample/CCMD46727384ST-11-0/genes/genes_summary.tsv; Input files updated by another job: /pipeline/results/01-QC/CCMD46727384ST-11-0/CCMD46727384ST-11-0_paired_1.fastq, /pipeline/results/02-variant-calling/SV/CNV/across_sample/bt2_indexes/pangenomes.species, /pipeline/results/01-QC/CCMD46727384ST-11-0/CCMD46727384ST-11-0_paired_2.fastq
+    wildcards: sample=CCMD46727384ST-11-0
+    threads: 8
+    resources: tmpdir=/tmp
+
+
+        (
+        midas run_genes --sample_name CCMD46727384ST-11-0             -1 /pipeline/results/01-QC/CCMD46727384ST-11-0/CCMD46727384ST-11-0_paired_1.fastq -2 /pipeline/results/01-QC/CCMD46727384ST-11-0/CCMD46727384ST-11-0_paired_2.fastq             --midasdb_name localdb --midasdb_dir /pipeline/database/midasv3/midasdb_localdb             --num_cores 8 --select_threshold=-1             --prebuilt_bowtie2_indexes /pipeline/results/02-variant-calling/SV/CNV/across_sample/bt2_indexes/pangenomes             --prebuilt_bowtie2_species /pipeline/results/02-variant-calling/SV/CNV/across_sample/bt2_indexes/pangenomes.species             /pipeline/results/02-variant-calling/SV/CNV/single_sample
+        ) > /pipeline/results/logs/MIDASv3/run-genes/CCMD46727384ST-11-0.log 2>&1
+        
+Activating conda environment: .snakemake/conda/d761d96befc1f6ebdf21c5180a791095_
+[Sun Aug  9 02:41:08 2026]
+Finished job 7.
+18 of 37 steps (49%) done
+Select jobs to execute...
+Execute 4 jobs...
+
+[Sun Aug  9 02:41:08 2026]
+localrule SGVFinder2_merge:
+    input: /pipeline/results/02-variant-calling/SV/dSV-vSV/ICRA/CCMD19168690ST-11-0.smp, /pipeline/results/02-variant-calling/SV/dSV-vSV/ICRA/CCMD46727384ST-11-0.smp
+    output: /pipeline/results/02-variant-calling/SV/dSV-vSV/across-sample/dsgv.csv, /pipeline/results/02-variant-calling/SV/dSV-vSV/across-sample/vsgv.csv
+    log: /pipeline/results/logs/dSV-vSV/across-sample/merge.log
+    jobid: 11
+    benchmark: /pipeline/results/benchmarks/02-variant-calling/SV/dSV-vSV/across-sample/merge.tsv
+    reason: Missing output files: /pipeline/results/02-variant-calling/SV/dSV-vSV/across-sample/dsgv.csv, /pipeline/results/02-variant-calling/SV/dSV-vSV/across-sample/vsgv.csv; Input files updated by another job: /pipeline/results/02-variant-calling/SV/dSV-vSV/ICRA/CCMD19168690ST-11-0.smp, /pipeline/results/02-variant-calling/SV/dSV-vSV/ICRA/CCMD46727384ST-11-0.smp
+    threads: 2
+    resources: tmpdir=/tmp
+
+[Sun Aug  9 02:41:08 2026]
+localrule PhaseFinder_merge:
+    input: /pipeline/results/02-variant-calling/SV/Inversion/single-sample/CCMD19168690ST-11-0.inv.tsv, /pipeline/results/02-variant-calling/SV/Inversion/single-sample/CCMD46727384ST-11-0.inv.tsv
+    output: /pipeline/results/02-variant-calling/SV/Inversion/across-sample/inversion.tsv
+    log: /pipeline/results/logs/Inversion/across-sample/merge_inv.log
+    jobid: 16
+    benchmark: /pipeline/results/benchmarks/02-variant-calling/SV/Inversion/across-sample/merge_inv.tsv
+    reason: Missing output files: /pipeline/results/02-variant-calling/SV/Inversion/across-sample/inversion.tsv; Input files updated by another job: /pipeline/results/02-variant-calling/SV/Inversion/single-sample/CCMD46727384ST-11-0.inv.tsv, /pipeline/results/02-variant-calling/SV/Inversion/single-sample/CCMD19168690ST-11-0.inv.tsv
+    resources: tmpdir=/tmp
+
+[Sun Aug  9 02:41:08 2026]
+localrule generate_samples_list_snp:
+    input: /pipeline/results/02-variant-calling/SNP/MIDAS/single_sample/CCMD19168690ST-11-0/species/species_profile.tsv, /pipeline/results/02-variant-calling/SNP/MIDAS/single_sample/CCMD46727384ST-11-0/species/species_profile.tsv
+    output: /pipeline/results/02-variant-calling/SNP/MIDAS/samples_list.tsv
+    jobid: 5
+    benchmark: /pipeline/results/benchmarks/02-variant-calling/SNP/MIDAS/samples_list.tsv
+    reason: Missing output files: /pipeline/results/02-variant-calling/SNP/MIDAS/samples_list.tsv; Input files updated by another job: /pipeline/results/02-variant-calling/SNP/MIDAS/single_sample/CCMD19168690ST-11-0/species/species_profile.tsv, /pipeline/results/02-variant-calling/SNP/MIDAS/single_sample/CCMD46727384ST-11-0/species/species_profile.tsv
+    resources: tmpdir=/tmp
+
+
+[Sun Aug  9 02:41:08 2026]
+localrule QuickVariant_indel:
+    input: /pipeline/results/02-variant-calling/INDEL/single-sample/CCMD19168690ST-11-0.vcf, /pipeline/results/02-variant-calling/INDEL/single-sample/CCMD46727384ST-11-0.vcf
+    output: /pipeline/results/02-variant-calling/INDEL/single-sample/CCMD19168690ST-11-0.vcf.indel.txt, /pipeline/results/02-variant-calling/INDEL/single-sample/CCMD46727384ST-11-0.vcf.indel.txt
+    log: /pipeline/results/logs/QuickVariant/single-sample/indelfilter.log
+    jobid: 31
+    benchmark: /pipeline/results/benchmarks/02-variant-calling/INDEL/single-sample/indelfilter.tsv
+    reason: Missing output files: /pipeline/results/02-variant-calling/INDEL/single-sample/CCMD46727384ST-11-0.vcf.indel.txt, /pipeline/results/02-variant-calling/INDEL/single-sample/CCMD19168690ST-11-0.vcf.indel.txt; Input files updated by another job: /pipeline/results/02-variant-calling/INDEL/single-sample/CCMD46727384ST-11-0.vcf, /pipeline/results/02-variant-calling/INDEL/single-sample/CCMD19168690ST-11-0.vcf
+    resources: tmpdir=/tmp
+
+
+        (
+            python /pipeline/software/QuickVariants/QuickVariants_Indelfilter.py                 -i /pipeline/results/02-variant-calling/INDEL/single-sample                                  
+        ) > /pipeline/results/logs/QuickVariant/single-sample/indelfilter.log 2>&1
+        
+Activating conda environment: .snakemake/conda/6d0f440ac4144d9731adccf20a121355_
+Activating conda environment: .snakemake/conda/6bd68eacc32d12100390487035c703d0_
+Activating conda environment: .snakemake/conda/6bd68eacc32d12100390487035c703d0_
+Activating conda environment: .snakemake/conda/f7f697b5166f90f45fc3491867d995f8_
+host: b4fa82f4ae05
+Activating conda environment: .snakemake/conda/f7f697b5166f90f45fc3491867d995f8_
+[Sun Aug  9 02:41:08 2026]
+Finished job 5.
+19 of 37 steps (51%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Sun Aug  9 02:41:08 2026]
+localrule midas_merge_species_snp:
+    input: /pipeline/results/02-variant-calling/SNP/MIDAS/samples_list.tsv
+    output: /pipeline/results/02-variant-calling/SNP/MIDAS/across_sample/species/species_prevalence.tsv
+    log: /pipeline/results/logs/MIDASv3/SNP/merge-species/species.log
+    jobid: 4
+    benchmark: /pipeline/results/benchmarks/02-variant-calling/SNP/MIDAS/across_sample/merge_species.tsv
+    reason: Missing output files: /pipeline/results/02-variant-calling/SNP/MIDAS/across_sample/species/species_prevalence.tsv; Input files updated by another job: /pipeline/results/02-variant-calling/SNP/MIDAS/samples_list.tsv
+    resources: tmpdir=/tmp
+
+(midas merge_species --samples_list /pipeline/results/02-variant-calling/SNP/MIDAS/samples_list.tsv --min_cov 2 /pipeline/results/02-variant-calling/SNP/MIDAS/across_sample) > /pipeline/results/logs/MIDASv3/SNP/merge-species/species.log 2>&1
+Activating conda environment: .snakemake/conda/d761d96befc1f6ebdf21c5180a791095_
+[Sun Aug  9 02:41:09 2026]
+Finished job 4.
+20 of 37 steps (54%) done
+Select jobs to execute...
+Waiting for more resources.
+[Sun Aug  9 02:41:10 2026]
+Finished job 16.
+21 of 37 steps (57%) done
+Execute 1 jobs...
+
+[Sun Aug  9 02:41:10 2026]
+localrule PhaseFinder_anno:
+    input: /pipeline/results/02-variant-calling/SV/Inversion/across-sample/inversion.tsv, /pipeline/database/43_species_features.tsv
+    output: /pipeline/results/02-variant-calling/SV/Inversion/across-sample/inversion_anno.tsv
+    log: /pipeline/results/logs/Inversion/across-sample/anno_inv.log
+    jobid: 15
+    benchmark: /pipeline/results/benchmarks/02-variant-calling/SV/Inversion/across-sample/anno_inversions.tsv
+    reason: Missing output files: /pipeline/results/02-variant-calling/SV/Inversion/across-sample/inversion_anno.tsv; Input files updated by another job: /pipeline/results/02-variant-calling/SV/Inversion/across-sample/inversion.tsv
+    resources: tmpdir=/tmp
+
+2026-08-09 02:41:16,428 [INFO] Starting inversion annotation.
+2026-08-09 02:41:16,428 [INFO] Annotation file: /pipeline/database/43_species_features.tsv
+2026-08-09 02:41:16,428 [INFO] Inversion matrix file: /pipeline/results/02-variant-calling/SV/Inversion/across-sample/inversion.tsv
+2026-08-09 02:41:16,428 [INFO] Output file: /pipeline/results/02-variant-calling/SV/Inversion/across-sample/inversion_anno.tsv
+2026-08-09 02:41:16,428 [INFO] Reading annotation file: /pipeline/database/43_species_features.tsv
+[Sun Aug  9 02:41:17 2026]
+Finished job 31.
+22 of 37 steps (59%) done
+Removing temporary output /pipeline/results/02-variant-calling/INDEL/single-sample/CCMD19168690ST-11-0.vcf.
+Removing temporary output /pipeline/results/02-variant-calling/INDEL/single-sample/CCMD46727384ST-11-0.vcf.
+Select jobs to execute...
+Execute 2 jobs...
+
+[Sun Aug  9 02:41:17 2026]
+localrule QuickVariant_mv:
+    input: /pipeline/results/02-variant-calling/INDEL/single-sample/CCMD46727384ST-11-0.vcf.indel.txt
+    output: /pipeline/results/02-variant-calling/INDEL/single-sample/CCMD46727384ST-11-0.indel.tsv
+    jobid: 36
+    reason: Missing output files: /pipeline/results/02-variant-calling/INDEL/single-sample/CCMD46727384ST-11-0.indel.tsv; Input files updated by another job: /pipeline/results/02-variant-calling/INDEL/single-sample/CCMD46727384ST-11-0.vcf.indel.txt
+    wildcards: sample=CCMD46727384ST-11-0
+    resources: tmpdir=/tmp
+
+mv /pipeline/results/02-variant-calling/INDEL/single-sample/CCMD46727384ST-11-0.vcf.indel.txt /pipeline/results/02-variant-calling/INDEL/single-sample/CCMD46727384ST-11-0.indel.tsv && rm -f /pipeline/results/02-variant-calling/INDEL/single-sample/CCMD46727384ST-11-0.vcf.snp
+Activating conda environment: .snakemake/conda/6d0f440ac4144d9731adccf20a121355_
+
+[Sun Aug  9 02:41:17 2026]
+localrule QuickVariant_mv:
+    input: /pipeline/results/02-variant-calling/INDEL/single-sample/CCMD19168690ST-11-0.vcf.indel.txt
+    output: /pipeline/results/02-variant-calling/INDEL/single-sample/CCMD19168690ST-11-0.indel.tsv
+    jobid: 30
+    reason: Missing output files: /pipeline/results/02-variant-calling/INDEL/single-sample/CCMD19168690ST-11-0.indel.tsv; Input files updated by another job: /pipeline/results/02-variant-calling/INDEL/single-sample/CCMD19168690ST-11-0.vcf.indel.txt
+    wildcards: sample=CCMD19168690ST-11-0
+    resources: tmpdir=/tmp
+
+mv /pipeline/results/02-variant-calling/INDEL/single-sample/CCMD19168690ST-11-0.vcf.indel.txt /pipeline/results/02-variant-calling/INDEL/single-sample/CCMD19168690ST-11-0.indel.tsv && rm -f /pipeline/results/02-variant-calling/INDEL/single-sample/CCMD19168690ST-11-0.vcf.snp
+Activating conda environment: .snakemake/conda/6d0f440ac4144d9731adccf20a121355_
+2026-08-09 02:41:17,619 [INFO] Annotation file loaded. Shape: (155939, 12)
+2026-08-09 02:41:17,827 [INFO] Accession to genome_id/genome_name map created.
+[Sun Aug  9 02:41:17 2026]
+Finished job 30.
+23 of 37 steps (62%) done
+Select jobs to execute...
+Waiting for more resources.
+[Sun Aug  9 02:41:17 2026]
+Finished job 36.
+24 of 37 steps (65%) done
+Execute 1 jobs...
+
+[Sun Aug  9 02:41:17 2026]
+localrule QuickVariant_merge:
+    input: /pipeline/results/02-variant-calling/INDEL/single-sample/CCMD19168690ST-11-0.indel.tsv, /pipeline/results/02-variant-calling/INDEL/single-sample/CCMD46727384ST-11-0.indel.tsv
+    output: /pipeline/results/02-variant-calling/INDEL/across-sample/indel.tsv
+    log: /pipeline/results/logs/QuickVariant/across-sample/merge_indels.log
+    jobid: 29
+    benchmark: /pipeline/results/benchmarks/02-variant-calling/INDEL/across-sample/merge_indels.tsv
+    reason: Missing output files: /pipeline/results/02-variant-calling/INDEL/across-sample/indel.tsv; Input files updated by another job: /pipeline/results/02-variant-calling/INDEL/single-sample/CCMD46727384ST-11-0.indel.tsv, /pipeline/results/02-variant-calling/INDEL/single-sample/CCMD19168690ST-11-0.indel.tsv
+    resources: tmpdir=/tmp
+
+Activating conda environment: .snakemake/conda/6d0f440ac4144d9731adccf20a121355_
+2026-08-09 02:41:17,956 [INFO] Annotation data converted to PyRanges object for interval joining.
+2026-08-09 02:41:17,956 [INFO] Reading inversion matrix file: /pipeline/results/02-variant-calling/SV/Inversion/across-sample/inversion.tsv
+2026-08-09 02:41:17,957 [INFO] Inversion matrix file loaded. Shape: (6, 3)
+2026-08-09 02:41:17,959 [INFO] Inversion data converted to PyRanges object.
+2026-08-09 02:41:17,959 [INFO] Performing interval-based join to annotate inversions...
+2026-08-09 02:41:18,298 [INFO] Interval join complete. Result shape: (6, 18)
+2026-08-09 02:41:18,298 [INFO] Formatting final output...
+2026-08-09 02:41:18,299 [INFO] Saving annotated inversions to: /pipeline/results/02-variant-calling/SV/Inversion/across-sample/inversion_anno.tsv
+2026-08-09 02:41:18,385 [INFO] Annotation complete. Output file saved successfully.
+Activating conda environment: .snakemake/conda/6d0f440ac4144d9731adccf20a121355_
+[Sun Aug  9 02:41:18 2026]
+Finished job 15.
+25 of 37 steps (68%) done
+Select jobs to execute...
+Waiting for more resources.
+[Sun Aug  9 02:41:20 2026]
+Finished job 27.
+26 of 37 steps (70%) done
+Execute 1 jobs...
+
+[Sun Aug  9 02:41:20 2026]
+localrule midas_merge_genes:
+    input: /pipeline/results/02-variant-calling/SV/CNV/single_sample/CCMD19168690ST-11-0/genes/genes_summary.tsv, /pipeline/results/02-variant-calling/SV/CNV/single_sample/CCMD46727384ST-11-0/genes/genes_summary.tsv, /pipeline/results/02-variant-calling/SV/CNV/samples_list.tsv
+    output: /pipeline/results/02-variant-calling/SV/CNV/across_sample/genes/genes_summary.tsv
+    log: /pipeline/results/logs/MIDASv3/merge-genes/genes.log
+    jobid: 20
+    benchmark: /pipeline/results/benchmarks/02-variant-calling/SV/CNV/across_sample/merge_genes.tsv
+    reason: Missing output files: /pipeline/results/02-variant-calling/SV/CNV/across_sample/genes/genes_summary.tsv; Input files updated by another job: /pipeline/results/02-variant-calling/SV/CNV/samples_list.tsv, /pipeline/results/02-variant-calling/SV/CNV/single_sample/CCMD19168690ST-11-0/genes/genes_summary.tsv, /pipeline/results/02-variant-calling/SV/CNV/single_sample/CCMD46727384ST-11-0/genes/genes_summary.tsv
+    threads: 8
+    resources: tmpdir=/tmp
+
+(midas merge_genes --samples_list /pipeline/results/02-variant-calling/SV/CNV/samples_list.tsv --midasdb_name localdb --midasdb_dir /pipeline/database/midasv3/midasdb_localdb --num_cores 8 --sample_counts 2 --cluster_level_in 99 --genome_depth 0.4 /pipeline/results/02-variant-calling/SV/CNV/across_sample) > /pipeline/results/logs/MIDASv3/merge-genes/genes.log 2>&1 
+Activating conda environment: .snakemake/conda/d761d96befc1f6ebdf21c5180a791095_
+[Sun Aug  9 02:41:21 2026]
+Finished job 20.
+27 of 37 steps (73%) done
+Removing temporary output /pipeline/results/02-variant-calling/SV/CNV/samples_list.tsv.
+Select jobs to execute...
+Execute 2 jobs...
+
+[Sun Aug  9 02:41:21 2026]
+localrule midas_run_snps:
+    input: /pipeline/results/01-QC/CCMD19168690ST-11-0/CCMD19168690ST-11-0_paired_1.fastq, /pipeline/results/01-QC/CCMD19168690ST-11-0/CCMD19168690ST-11-0_paired_2.fastq, /pipeline/results/02-variant-calling/SNP/MIDAS/across_sample/species/species_prevalence.tsv
+    output: /pipeline/results/02-variant-calling/SNP/MIDAS/single_sample/CCMD19168690ST-11-0/snps/snps_summary.tsv
+    log: /pipeline/results/logs/MIDASv3/run-snps/CCMD19168690ST-11-0.log
+    jobid: 2
+    benchmark: /pipeline/results/benchmarks/02-variant-calling/SNP/MIDAS/single_sample/CCMD19168690ST-11-0_snps.tsv
+    reason: Missing output files: /pipeline/results/02-variant-calling/SNP/MIDAS/single_sample/CCMD19168690ST-11-0/snps/snps_summary.tsv; Input files updated by another job: /pipeline/results/02-variant-calling/SNP/MIDAS/across_sample/species/species_prevalence.tsv, /pipeline/results/01-QC/CCMD19168690ST-11-0/CCMD19168690ST-11-0_paired_1.fastq, /pipeline/results/01-QC/CCMD19168690ST-11-0/CCMD19168690ST-11-0_paired_2.fastq
+    wildcards: sample=CCMD19168690ST-11-0
+    threads: 8
+    resources: tmpdir=/tmp
+
+
+        (
+        midas run_snps --sample_name CCMD19168690ST-11-0             -1 /pipeline/results/01-QC/CCMD19168690ST-11-0/CCMD19168690ST-11-0_paired_1.fastq -2 /pipeline/results/01-QC/CCMD19168690ST-11-0/CCMD19168690ST-11-0_paired_2.fastq             --midasdb_name localdb --midasdb_dir /pipeline/database/midasv3/midasdb_localdb             --num_cores 8 --chunk_size 1000000 --ignore_ambiguous             --select_by median_marker_coverage,unique_fraction_covered --select_threshold=2,0.5             /pipeline/results/02-variant-calling/SNP/MIDAS/single_sample
+        ) > /pipeline/results/logs/MIDASv3/run-snps/CCMD19168690ST-11-0.log 2>&1
+        
+Activating conda environment: .snakemake/conda/d761d96befc1f6ebdf21c5180a791095_
+
+[Sun Aug  9 02:41:21 2026]
+localrule finalize_cnv_analysis:
+    input: /pipeline/results/02-variant-calling/SV/CNV/across_sample/genes/genes_summary.tsv
+    output: /pipeline/results/02-variant-calling/SV/CNV/across_sample/merge.genes_copynum.tsv, /pipeline/results/logs/MIDASv3/cnv_done.txt
+    log: /pipeline/results/logs/MIDASv3/finalize_cnv.log
+    jobid: 19
+    reason: Missing output files: /pipeline/results/logs/MIDASv3/cnv_done.txt, /pipeline/results/02-variant-calling/SV/CNV/across_sample/merge.genes_copynum.tsv; Input files updated by another job: /pipeline/results/02-variant-calling/SV/CNV/across_sample/genes/genes_summary.tsv
+    resources: tmpdir=/tmp
+
+
+        (
+            python -c '
+import pandas as pd
+import lz4.frame
+import os
+import glob
+import sys
+
+genes_dir = r"/pipeline/results/02-variant-calling/SV/CNV/across_sample/genes"
+output_file = r"/pipeline/results/02-variant-calling/SV/CNV/across_sample/merge.genes_copynum.tsv"
+
+try:
+    lz4_files = glob.glob(os.path.join(genes_dir, "*", "*.genes_copynum.tsv.lz4"))
+
+    if not lz4_files:
+        print("No .lz4 files found to merge.", file=sys.stderr)
+        with open(output_file, "w") as f:
+            f.write("cluster_id\n")
+        sys.exit(0)
+
+    all_dfs = []
+    for lz4_file in lz4_files:
+        try:
+            with lz4.frame.open(lz4_file, "rt", encoding="utf-8") as f:
+                df = pd.read_csv(f, sep="\t")
+                if not df.empty:
+                    df.set_index(df.columns[0], inplace=True)
+                    all_dfs.append(df)
+        except Exception as e:
+            print(f"Warning: Could not process file {lz4_file}. Error: {e}", file=sys.stderr)
+
+    if not all_dfs:
+        print("Failed to read any .lz4 files.", file=sys.stderr)
+        with open(output_file, "w") as f:
+            f.write("cluster_id\n")
+        sys.exit(0)
+
+    final_df = pd.concat(all_dfs, axis=0, sort=False).groupby(level=0).sum().fillna(0.000000)
+    final_df.reset_index(inplace=True)
+    final_df.to_csv(output_file, sep="\t", index=False)
+
+    print(f"Successfully merged {len(all_dfs)} files into the output file.")
+
+except Exception as e:
+    print(f"An unexpected error occurred: {e}", file=sys.stderr)
+    sys.exit(1)
+' > /pipeline/results/logs/MIDASv3/finalize_cnv.log 2>&1
+        ) && rm -rf /pipeline/results/02-variant-calling/SV/CNV/single_sample /pipeline/results/02-variant-calling/SV/CNV/across_sample/bt2_indexes
+        
+Activating conda environment: .snakemake/conda/d761d96befc1f6ebdf21c5180a791095_
+[Sun Aug  9 02:41:22 2026]
+Finished job 11.
+28 of 37 steps (76%) done
+Removing temporary output /pipeline/results/02-variant-calling/SV/dSV-vSV/ICRA/CCMD19168690ST-11-0.smp.
+Removing temporary output /pipeline/results/02-variant-calling/SV/dSV-vSV/ICRA/CCMD46727384ST-11-0.smp.
+Select jobs to execute...
+Execute 2 jobs...
+
+[Sun Aug  9 02:41:22 2026]
+localrule SGVFinder2_anno_dsgv:
+    input: /pipeline/results/02-variant-calling/SV/dSV-vSV/across-sample/dsgv.csv, /pipeline/database/43_species_features.tsv
+    output: /pipeline/results/02-variant-calling/SV/dSV-vSV/across-sample/dsgv_anno.tsv
+    log: /pipeline/results/logs/dSV-vSV/across-sample/anno_dsgv.log
+    jobid: 10
+    benchmark: /pipeline/results/benchmarks/02-variant-calling/SV/dSV-vSV/across-sample/anno_dsgv.tsv
+    reason: Missing output files: /pipeline/results/02-variant-calling/SV/dSV-vSV/across-sample/dsgv_anno.tsv; Input files updated by another job: /pipeline/results/02-variant-calling/SV/dSV-vSV/across-sample/dsgv.csv
+    resources: tmpdir=/tmp
+
+[Sun Aug  9 02:41:22 2026]
+localrule SGVFinder2_anno_vsgv:
+    input: /pipeline/results/02-variant-calling/SV/dSV-vSV/across-sample/vsgv.csv, /pipeline/database/43_species_features.tsv
+    output: /pipeline/results/02-variant-calling/SV/dSV-vSV/across-sample/vsgv_anno.tsv
+    log: /pipeline/results/logs/dSV-vSV/across-sample/anno_vsgv.log
+    jobid: 14
+    benchmark: /pipeline/results/benchmarks/02-variant-calling/SV/dSV-vSV/across-sample/anno_vsgv.tsv
+    reason: Missing output files: /pipeline/results/02-variant-calling/SV/dSV-vSV/across-sample/vsgv_anno.tsv; Input files updated by another job: /pipeline/results/02-variant-calling/SV/dSV-vSV/across-sample/vsgv.csv
+    resources: tmpdir=/tmp
+
+2026-08-09 02:41:23,448 [INFO] Starting SGV cluster annotation.
+2026-08-09 02:41:23,448 [INFO] Annotation file: /pipeline/database/43_species_features.tsv
+2026-08-09 02:41:23,448 [INFO] SGV matrix file: /pipeline/results/02-variant-calling/SV/dSV-vSV/across-sample/vsgv.csv
+2026-08-09 02:41:23,448 [INFO] Output file: /pipeline/results/02-variant-calling/SV/dSV-vSV/across-sample/vsgv_anno.tsv
+2026-08-09 02:41:23,448 [INFO] Reading annotation file: /pipeline/database/43_species_features.tsv
+2026-08-09 02:41:23,451 [INFO] Starting SGV cluster annotation.
+2026-08-09 02:41:23,451 [INFO] Annotation file: /pipeline/database/43_species_features.tsv
+2026-08-09 02:41:23,451 [INFO] SGV matrix file: /pipeline/results/02-variant-calling/SV/dSV-vSV/across-sample/dsgv.csv
+2026-08-09 02:41:23,451 [INFO] Output file: /pipeline/results/02-variant-calling/SV/dSV-vSV/across-sample/dsgv_anno.tsv
+2026-08-09 02:41:23,451 [INFO] Reading annotation file: /pipeline/database/43_species_features.tsv
+2026-08-09 02:41:23,674 [INFO] Annotation file loaded. Shape: (155939, 12)
+2026-08-09 02:41:23,677 [INFO] Genome_id to genome_name map created.
+2026-08-09 02:41:23,678 [INFO] Annotation file loaded. Shape: (155939, 12)
+2026-08-09 02:41:23,681 [INFO] Genome_id to genome_name map created.
+2026-08-09 02:41:23,744 [INFO] Annotation data (using global coords) converted to PyRanges object.
+2026-08-09 02:41:23,744 [INFO] Reading SGV matrix file: /pipeline/results/02-variant-calling/SV/dSV-vSV/across-sample/vsgv.csv
+2026-08-09 02:41:23,745 [INFO] First column ('Unnamed: 0') assumed as sample/index. Using subsequent 4 columns as SGV IDs.
+2026-08-09 02:41:23,745 [INFO] Loaded 4 SGV Cluster IDs.
+2026-08-09 02:41:23,746 [INFO] Annotation data (using global coords) converted to PyRanges object.
+2026-08-09 02:41:23,746 [INFO] Reading SGV matrix file: /pipeline/results/02-variant-calling/SV/dSV-vSV/across-sample/dsgv.csv
+2026-08-09 02:41:23,746 [INFO] SGV interval data converted to PyRanges object.
+2026-08-09 02:41:23,746 [INFO] Performing interval-based join to annotate SGV intervals...
+2026-08-09 02:41:23,747 [INFO] First column ('Unnamed: 0') assumed as sample/index. Using subsequent 4 columns as SGV IDs.
+2026-08-09 02:41:23,747 [INFO] Loaded 4 SGV Cluster IDs.
+2026-08-09 02:41:23,749 [INFO] SGV interval data converted to PyRanges object.
+2026-08-09 02:41:23,749 [INFO] Performing interval-based join to annotate SGV intervals...
+2026-08-09 02:41:23,779 [INFO] SGV Interval join complete. Result shape: (338, 17)
+2026-08-09 02:41:23,779 [INFO] Formatting final output for SGVs...
+2026-08-09 02:41:23,782 [INFO] SGV Interval join complete. Result shape: (1582, 17)
+2026-08-09 02:41:23,782 [INFO] Formatting final output for SGVs...
+2026-08-09 02:41:23,790 [INFO] Saving annotated SGVs to: /pipeline/results/02-variant-calling/SV/dSV-vSV/across-sample/vsgv_anno.tsv
+2026-08-09 02:41:23,792 [INFO] SGV Annotation complete. Output file saved successfully.
+2026-08-09 02:41:23,828 [INFO] Saving annotated SGVs to: /pipeline/results/02-variant-calling/SV/dSV-vSV/across-sample/dsgv_anno.tsv
+2026-08-09 02:41:23,847 [INFO] SGV Annotation complete. Output file saved successfully.
+[Sun Aug  9 02:41:23 2026]
+Finished job 14.
+29 of 37 steps (78%) done
+Select jobs to execute...
+Waiting for more resources.
+[Sun Aug  9 02:41:23 2026]
+Finished job 10.
+30 of 37 steps (81%) done
+Waiting for more resources.
+Touching output file /pipeline/results/logs/MIDASv3/cnv_done.txt.
+[Sun Aug  9 02:41:24 2026]
+Finished job 19.
+31 of 37 steps (84%) done
+Waiting for more resources.
+[Sun Aug  9 02:41:53 2026]
+Finished job 2.
+32 of 37 steps (86%) done
+Execute 1 jobs...
+
+[Sun Aug  9 02:41:53 2026]
+localrule midas_run_snps:
+    input: /pipeline/results/01-QC/CCMD46727384ST-11-0/CCMD46727384ST-11-0_paired_1.fastq, /pipeline/results/01-QC/CCMD46727384ST-11-0/CCMD46727384ST-11-0_paired_2.fastq, /pipeline/results/02-variant-calling/SNP/MIDAS/across_sample/species/species_prevalence.tsv
+    output: /pipeline/results/02-variant-calling/SNP/MIDAS/single_sample/CCMD46727384ST-11-0/snps/snps_summary.tsv
+    log: /pipeline/results/logs/MIDASv3/run-snps/CCMD46727384ST-11-0.log
+    jobid: 9
+    benchmark: /pipeline/results/benchmarks/02-variant-calling/SNP/MIDAS/single_sample/CCMD46727384ST-11-0_snps.tsv
+    reason: Missing output files: /pipeline/results/02-variant-calling/SNP/MIDAS/single_sample/CCMD46727384ST-11-0/snps/snps_summary.tsv; Input files updated by another job: /pipeline/results/01-QC/CCMD46727384ST-11-0/CCMD46727384ST-11-0_paired_1.fastq, /pipeline/results/02-variant-calling/SNP/MIDAS/across_sample/species/species_prevalence.tsv, /pipeline/results/01-QC/CCMD46727384ST-11-0/CCMD46727384ST-11-0_paired_2.fastq
+    wildcards: sample=CCMD46727384ST-11-0
+    threads: 8
+    resources: tmpdir=/tmp
+
+
+        (
+        midas run_snps --sample_name CCMD46727384ST-11-0             -1 /pipeline/results/01-QC/CCMD46727384ST-11-0/CCMD46727384ST-11-0_paired_1.fastq -2 /pipeline/results/01-QC/CCMD46727384ST-11-0/CCMD46727384ST-11-0_paired_2.fastq             --midasdb_name localdb --midasdb_dir /pipeline/database/midasv3/midasdb_localdb             --num_cores 8 --chunk_size 1000000 --ignore_ambiguous             --select_by median_marker_coverage,unique_fraction_covered --select_threshold=2,0.5             /pipeline/results/02-variant-calling/SNP/MIDAS/single_sample
+        ) > /pipeline/results/logs/MIDASv3/run-snps/CCMD46727384ST-11-0.log 2>&1
+        
+Activating conda environment: .snakemake/conda/d761d96befc1f6ebdf21c5180a791095_
+[Sun Aug  9 02:41:57 2026]
+Finished job 29.
+33 of 37 steps (89%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Sun Aug  9 02:41:57 2026]
+localrule QuickVariant_anno:
+    input: /pipeline/results/02-variant-calling/INDEL/across-sample/indel.tsv, /pipeline/database/43_species_features.tsv
+    output: /pipeline/results/02-variant-calling/INDEL/across-sample/indel_anno.tsv
+    log: /pipeline/results/logs/QuickVariant/across-sample/anno_indels.log
+    jobid: 28
+    benchmark: /pipeline/results/benchmarks/02-variant-calling/INDEL/across-sample/anno_indels.tsv
+    reason: Missing output files: /pipeline/results/02-variant-calling/INDEL/across-sample/indel_anno.tsv; Input files updated by another job: /pipeline/results/02-variant-calling/INDEL/across-sample/indel.tsv
+    resources: tmpdir=/tmp
+
+2026-08-09 02:41:57,912 [INFO] Starting variant annotation.
+2026-08-09 02:41:57,912 [INFO] Annotation file: /pipeline/database/43_species_features.tsv
+2026-08-09 02:41:57,912 [INFO] Variant matrix file: /pipeline/results/02-variant-calling/INDEL/across-sample/indel.tsv
+2026-08-09 02:41:57,912 [INFO] Output file: /pipeline/results/02-variant-calling/INDEL/across-sample/indel_anno.tsv
+2026-08-09 02:41:57,912 [INFO] Reading annotation file: /pipeline/database/43_species_features.tsv
+2026-08-09 02:41:58,146 [INFO] Annotation file loaded. Shape: (155939, 12)
+2026-08-09 02:41:58,151 [INFO] Accession to genome_id/genome_name map created.
+2026-08-09 02:41:58,234 [INFO] Annotation data converted to PyRanges object for interval joining.
+2026-08-09 02:41:58,234 [INFO] Reading variant matrix file: /pipeline/results/02-variant-calling/INDEL/across-sample/indel.tsv
+2026-08-09 02:41:58,235 [INFO] Variant matrix file loaded. Shape: (101, 3)
+2026-08-09 02:41:58,237 [INFO] Variant data converted to PyRanges object.
+2026-08-09 02:41:58,237 [INFO] Performing interval-based join to annotate features...
+2026-08-09 02:41:58,570 [INFO] Interval join complete. Result shape: (101, 18)
+2026-08-09 02:41:58,570 [INFO] Formatting final output...
+2026-08-09 02:41:58,574 [INFO] Saving annotated variants to: /pipeline/results/02-variant-calling/INDEL/across-sample/indel_anno.tsv
+2026-08-09 02:41:58,575 [INFO] Annotation complete. Output file saved successfully.
+[Sun Aug  9 02:41:58 2026]
+Finished job 28.
+34 of 37 steps (92%) done
+[Sun Aug  9 02:42:13 2026]
+Finished job 9.
+35 of 37 steps (95%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Sun Aug  9 02:42:13 2026]
+localrule midas_merge_snps:
+    input: /pipeline/results/02-variant-calling/SNP/MIDAS/single_sample/CCMD19168690ST-11-0/snps/snps_summary.tsv, /pipeline/results/02-variant-calling/SNP/MIDAS/single_sample/CCMD46727384ST-11-0/snps/snps_summary.tsv, /pipeline/results/02-variant-calling/SNP/MIDAS/samples_list.tsv
+    output: /pipeline/results/02-variant-calling/SNP/MIDAS/across_sample/snps/snps_summary.tsv
+    log: /pipeline/results/logs/MIDASv3/merge-snps/snps.log
+    jobid: 1
+    benchmark: /pipeline/results/benchmarks/02-variant-calling/SNP/MIDAS/across_sample/merge_snps.tsv
+    reason: Missing output files: /pipeline/results/02-variant-calling/SNP/MIDAS/across_sample/snps/snps_summary.tsv; Input files updated by another job: /pipeline/results/02-variant-calling/SNP/MIDAS/single_sample/CCMD46727384ST-11-0/snps/snps_summary.tsv, /pipeline/results/02-variant-calling/SNP/MIDAS/samples_list.tsv, /pipeline/results/02-variant-calling/SNP/MIDAS/single_sample/CCMD19168690ST-11-0/snps/snps_summary.tsv
+    threads: 8
+    resources: tmpdir=/tmp
+
+(midas merge_snps --samples_list /pipeline/results/02-variant-calling/SNP/MIDAS/samples_list.tsv --midasdb_name localdb --midasdb_dir /pipeline/database/midasv3/midasdb_localdb --num_cores 8 --chunk_size 100000 --genome_coverage 0.7 /pipeline/results/02-variant-calling/SNP/MIDAS/across_sample) > /pipeline/results/logs/MIDASv3/merge-snps/snps.log 2>&1 
+Activating conda environment: .snakemake/conda/d761d96befc1f6ebdf21c5180a791095_
+[Sun Aug  9 02:42:31 2026]
+Finished job 1.
+36 of 37 steps (97%) done
+Removing temporary output /pipeline/results/02-variant-calling/SNP/MIDAS/samples_list.tsv.
+Select jobs to execute...
+Execute 1 jobs...
+
+[Sun Aug  9 02:42:31 2026]
+localrule finalize_snp_analysis:
+    input: /pipeline/results/02-variant-calling/SNP/MIDAS/across_sample/snps/snps_summary.tsv
+    output: /pipeline/results/02-variant-calling/SNP/MIDAS/across_sample/merge.snps_freqs.tsv, /pipeline/results/02-variant-calling/SNP/MIDAS/across_sample/merge.snps_info.tsv, /pipeline/results/logs/MIDASv3/snp_done.txt
+    log: /pipeline/results/logs/MIDASv3/finalize_snp.log
+    jobid: 0
+    reason: Input files updated by another job: /pipeline/results/02-variant-calling/SNP/MIDAS/across_sample/snps/snps_summary.tsv
+    resources: tmpdir=/tmp
+
+
+        (
+            python -c '
+import pandas as pd
+import lz4.frame
+import os
+import glob
+import sys
+
+snps_dir = r"/pipeline/results/02-variant-calling/SNP/MIDAS/across_sample/snps"
+output_freqs_file = r"/pipeline/results/02-variant-calling/SNP/MIDAS/across_sample/merge.snps_freqs.tsv"
+output_info_file = r"/pipeline/results/02-variant-calling/SNP/MIDAS/across_sample/merge.snps_info.tsv"
+
+try:
+    # --- Part 1: Merge snps_freqs files ---
+    freqs_lz4_files = glob.glob(os.path.join(snps_dir, "*", "*.snps_freqs.tsv.lz4"))
+
+    if not freqs_lz4_files:
+        print("No snps_freqs.tsv.lz4 files found to merge.", file=sys.stderr)
+        with open(output_freqs_file, "w") as f:
+            f.write("site_id\n")
+    else:
+        freqs_dfs = []
+        for lz4_file in freqs_lz4_files:
+            try:
+                with lz4.frame.open(lz4_file, "rt", encoding="utf-8") as f:
+                    df = pd.read_csv(f, sep="\t")
+                    if not df.empty:
+                        df.set_index(df.columns[0], inplace=True)
+                        freqs_dfs.append(df)
+            except Exception as e:
+                print(f"Warning: Could not process freqs file {lz4_file}. Error: {e}", file=sys.stderr)
+
+        if freqs_dfs:
+            final_freqs_df = pd.concat(freqs_dfs, axis=0, sort=False).groupby(level=0).sum().fillna(-1.0)
+            final_freqs_df.reset_index(inplace=True)
+            final_freqs_df.to_csv(output_freqs_file, sep="\t", index=False)
+            print(f"Successfully merged {len(freqs_dfs)} snps_freqs files.")
+        else:
+            print("Failed to read any snps_freqs files.", file=sys.stderr)
+            with open(output_freqs_file, "w") as f:
+                f.write("site_id\n")
+
+    # --- Part 2: Merge snps_info files ---
+    info_lz4_files = glob.glob(os.path.join(snps_dir, "*", "*.snps_info.tsv.lz4"))
+    
+    if not info_lz4_files:
+        print("No snps_info.tsv.lz4 files found to merge.", file=sys.stderr)
+        with open(output_info_file, "w") as f:
+            f.write("site_id\tmajor_allele\tminor_allele\tsample_counts\tsnp_type\trc_A\trc_C\trc_G\trc_T\tsc_A\tsc_C\tsc_G\tsc_T\tlocus_type\tgene_id\tsite_type\tamino_acids\n")
+    else:
+        info_dfs_generator = (pd.read_csv(lz4.frame.open(f, "rt", encoding="utf-8"), sep="\t") for f in info_lz4_files)
+        
+        final_info_df = pd.concat(info_dfs_generator, ignore_index=True)
+        
+        final_info_df.drop_duplicates(inplace=True)
+        
+        final_info_df.to_csv(output_info_file, sep="\t", index=False)
+        print(f"Successfully merged {len(info_lz4_files)} snps_info files.")
+
+except Exception as e:
+    print(f"An unexpected error occurred: {e}", file=sys.stderr)
+    sys.exit(1)
+' > /pipeline/results/logs/MIDASv3/finalize_snp.log 2>&1
+        ) && rm -rf /pipeline/results/02-variant-calling/SNP/MIDAS/single_sample /pipeline/results/02-variant-calling/SNP/MIDAS/across_sample/temp
+        
+Activating conda environment: .snakemake/conda/d761d96befc1f6ebdf21c5180a791095_
+Touching output file /pipeline/results/logs/MIDASv3/snp_done.txt.
+[Sun Aug  9 02:42:32 2026]
+Finished job 0.
+37 of 37 steps (100%) done
+Complete log: .snakemake/log/2026-08-09T022913.069802.snakemake.log

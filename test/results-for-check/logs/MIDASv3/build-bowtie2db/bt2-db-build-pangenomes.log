@@ -1,0 +1,37 @@
+1786243218.4:  Build Bowtie2 genome database in subcommand build_bowtie2db with args
+1786243218.4:  {
+1786243218.4:      "subcommand": "build_bowtie2db",
+1786243218.4:      "force": false,
+1786243218.4:      "debug": false,
+1786243218.4:      "zzz_worker_mode": false,
+1786243218.4:      "batch_branch": "master",
+1786243218.4:      "batch_memory": 378880,
+1786243218.4:      "batch_vcpus": 48,
+1786243218.4:      "batch_queue": "pairani",
+1786243218.4:      "batch_ecr_image": "pairani:latest",
+1786243218.4:      "bt2_indexes_dir": "/pipeline/results/02-variant-calling/SV/CNV/across_sample/bt2_indexes",
+1786243218.4:      "bt2_indexes_name": "pangenomes",
+1786243218.4:      "midasdb_name": "localdb",
+1786243218.4:      "midasdb_dir": "/pipeline/database/midasv3/midasdb_localdb",
+1786243218.4:      "species_list": null,
+1786243218.4:      "species_profile": "/pipeline/results/02-variant-calling/SV/CNV/across_sample/species/species_prevalence.tsv",
+1786243218.4:      "select_by": "sample_counts",
+1786243218.4:      "select_threshold": "1",
+1786243218.4:      "num_cores": 8,
+1786243218.4:      "prune_centroids": false,
+1786243218.4:      "prune_method": "max",
+1786243218.4:      "prune_cutoff": 0.4,
+1786243218.4:      "remove_singleton": false
+1786243218.4:  }
+1786243218.4:  MIDAS2::build_bowtie2db::build bt2 indexees for the listed species: ['100037', '100004']
+1786243218.4:  MIDAS2::build_bowtie2_pangenomes_indexes::start
+1786243218.8:  'rm -f /pipeline/results/02-variant-calling/SV/CNV/across_sample/bt2_indexes/pangenomes.fa'
+1786243221.1:  'bowtie2-build --threads 8 /pipeline/results/02-variant-calling/SV/CNV/across_sample/bt2_indexes/pangenomes.fa /pipeline/results/02-variant-calling/SV/CNV/across_sample/bt2_indexes/pangenomes > /pipeline/results/02-variant-calling/SV/CNV/across_sample/bt2_indexes/bt2-db-build-pangenomes.log'
+Building a SMALL index
+Renaming /pipeline/results/02-variant-calling/SV/CNV/across_sample/bt2_indexes/pangenomes.3.bt2.tmp to /pipeline/results/02-variant-calling/SV/CNV/across_sample/bt2_indexes/pangenomes.3.bt2
+Renaming /pipeline/results/02-variant-calling/SV/CNV/across_sample/bt2_indexes/pangenomes.4.bt2.tmp to /pipeline/results/02-variant-calling/SV/CNV/across_sample/bt2_indexes/pangenomes.4.bt2
+Renaming /pipeline/results/02-variant-calling/SV/CNV/across_sample/bt2_indexes/pangenomes.1.bt2.tmp to /pipeline/results/02-variant-calling/SV/CNV/across_sample/bt2_indexes/pangenomes.1.bt2
+Renaming /pipeline/results/02-variant-calling/SV/CNV/across_sample/bt2_indexes/pangenomes.2.bt2.tmp to /pipeline/results/02-variant-calling/SV/CNV/across_sample/bt2_indexes/pangenomes.2.bt2
+Renaming /pipeline/results/02-variant-calling/SV/CNV/across_sample/bt2_indexes/pangenomes.rev.1.bt2.tmp to /pipeline/results/02-variant-calling/SV/CNV/across_sample/bt2_indexes/pangenomes.rev.1.bt2
+Renaming /pipeline/results/02-variant-calling/SV/CNV/across_sample/bt2_indexes/pangenomes.rev.2.bt2.tmp to /pipeline/results/02-variant-calling/SV/CNV/across_sample/bt2_indexes/pangenomes.rev.2.bt2
+1786243226.2:  MIDAS2::build_bowtie2_pangenomes_indexes::finish

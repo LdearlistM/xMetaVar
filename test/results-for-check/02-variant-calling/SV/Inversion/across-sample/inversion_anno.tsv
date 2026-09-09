@@ -1,0 +1,7 @@
+Site	genome_id	genome_name	accession	feature_type	patric_id	start	end	strand	gene	product	global_start	global_end
+ADLE01000001:182930-182954-183130-183154	742726.3	Barnesiella intestinihominis YIT 11860	ADLE01000001	CDS	fig|742726.3.peg.150	183060	183209	+		hypothetical protein	183060	183209
+CP102258:2663094-2663119-2663304-2663329	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	repeat_region	fig|28111.542.repeat.33	2663297	2665260	+		repeat region	2663297	2665260
+CP102258:3005312-3005336-3005512-3005536	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102258:723508-723530-723563-723585	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	-1	-1	-1	-1	+	-1	-1	-1	-1
+CP102258:824902-824936-825082-825116	28111.542	Bacteroides eggerthii strain DSM 20697	CP102258	-1	-1	-1	-1	+	-1	-1	-1	-1
+UFTK01000001:2735804-2735825-2735987-2736008	46503.89	Parabacteroides merdae strain NCTC13052	UFTK01000001	-1	-1	-1	-1	+	-1	-1	-1	-1

@@ -1,0 +1,95 @@
+1786242928.9:  Single sample abundant species profiling in subcommand run_species with args
+1786242928.9:  {
+1786242928.9:      "subcommand": "run_species",
+1786242928.9:      "force": false,
+1786242928.9:      "debug": false,
+1786242928.9:      "zzz_worker_mode": false,
+1786242928.9:      "batch_branch": "master",
+1786242928.9:      "batch_memory": 378880,
+1786242928.9:      "batch_vcpus": 48,
+1786242928.9:      "batch_queue": "pairani",
+1786242928.9:      "batch_ecr_image": "pairani:latest",
+1786242928.9:      "midas_outdir": "/pipeline/results/02-variant-calling/SV/CNV/single_sample",
+1786242928.9:      "sample_name": "CCMD46727384ST-11-0",
+1786242928.9:      "r1": "/pipeline/results/01-QC/CCMD46727384ST-11-0/CCMD46727384ST-11-0_paired_1.fastq",
+1786242928.9:      "r2": "/pipeline/results/01-QC/CCMD46727384ST-11-0/CCMD46727384ST-11-0_paired_2.fastq",
+1786242928.9:      "midasdb_name": "localdb",
+1786242928.9:      "midasdb_dir": "/pipeline/database/midasv3/midasdb_localdb",
+1786242928.9:      "word_size": 28,
+1786242928.9:      "aln_mapid": null,
+1786242928.9:      "aln_cov": 0.75,
+1786242928.9:      "marker_reads": 2,
+1786242928.9:      "marker_covered": 2,
+1786242928.9:      "max_reads": null,
+1786242928.9:      "num_cores": 8
+1786242928.9:  }
+1786242928.9:  Create OUTPUT directory for CCMD46727384ST-11-0.
+1786242928.9:  'rm -rf /pipeline/results/02-variant-calling/SV/CNV/single_sample/CCMD46727384ST-11-0/species'
+1786242928.9:  'mkdir -p /pipeline/results/02-variant-calling/SV/CNV/single_sample/CCMD46727384ST-11-0/species'
+1786242928.9:  Create TEMP directory for CCMD46727384ST-11-0.
+1786242928.9:  'rm -rf /pipeline/results/02-variant-calling/SV/CNV/single_sample/CCMD46727384ST-11-0/temp/species'
+1786242928.9:  'mkdir -p /pipeline/results/02-variant-calling/SV/CNV/single_sample/CCMD46727384ST-11-0/temp/species'
+1786242928.9:  MIDAS2::fetch_midasdb_files::start
+1786242929.0:  MIDAS2::fetch_midasdb_files::finish
+1786242929.1:  MIDAS2::map_reads_hsblastn::start
+[HS-BLASTN] Loading database.
+	Loading /pipeline/database/midasv3/midasdb_localdb/markers/phyeco/phyeco.fa.sequence, size = 0.0004GB
+	Loading /pipeline/database/midasv3/midasdb_localdb/markers/phyeco/phyeco.fa.bwt, size = 0.4GB
+	Loading /pipeline/database/midasv3/midasdb_localdb/markers/phyeco/phyeco.fa.sa, size = 0.0008GB
+[HS-BLASTN] done. Time elapsed: 26.78 secs.
+
+
+[HS-BLASTN] Processing /dev/stdin.
+	Processing 64000 queries.
+	Processing 64000 queries.
+	Processing 64000 queries.
+	Processing 64000 queries.
+	Processing 64000 queries.
+	Processing 64000 queries.
+	Processing 64000 queries.
+	Processing 64000 queries.
+	Processing 64000 queries.
+	Processing 64000 queries.
+	Processing 64000 queries.
+	Processing 64000 queries.
+	Processing 64000 queries.
+	Processing 64000 queries.
+1786242960.2:  parse_reads:: parsed 912216 reads from /pipeline/results/01-QC/CCMD46727384ST-11-0/CCMD46727384ST-11-0_paired_1.fastq
+	Processing 64000 queries.
+	Processing 64000 queries.
+	Processing 64000 queries.
+	Processing 64000 queries.
+	Processing 64000 queries.
+	Processing 64000 queries.
+	Processing 64000 queries.
+	Processing 64000 queries.
+	Processing 64000 queries.
+	Processing 64000 queries.
+	Processing 64000 queries.
+	Processing 64000 queries.
+	Processing 64000 queries.
+	Processing 64000 queries.
+1786242964.2:  parse_reads:: parsed 912216 reads from /pipeline/results/01-QC/CCMD46727384ST-11-0/CCMD46727384ST-11-0_paired_2.fastq
+	Processing 32432 queries.
+
+
+
+[HS-BLASTN] done. Elpased time: 8.2444 secs.
+[HS-BLASTN] 1824432 queries processed.
+
+[CMD] hs-blastn align -outfmt 6 -num_threads 8 -evalue 1e-3 -word_size 28 -query /dev/stdin -db /pipeline/database/midasv3/midasdb_localdb/markers/phyeco/phyeco.fa 
+1786242964.3:  MIDAS2::map_reads_hsblastn::finish
+1786242964.3:  MIDAS2::read in marker information::start
+1786242964.8:  MIDAS2::read in marker information::finish
+1786242964.8:  MIDAS2::find_best_hits::start
+1786242964.8:    total alignments: 2602
+1786242964.8:  MIDAS2::find_best_hits::finish
+1786242964.8:  MIDAS2::assign_unique::start
+1786242964.8:   uniquely mapped reads: 1571
+1786242964.8:   ambiguously mapped reads: 13
+1786242964.8:  MIDAS2::assign_unique::finish
+1786242964.8:  MIDAS2::assign_non_unique::start
+1786242964.8:  MIDAS2::assign_non_unique::finish
+1786242964.8:  MIDAS2::normalize_counts::start
+1786242964.8:    total marker-gene coverage 19.876
+1786242964.8:  MIDAS2::normalize_counts::finish

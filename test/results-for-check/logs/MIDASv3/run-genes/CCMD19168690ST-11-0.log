@@ -1,0 +1,84 @@
+1786243227.2:  Single sample pan-gene copy number variant calling in subcommand run_genes with args
+1786243227.2:  {
+1786243227.2:      "subcommand": "run_genes",
+1786243227.2:      "force": false,
+1786243227.2:      "debug": false,
+1786243227.2:      "zzz_worker_mode": false,
+1786243227.2:      "batch_branch": "master",
+1786243227.2:      "batch_memory": 378880,
+1786243227.2:      "batch_vcpus": 48,
+1786243227.2:      "batch_queue": "pairani",
+1786243227.2:      "batch_ecr_image": "pairani:latest",
+1786243227.2:      "midas_outdir": "/pipeline/results/02-variant-calling/SV/CNV/single_sample",
+1786243227.2:      "sample_name": "CCMD19168690ST-11-0",
+1786243227.2:      "r1": "/pipeline/results/01-QC/CCMD19168690ST-11-0/CCMD19168690ST-11-0_paired_1.fastq",
+1786243227.2:      "r2": "/pipeline/results/01-QC/CCMD19168690ST-11-0/CCMD19168690ST-11-0_paired_2.fastq",
+1786243227.2:      "prebuilt_bowtie2_indexes": "/pipeline/results/02-variant-calling/SV/CNV/across_sample/bt2_indexes/pangenomes",
+1786243227.2:      "prebuilt_bowtie2_species": "/pipeline/results/02-variant-calling/SV/CNV/across_sample/bt2_indexes/pangenomes.species",
+1786243227.2:      "midasdb_name": "localdb",
+1786243227.2:      "midasdb_dir": "/pipeline/database/midasv3/midasdb_localdb",
+1786243227.2:      "species_list": null,
+1786243227.2:      "select_by": "median_marker_coverage",
+1786243227.2:      "select_threshold": "-1",
+1786243227.2:      "aln_speed": "very-sensitive",
+1786243227.2:      "aln_mode": "global",
+1786243227.2:      "aln_interleaved": false,
+1786243227.2:      "fragment_length": 500,
+1786243227.2:      "max_reads": null,
+1786243227.2:      "aln_extra_flags": "",
+1786243227.2:      "aln_mapid": 94.0,
+1786243227.2:      "aln_mapq": 0,
+1786243227.2:      "aln_readq": 20,
+1786243227.2:      "aln_cov": 0.75,
+1786243227.2:      "total_depth": 1,
+1786243227.2:      "num_cores": 8,
+1786243227.2:      "prune_centroids": false,
+1786243227.2:      "prune_method": "max",
+1786243227.2:      "prune_cutoff": 0.4,
+1786243227.2:      "remove_singleton": false,
+1786243227.2:      "alignment_only": false,
+1786243227.2:      "cluster_level": "99",
+1786243227.2:      "remove_bam": false,
+1786243227.2:      "remove_bt2_index": false,
+1786243227.2:      "skip_species_summary": false
+1786243227.2:  }
+1786243227.2:  Create OUTPUT directory for CCMD19168690ST-11-0.
+1786243227.2:  'rm -rf /pipeline/results/02-variant-calling/SV/CNV/single_sample/CCMD19168690ST-11-0/genes'
+1786243227.2:  'mkdir -p /pipeline/results/02-variant-calling/SV/CNV/single_sample/CCMD19168690ST-11-0/genes'
+1786243227.2:  Create TEMP directory for CCMD19168690ST-11-0.
+1786243227.2:  'rm -rf /pipeline/results/02-variant-calling/SV/CNV/single_sample/CCMD19168690ST-11-0/temp/genes'
+1786243227.2:  'mkdir -p /pipeline/results/02-variant-calling/SV/CNV/single_sample/CCMD19168690ST-11-0/temp/genes'
+1786243227.2:  Use existing Bowtie2 indexes /pipeline/results/02-variant-calling/SV/CNV/across_sample/bt2_indexes/pangenomes
+1786243227.2:  Read in list of species used to build provided bowtie2 indexes /pipeline/results/02-variant-calling/SV/CNV/across_sample/bt2_indexes/pangenomes
+1786243227.2:  2
+1786243227.3:  Use existing Bowtie2 indexes /pipeline/results/02-variant-calling/SV/CNV/across_sample/bt2_indexes/pangenomes
+1786243227.3:  MIDAS2::build_bowtie2db::finish
+1786243227.3:  MIDAS2::bowtie2_align::start
+1786243227.3:  'bowtie2 --no-unal -x /pipeline/results/02-variant-calling/SV/CNV/across_sample/bt2_indexes/pangenomes -X 500  --end-to-end --very-sensitive  --threads 8 -q -1 /pipeline/results/01-QC/CCMD19168690ST-11-0/CCMD19168690ST-11-0_paired_1.fastq -2 /pipeline/results/01-QC/CCMD19168690ST-11-0/CCMD19168690ST-11-0_paired_2.fastq |                 samtools view --threads 8 -b - |                 samtools sort --threads 8 -o /pipeline/results/02-variant-calling/SV/CNV/single_sample/CCMD19168690ST-11-0/genes/CCMD19168690ST-11-0.bam'
+550273 reads; of these:
+  550273 (100.00%) were paired; of these:
+    431581 (78.43%) aligned concordantly 0 times
+    91363 (16.60%) aligned concordantly exactly 1 time
+    27329 (4.97%) aligned concordantly >1 times
+    ----
+    431581 pairs aligned concordantly 0 times; of these:
+      5609 (1.30%) aligned discordantly 1 time
+    ----
+    425972 pairs aligned 0 times concordantly or discordantly; of these:
+      851944 mates make up the pairs; of these:
+        809439 (95.01%) aligned 0 times
+        28315 (3.32%) aligned exactly 1 time
+        14190 (1.67%) aligned >1 times
+26.45% overall alignment rate
+[bam_sort_core] merging from 0 files and 8 in-memory blocks...
+1786243237.9:  'samtools index -@ 8 /pipeline/results/02-variant-calling/SV/CNV/single_sample/CCMD19168690ST-11-0/genes/CCMD19168690ST-11-0.bam'
+1786243238.0:  "samtools idxstats -@ 8 /pipeline/results/02-variant-calling/SV/CNV/single_sample/CCMD19168690ST-11-0/genes/CCMD19168690ST-11-0.bam | awk '$3 > 0 {print $1}' > /pipeline/results/02-variant-calling/SV/CNV/single_sample/CCMD19168690ST-11-0/genes/CCMD19168690ST-11-0.bam.idxstats"
+1786243238.2:  MIDAS2::bowtie2_align::finish
+1786243238.2:  MIDAS2::prepare_species::start
+1786243238.4:  MIDAS2::prepare_species::finish
+1786243238.4:  MIDAS2::multiprocessing_map::start
+1786243241.9:  MIDAS2::multiprocessing_map::finish
+1786243241.9:  median marker depth for 100037 is 4.174672
+1786243241.9:  median marker depth for 100004 is 3.478673
+1786243241.9:  MIDAS2::write_species_summary::start
+1786243241.9:  MIDAS2::write_species_summary::finish

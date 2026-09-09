@@ -1,0 +1,18 @@
+Setting the index via positional argument will be deprecated in a future release. Please use -x option instead.
+# reads processed: 550273
+# reads with at least one alignment: 109532 (19.91%)
+# reads that failed to align: 440741 (80.09%)
+Reported 339764 paired-end alignments
+
+Running PhaseFinder ratio in PE mode.
+****** NOW RUNNING COMMAND ******:  bowtie -X 2000 -p 8 -a --best --strata /pipeline/database/PhaseFinder/Phasefinder_reference.fasta -1 /pipeline/results/01-QC/CCMD19168690ST-11-0/CCMD19168690ST-11-0_paired_1.fastq -2 /pipeline/results/01-QC/CCMD19168690ST-11-0/CCMD19168690ST-11-0_paired_2.fastq -S|        samtools view -@ 8 -F 4 -h |sam2bed -d|sortBed |cut -f 1-4,7 > /pipeline/results/02-variant-calling/SV/Inversion/single-sample/CCMD19168690ST-11-0.bed 
+****** NOW RUNNING COMMAND ******: 
+        awk -v out=/pipeline/results/02-variant-calling/SV/Inversion/single-sample/CCMD19168690ST-11-0.phasefinder.tqtrfdh9/invinfo 'BEGIN{OFS="\t"}{print $1"_F",$2,$3,$4,$5"\n"$1"_R",$2,$3,$4,$5 > out".bed";print $1"_F", $6 "\n" $1"_R",$6 > out".info" }' /pipeline/database/PhaseFinder/Phasefinder_reference.fasta.info.tab
+        awk '{print $1"\t"$2"\t"$3"\t1\n"$1"\t"$4"\t"$5"\t1\n"$1"\t"$2"\t"$5"\t-1"}' /pipeline/results/02-variant-calling/SV/Inversion/single-sample/CCMD19168690ST-11-0.phasefinder.tqtrfdh9/invinfo.bed |slopBed -b 10 -g /pipeline/results/02-variant-calling/SV/Inversion/single-sample/CCMD19168690ST-11-0.phasefinder.tqtrfdh9/invinfo.info |        sortBed|intersectBed -c -f 1 -a - -b /pipeline/results/02-variant-calling/SV/Inversion/single-sample/CCMD19168690ST-11-0.bed |awk '{a[$1]+=$4*$5}END{for(i in a){print i"\t"a[i]}}'|sort -k1,1|sed 's/_F\t/\tF\t/;s/_R\t/\tR\t/' >/pipeline/results/02-variant-calling/SV/Inversion/single-sample/CCMD19168690ST-11-0.span.count
+****** NOW RUNNING COMMAND ******: 
+        cat /pipeline/results/02-variant-calling/SV/Inversion/single-sample/CCMD19168690ST-11-0.bed|awk 'BEGIN{OFS="\t"}{print $4,$5,$1}' \
+        | sed 's/_\(.\)$/\t\1/g' \
+        | awk '{if(int($2/64)%2==1){P=1}else{P=2};print $1"\t"P"\t"$3"\t"$4}' > /pipeline/results/02-variant-calling/SV/Inversion/single-sample/CCMD19168690ST-11-0.tab
+        cut -f 1-3 /pipeline/results/02-variant-calling/SV/Inversion/single-sample/CCMD19168690ST-11-0.tab | sort | uniq -u | fgrep -f - /pipeline/results/02-variant-calling/SV/Inversion/single-sample/CCMD19168690ST-11-0.tab | cut -f 3-4 | sort | uniq -c | awk '{print $2"\t"$3"\t"$1}' > /pipeline/results/02-variant-calling/SV/Inversion/single-sample/CCMD19168690ST-11-0.pe.count
+        
+****** NOW RUNNING COMMAND ******: rm -f /pipeline/results/02-variant-calling/SV/Inversion/single-sample/CCMD19168690ST-11-0.bed /pipeline/results/02-variant-calling/SV/Inversion/single-sample/CCMD19168690ST-11-0.tab /pipeline/results/02-variant-calling/SV/Inversion/single-sample/CCMD19168690ST-11-0.span.count /pipeline/results/02-variant-calling/SV/Inversion/single-sample/CCMD19168690ST-11-0.pe.count

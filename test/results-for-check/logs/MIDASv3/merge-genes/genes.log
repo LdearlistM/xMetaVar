@@ -1,0 +1,29 @@
+1786243281.2:  Across samples pan-gene CNV merging in subcommand merge_genes with args
+1786243281.2:  {
+1786243281.2:      "subcommand": "merge_genes",
+1786243281.2:      "force": false,
+1786243281.2:      "debug": false,
+1786243281.2:      "zzz_worker_mode": false,
+1786243281.2:      "batch_branch": "master",
+1786243281.2:      "batch_memory": 378880,
+1786243281.2:      "batch_vcpus": 48,
+1786243281.2:      "batch_queue": "pairani",
+1786243281.2:      "batch_ecr_image": "pairani:latest",
+1786243281.2:      "midas_outdir": "/pipeline/results/02-variant-calling/SV/CNV/across_sample",
+1786243281.2:      "samples_list": "/pipeline/results/02-variant-calling/SV/CNV/samples_list.tsv",
+1786243281.2:      "species_list": null,
+1786243281.2:      "genome_depth": 0.4,
+1786243281.2:      "sample_counts": 2,
+1786243281.2:      "midasdb_name": "localdb",
+1786243281.2:      "midasdb_dir": "/pipeline/database/midasv3/midasdb_localdb",
+1786243281.2:      "min_copy": 0.35,
+1786243281.2:      "cluster_level_in": "99",
+1786243281.2:      "cluster_level_out": "80",
+1786243281.2:      "num_cores": 8
+1786243281.2:  }
+1786243281.2:  2 species pass the filter
+1786243281.2:  MIDAS2::prepare_species::start
+1786243281.3:  MIDAS2::prepare_species::finish
+1786243281.3:  Create OUTPUT directory.
+1786243281.3:  'rm -rf /pipeline/results/02-variant-calling/SV/CNV/across_sample/genes'
+1786243281.3:  'mkdir -p /pipeline/results/02-variant-calling/SV/CNV/across_sample/genes'

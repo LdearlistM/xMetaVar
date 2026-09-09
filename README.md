@@ -2,8 +2,6 @@
 
 <img src="./images/graphabstract.png" width="520" alt="xMetaVar graphical abstract">
 
-<!-- TODO[image]: replace ./images/graphabstract.png with the final Fig. 1 overview from the revised manuscript -->
-
 ### Scalable harmonization and interpretation of multi-layer microbial genomic variation across metagenomic cohorts
 
 [![Backend Image](https://img.shields.io/badge/backend%20image-ghcr.io%2Fldearlistm%2Fxmetavar%3A1.0.1-2496ED?logo=docker)](https://github.com/ldearlistm/xMetaVar/pkgs/container/xmetavar)
@@ -29,20 +27,35 @@ xMetaVar adopts a **two-stage local–web design** that separates computationall
 
 ## Table of Contents
 
-- [Features](#features)
-- [Which way should I use xMetaVar?](#which-way-should-i-use-xmetavar)
 - [Part I — Local variant-calling workflow](#part-i--local-variant-calling-workflow)
   - [1. Installation](#1-installation)
+    - [1.1 Hardware requirements](#11-hardware-requirements)
+    - [1.2 Install Docker](#12-install-docker)
+    - [1.3 Pull the backend image](#13-pull-the-backend-image)
+    - [1.4 Obtain the reference database](#14-obtain-the-reference-database)
+    - [1.5 Quick test with bundled example data](#15-quick-test-with-bundled-example-data)
   - [2. Prepare input data](#2-prepare-input-data)
+    - [2.1 Project layout](#21-project-layout)
+    - [2.2 The sample sheet (`samples.tsv`)](#22-the-sample-sheet-samplestsv)
+    - [2.3 The configuration file (`config.yaml`)](#23-the-configuration-file-configyaml)
   - [3. Run the workflow](#3-run-the-workflow)
+    - [3.1 Mount mapping](#31-mount-mapping)
+    - [3.2 Run everything (`all`)](#32-run-everything-all)
+    - [3.3 Modular target keys](#33-modular-target-keys)
+    - [3.4 Cores and extra Snakemake arguments](#34-cores-and-extra-snakemake-arguments)
+    - [3.5 HPC / Slurm](#35-hpc--slurm)
   - [4. Output files](#4-output-files)
-  - [5. Usage tips & troubleshooting](#5-usage-tips--troubleshooting)
+  - [5. Usage tips \& troubleshooting](#5-usage-tips--troubleshooting)
 - [Part II — Web-based interpretation](#part-ii--web-based-interpretation)
+    - [Step-by-step website usage](#step-by-step-website-usage)
 - [Part III — Self-host the web frontend](#part-iii--self-host-the-web-frontend)
-- [Reference database](#reference-database)
-- [Citation](#citation)
-- [License](#license)
-- [Contact](#contact)
+    - [Prerequisites](#prerequisites)
+    - [Start the frontend](#start-the-frontend)
+  - [Reference database](#reference-database)
+    - [Custom reference panel](#custom-reference-panel)
+  - [Citation](#citation)
+  - [License](#license)
+  - [Contact](#contact)
 
 ---
 
@@ -67,7 +80,7 @@ xMetaVar adopts a **two-stage local–web design** that separates computationall
 - **Modular execution** — run the full pipeline or any combination of variant layers; regenerate deliverables from existing results without re-calling.
 - **Reproducible by default** — one Docker image, fixed Conda environments, retained logs and QC summaries.
 
-<!-- TODO[figure]: insert a compact variant-layer / architecture schematic here (Fig. 1B–D from the manuscript). Keep images under ./images/ and reference them with relative paths. -->
+<img src="./images/GM-Fig1.png" width="780" alt="xMetaVar local–web framework: from raw metagenomic reads through quality control and multi-type variant calling to standardized cohort matrices and interactive interpretation">
 
 ---
 
@@ -136,13 +149,41 @@ Download the pre-compiled xMetaVar reference database from Figshare and unpack i
 
 ### 1.5 Quick test with bundled example data
 
-A minimal paired-end example (sample sheets, `config.yaml` and demo FASTQs) is provided under [`test/`](./test):
+A minimal paired-end example (sample sheets, `config.yaml` and demo FASTQs) is provided under [`test/`](./test): `test/example_pe_samples.tsv`, `test/example_se_samples.tsv`, `test/config.yaml`, and `test/rawdata/`.
+
+Adapt the host paths below to your own project layout (the in-container paths after each `:` must stay unchanged). Dry-run first with the trailing `-n`, then remove it to execute.
+
+Step 1 — run the selected variant modules (MIDAS SNV + InDel + all SV layers; the optional GT-Pro layer is omitted):
 
 ```bash
-# test/example_pe_samples.tsv, test/example_se_samples.tsv, test/config.yaml, test/rawdata/
+docker run --rm \
+  -v "/path/to/project/config.yaml:/pipeline/config.yaml" \
+  -v "/path/to/project/sample-pe.tsv:/pipeline/samples.tsv" \
+  -v "/path/to/project/results:/pipeline/results" \
+  -v "/path/to/project/rawdata:/pipeline/rawdata" \
+  -v "/path/to/database:/pipeline/database" \
+  -e XMETAVAR_CORES=16 \
+  -e XMETAVAR_CHOWN_TO="$(id -u):$(id -g)" \
+  ghcr.io/ldearlistm/xmetavar:1.0.1 snp_midas indel sv_sgvfinder sv_inversion sv_midas \
+  -- --printshellcmds --rerun-incomplete --keep-going -n
 ```
 
-<!-- TODO: add a verified copy-paste command that runs the test/ example end-to-end once paths are finalized (dry-run first with -n). -->
+Step 2 — assemble web-ready deliverables from the results:
+
+```bash
+docker run --rm \
+  -v "/path/to/project/config.yaml:/pipeline/config.yaml" \
+  -v "/path/to/project/sample-pe.tsv:/pipeline/samples.tsv" \
+  -v "/path/to/project/results:/pipeline/results" \
+  -v "/path/to/project/rawdata:/pipeline/rawdata" \
+  -v "/path/to/database:/pipeline/database" \
+  -e XMETAVAR_CORES=16 \
+  -e XMETAVAR_CHOWN_TO="$(id -u):$(id -g)" \
+  ghcr.io/ldearlistm/xmetavar:1.0.1 deliverables \
+  -- --printshellcmds --rerun-incomplete --keep-going -n
+```
+
+> Drop the trailing `-n` to actually execute. Both steps use the same five mounts.
 
 ---
 
@@ -304,7 +345,42 @@ Results are written under `results/02-variant-calling/` (plus `results/logs/`). 
 
 Each layer ships both a **native/near-native matrix** (module-specific values) and a **standardized matrix** (variant-type-specific binary or scaled encoding), together with an output manifest and feature annotation linking every feature to its module, variant class, species, reference locus and gene/product.
 
-<!-- TODO: document the exact deliverables/ folder layout and the web-upload file set once finalized (which matrices + annotation + metadata the web server expects). -->
+### 4.1 Result directory at a glance
+
+After running the variant modules followed by `deliverables`, the results directory is organized as below. Intermediate single-sample files, compressed `.lz4` caches, the Snakemake `benchmarks/` folder and runtime `logs/` are omitted for clarity:
+
+```text
+results/
+├── 01-QC/                                    # Quality-controlled, host-depleted reads + QC logs
+├── 02-variant-calling/                       # Per-layer harmonized outputs
+│   ├── SNP/MIDAS/across_sample/
+│   │   ├── merge.snps_freqs.tsv              # SNV minor-allele-frequency matrix
+│   │   └── merge.snps_info.tsv               # SNV locus metadata
+│   ├── INDEL/across-sample/
+│   │   ├── indel.tsv                         # InDel presence/absence matrix
+│   │   └── indel_anno.tsv                    # InDel locus / gene annotation
+│   └── SV/
+│       ├── dSV-vSV/across-sample/            # dsgv.csv / dsgv_anno.tsv, vsgv.csv / vsgv_anno.tsv
+│       ├── Inversion/across-sample/          # inversion.tsv, inversion_anno.tsv
+│       └── CNV/across_sample/                # merge.genes_copynum.tsv
+├── 03-webserver-inputs/                      # ★ UPLOAD THIS FOLDER TO THE WEB SERVER
+│   ├── snps_freqs.tsv, snps_info.tsv
+│   ├── indel.tsv, indel_anno.tsv
+│   ├── dsgv.csv, dsgv_anno.tsv, vsgv.csv, vsgv_anno.tsv
+│   ├── inversion.tsv, inversion_anno.tsv
+│   └── genes_copynum.tsv
+├── 04-summary/                               # Integrated matrices and manifests
+│   ├── xmetavar_feature_matrix.tsv          # Unified sample-by-feature matrix
+│   ├── xmetavar_scaled_matrix.tsv            # Standardized / scaled matrix
+│   ├── variant_feature_manifest.tsv          # Feature metadata (class / species / locus / gene)
+│   ├── output_manifest.tsv, matrix_overview.tsv, sample_variant_burden.tsv
+│   └── type_matrices/                        # One matrix per type: SNP / INDEL / dSV / vSV / Inversion / CNV
+└── 05-report/
+    ├── xmetavar_report.html                  # Self-contained HTML report
+    └── xmetavar_report.md
+```
+
+**The `03-webserver-inputs/` folder is exactly the file set you upload to the web server** (Part II), together with your sample-metadata table. It collects the finalized cross-sample matrices under web-ready names, so you do not need to navigate `02-variant-calling/`. Raw reads are never uploaded.
 
 To visualize these matrices (landscape summaries, group comparisons, UpSet cross-layer overlap, phenotype association, Boruta/SHAP prioritization, JBrowse locus inspection), upload them to the web layer — see Part II.
 
@@ -374,8 +450,6 @@ docker run -d \
 
 Open <http://localhost:3000>.
 
-<!-- TODO[deploy]: confirm the exact in-container mount paths for public/shared_data against server.js. -->
-
 ---
 
 ## Reference database
@@ -384,7 +458,7 @@ Open <http://localhost:3000>.
 
 The default framework covers **43 prevalent human-gut bacterial species** (selected from curatedMetagenomicData at mean relative abundance > 0.5% and prevalence > 50%), with representative genomes and gene annotations from BV-BRC cross-checked against NCBI RefSeq. Module-specific indices (Bowtie 2, MIDAS, BWA, SGVFinder2, PhaseFinder) are pre-built on this common framework and shipped as a single archive:
 
-- **Download (pre-compiled):** [Database for xMetaVar — Figshare](https://doi.org/10.6084/m9.figshare.30846347) (4.60 GB, `xMetaVar_database.tar.xz`)
+- **Download (pre-compiled):** [Database for xMetaVar — Figshare](https://doi.org/10.6084/m9.figshare.30846347) — 4.60 GB compressed (`xMetaVar_database.tar.xz`), ~14.9 GB unpacked
 - **Unpack:** `tar -xvf xMetaVar_database.tar.xz`, then mount the resulting `database/` directory to `/pipeline/database` ([Section 3.1](#31-mount-mapping)) and keep the `*_db`/`*_path` fields in `config.yaml` consistent with it.
 
 **GT-Pro catalog not included.** As noted in Features, the optional GT-Pro predefined-SNP catalog is not part of this archive. To use the `snp_gtpro` layer, download it from the [GT-Pro repository](https://github.com/zjshi/gt-pro) following its official instructions and set `GT_Pro_db`/`GT_dict_path` in `config.yaml`.
@@ -392,8 +466,6 @@ The default framework covers **43 prevalent human-gut bacterial species** (selec
 ### Custom reference panel
 
 xMetaVar also supports a custom panel: provide representative genomes + GFF annotations and build module-specific indices following each tool's official procedure, then update `config.yaml`. Catalog-based modules (GT-Pro, PhaseFinder) keep their predefined locus definitions and act as complementary layers.
-
-<!-- TODO[database]: record the archive checksums (md5/sha256) and exact unpacked size. -->
 
 ---
 

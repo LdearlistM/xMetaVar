@@ -1,0 +1,32 @@
+Decompressing gzipped file ...
+
+Decompressing gzipped file ...
+
+Reformatting file sequence identifiers ...
+
+Reformatting file sequence identifiers ...
+
+Initial number of reads ( /pipeline/results/01-QC/CCMD19168690ST-11-0/reformatted_identifiersqskx62_u_decompressed_r5fznx6i_CCMD19168690ST-11-0_1 ): 606582.0
+Initial number of reads ( /pipeline/results/01-QC/CCMD19168690ST-11-0/reformatted_identifierswp6_9szu_decompressed_mywhsw1w_CCMD19168690ST-11-0_2 ): 606582.0
+Running Trimmomatic ... 
+Total reads after trimming ( /pipeline/results/01-QC/CCMD19168690ST-11-0/CCMD19168690ST-11-0.trimmed.1.fastq ): 550436.0
+Total reads after trimming ( /pipeline/results/01-QC/CCMD19168690ST-11-0/CCMD19168690ST-11-0.trimmed.2.fastq ): 550436.0
+Total reads after trimming ( /pipeline/results/01-QC/CCMD19168690ST-11-0/CCMD19168690ST-11-0.trimmed.single.1.fastq ): 37913.0
+Total reads after trimming ( /pipeline/results/01-QC/CCMD19168690ST-11-0/CCMD19168690ST-11-0.trimmed.single.2.fastq ): 14261.0
+Decontaminating ...
+Running bowtie2 ... 
+Total reads after removing those found in reference database ( /pipeline/results/01-QC/CCMD19168690ST-11-0/CCMD19168690ST-11-0_hg_38_bowtie2_paired_clean_1.fastq ): 550273.0
+Total reads after removing those found in reference database ( /pipeline/results/01-QC/CCMD19168690ST-11-0/CCMD19168690ST-11-0_hg_38_bowtie2_paired_clean_2.fastq ): 550273.0
+Total reads after merging results from multiple databases ( /pipeline/results/01-QC/CCMD19168690ST-11-0/CCMD19168690ST-11-0_paired_1.fastq ): 550273.0
+Total reads after merging results from multiple databases ( /pipeline/results/01-QC/CCMD19168690ST-11-0/CCMD19168690ST-11-0_paired_2.fastq ): 550273.0
+Total reads after removing those found in reference database ( /pipeline/results/01-QC/CCMD19168690ST-11-0/CCMD19168690ST-11-0_hg_38_bowtie2_unmatched_1_clean.fastq ): 37906.0
+Total reads after merging results from multiple databases ( /pipeline/results/01-QC/CCMD19168690ST-11-0/CCMD19168690ST-11-0_unmatched_1.fastq ): 37906.0
+Total reads after removing those found in reference database ( /pipeline/results/01-QC/CCMD19168690ST-11-0/CCMD19168690ST-11-0_hg_38_bowtie2_unmatched_2_clean.fastq ): 14257.0
+Total reads after merging results from multiple databases ( /pipeline/results/01-QC/CCMD19168690ST-11-0/CCMD19168690ST-11-0_unmatched_2.fastq ): 14257.0
+
+Final output files created: 
+/pipeline/results/01-QC/CCMD19168690ST-11-0/CCMD19168690ST-11-0_paired_1.fastq
+/pipeline/results/01-QC/CCMD19168690ST-11-0/CCMD19168690ST-11-0_paired_2.fastq
+/pipeline/results/01-QC/CCMD19168690ST-11-0/CCMD19168690ST-11-0_unmatched_1.fastq
+/pipeline/results/01-QC/CCMD19168690ST-11-0/CCMD19168690ST-11-0_unmatched_2.fastq
+

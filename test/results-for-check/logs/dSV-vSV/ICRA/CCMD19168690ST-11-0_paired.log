@@ -1,0 +1,45 @@
+2026-08-09 02:34:25 [INFO] Starting SGVFinder2 ICRA script.
+2026-08-09 02:34:25 [INFO] Input R1: /pipeline/results/01-QC/CCMD19168690ST-11-0/CCMD19168690ST-11-0_paired_1.fastq
+2026-08-09 02:34:25 [INFO] Input R2: /pipeline/results/01-QC/CCMD19168690ST-11-0/CCMD19168690ST-11-0_paired_2.fastq
+2026-08-09 02:34:25 [INFO] Database path prefix: /pipeline/database/SGVFinder2/SV_db
+2026-08-09 02:34:25 [INFO] Output directory: /pipeline/results/02-variant-calling/SV/dSV-vSV/ICRA
+2026-08-09 02:34:25 [INFO] Target SMP output file: /pipeline/results/02-variant-calling/SV/dSV-vSV/ICRA/CCMD19168690ST-11-0.smp
+2026-08-09 02:34:25 [INFO] Running SGVFinder2 single_file.
+2026-08-09 02:34:25 [INFO] Running ICRA on paired-end reads!
+2026-08-09 02:34:25 [INFO] Forward- /pipeline/results/01-QC/CCMD19168690ST-11-0/CCMD19168690ST-11-0_paired_1.fastq
+2026-08-09 02:34:25 [INFO] Reverse- /pipeline/results/01-QC/CCMD19168690ST-11-0/CCMD19168690ST-11-0_paired_2.fastq
+2026-08-09 02:34:25 [INFO] --------------------------------------------
+
+2026-08-09 02:38:11 [INFO] Average read length for CCMD19168690ST-11-0_paired_1.fastq set to 130
+2026-08-09 02:38:15 [INFO] _initialize: Parameter init complete. Time: 0:00:04.474049
+2026-08-09 02:38:16 [INFO] Iteration 2 - Time: 0:00:00.336079, dPi = 1.04e-01, nPi = 17
+2026-08-09 02:38:16 [INFO] Iteration 3 - Time: 0:00:00.683661, dPi = 8.52e-02, nPi = 17
+2026-08-09 02:38:17 [INFO] Iteration 4 - Time: 0:00:01.430605, dPi = 4.03e-03, nPi = 17
+2026-08-09 02:38:17 [INFO] Iteration 5 - Time: 0:00:01.750708, dPi = 1.16e-04, nPi = 17
+2026-08-09 02:38:17 [INFO] Iteration 6 - Time: 0:00:02.074707, dPi = 5.97e-06, nPi = 17
+2026-08-09 02:38:18 [INFO] Iteration 7 - Time: 0:00:02.395984, dPi = 5.09e-07, nPi = 17
+2026-08-09 02:38:18 [INFO] Final result - Time: 0:00:02.396148
+2026-08-09 02:38:18 [INFO] this is the len of delta:
+2026-08-09 02:38:18 [INFO] 219329
+2026-08-09 02:38:19 [INFO] single_file completed. Intermediate outputs: jspi=/pipeline/results/02-variant-calling/SV/dSV-vSV/ICRA/CCMD19168690ST-11-0_paired.jspi, jsdel=/pipeline/results/02-variant-calling/SV/dSV-vSV/ICRA/CCMD19168690ST-11-0_paired.jsdel
+2026-08-09 02:38:19 [INFO] Running safe SGVFinder2 get_sample_map replacement.
+2026-08-09 02:38:19 [INFO] Running safe_get_sample_map.
+2026-08-09 02:38:19 [INFO] x_coverage: 0.01
+2026-08-09 02:38:19 [INFO] rate_param: 10
+2026-08-09 02:38:19 [INFO] bin_size: 1000
+2026-08-09 02:38:19 [INFO] Loading jsdel file: /pipeline/results/02-variant-calling/SV/dSV-vSV/ICRA/CCMD19168690ST-11-0_paired.jsdel
+2026-08-09 02:38:20 [INFO] Average read length from jsdel: 130
+2026-08-09 02:38:20 [INFO] Number of delta records: 219329
+2026-08-09 02:38:20 [INFO] Clipped ind1 count: 0
+2026-08-09 02:38:20 [INFO] Clipped ind2 count: 0
+2026-08-09 02:38:20 [INFO] Skipped dest_id count: 0
+2026-08-09 02:38:20 [INFO] Number of retained destination maps: 2
+2026-08-09 02:38:20 [INFO] safe_get_sample_map completed.
+2026-08-09 02:38:20 [INFO] Saving sample map to pickle file: /pipeline/results/02-variant-calling/SV/dSV-vSV/ICRA/CCMD19168690ST-11-0.smp
+2026-08-09 02:38:20 [INFO] Sample map successfully saved.
+2026-08-09 02:38:20 [INFO] Cleaning SGVFinder2 ICRA intermediate files.
+2026-08-09 02:38:20 [INFO] Removed intermediate file: /pipeline/results/02-variant-calling/SV/dSV-vSV/ICRA/CCMD19168690ST-11-0_paired.bam
+2026-08-09 02:38:20 [INFO] Removed intermediate file: /pipeline/results/02-variant-calling/SV/dSV-vSV/ICRA/CCMD19168690ST-11-0_paired.pmp
+2026-08-09 02:38:20 [INFO] Removed intermediate file: /pipeline/results/02-variant-calling/SV/dSV-vSV/ICRA/CCMD19168690ST-11-0_paired.jspi
+2026-08-09 02:38:20 [INFO] Removed intermediate file: /pipeline/results/02-variant-calling/SV/dSV-vSV/ICRA/CCMD19168690ST-11-0_paired.jsdel
+2026-08-09 02:38:20 [INFO] ICRA script finished successfully.

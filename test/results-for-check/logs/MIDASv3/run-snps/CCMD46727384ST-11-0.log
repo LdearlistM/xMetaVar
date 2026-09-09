@@ -1,0 +1,127 @@
+1786243314.3:  Single sample SNV calling in subcommand run_snps with args
+1786243314.3:  {
+1786243314.3:      "subcommand": "run_snps",
+1786243314.3:      "force": false,
+1786243314.3:      "debug": false,
+1786243314.3:      "zzz_worker_mode": false,
+1786243314.3:      "batch_branch": "master",
+1786243314.3:      "batch_memory": 378880,
+1786243314.3:      "batch_vcpus": 48,
+1786243314.3:      "batch_queue": "pairani",
+1786243314.3:      "batch_ecr_image": "pairani:latest",
+1786243314.3:      "midas_outdir": "/pipeline/results/02-variant-calling/SNP/MIDAS/single_sample",
+1786243314.3:      "sample_name": "CCMD46727384ST-11-0",
+1786243314.3:      "r1": "/pipeline/results/01-QC/CCMD46727384ST-11-0/CCMD46727384ST-11-0_paired_1.fastq",
+1786243314.3:      "r2": "/pipeline/results/01-QC/CCMD46727384ST-11-0/CCMD46727384ST-11-0_paired_2.fastq",
+1786243314.3:      "prebuilt_bowtie2_indexes": null,
+1786243314.3:      "prebuilt_bowtie2_species": null,
+1786243314.3:      "midasdb_name": "localdb",
+1786243314.3:      "midasdb_dir": "/pipeline/database/midasv3/midasdb_localdb",
+1786243314.3:      "species_list": null,
+1786243314.3:      "select_by": "median_marker_coverage,unique_fraction_covered",
+1786243314.3:      "select_threshold": "2,0.5",
+1786243314.3:      "aln_speed": "very-sensitive",
+1786243314.3:      "aln_mode": "global",
+1786243314.3:      "aln_interleaved": false,
+1786243314.3:      "aln_extra_flags": "",
+1786243314.3:      "fragment_length": 1000,
+1786243314.3:      "fragment_ratio": 3,
+1786243314.3:      "max_reads": null,
+1786243314.3:      "aln_mapid": 94.0,
+1786243314.3:      "aln_mapq": 10,
+1786243314.3:      "aln_readq": 20,
+1786243314.3:      "aln_cov": 0.75,
+1786243314.3:      "aln_baseq": 30,
+1786243314.3:      "aln_trim": 0,
+1786243314.3:      "paired_only": false,
+1786243314.3:      "site_depth": 2,
+1786243314.3:      "snp_maf": 0.1,
+1786243314.3:      "ignore_ambiguous": true,
+1786243314.3:      "advanced": false,
+1786243314.3:      "analysis_ready": false,
+1786243314.3:      "chunk_size": 1000000,
+1786243314.3:      "num_cores": 8,
+1786243314.3:      "remove_bam": false,
+1786243314.3:      "remove_bt2_index": false
+1786243314.3:  }
+1786243314.3:  Create OUTPUT directory for CCMD46727384ST-11-0.
+1786243314.3:  Create TEMP directory for CCMD46727384ST-11-0.
+1786243314.5:  2
+1786243314.6:  MIDAS2::design_chunks::start
+1786243314.7:  ================= Total number of compute chunks: 10
+1786243314.7:  MIDAS2::design_chunks::finish
+1786243314.7:  MIDAS2::build_bowtie2db::start
+1786243314.8:  'rm -f /pipeline/results/02-variant-calling/SNP/MIDAS/single_sample/CCMD46727384ST-11-0/bt2_indexes/snps/repgenomes.fa'
+1786243314.8:  'bowtie2-build --threads 8 /pipeline/results/02-variant-calling/SNP/MIDAS/single_sample/CCMD46727384ST-11-0/bt2_indexes/snps/repgenomes.fa /pipeline/results/02-variant-calling/SNP/MIDAS/single_sample/CCMD46727384ST-11-0/bt2_indexes/snps/repgenomes > /pipeline/results/02-variant-calling/SNP/MIDAS/single_sample/CCMD46727384ST-11-0/bt2_indexes/snps/bt2-db-build-repgenomes.log'
+Building a SMALL index
+Renaming /pipeline/results/02-variant-calling/SNP/MIDAS/single_sample/CCMD46727384ST-11-0/bt2_indexes/snps/repgenomes.3.bt2.tmp to /pipeline/results/02-variant-calling/SNP/MIDAS/single_sample/CCMD46727384ST-11-0/bt2_indexes/snps/repgenomes.3.bt2
+Renaming /pipeline/results/02-variant-calling/SNP/MIDAS/single_sample/CCMD46727384ST-11-0/bt2_indexes/snps/repgenomes.4.bt2.tmp to /pipeline/results/02-variant-calling/SNP/MIDAS/single_sample/CCMD46727384ST-11-0/bt2_indexes/snps/repgenomes.4.bt2
+Renaming /pipeline/results/02-variant-calling/SNP/MIDAS/single_sample/CCMD46727384ST-11-0/bt2_indexes/snps/repgenomes.1.bt2.tmp to /pipeline/results/02-variant-calling/SNP/MIDAS/single_sample/CCMD46727384ST-11-0/bt2_indexes/snps/repgenomes.1.bt2
+Renaming /pipeline/results/02-variant-calling/SNP/MIDAS/single_sample/CCMD46727384ST-11-0/bt2_indexes/snps/repgenomes.2.bt2.tmp to /pipeline/results/02-variant-calling/SNP/MIDAS/single_sample/CCMD46727384ST-11-0/bt2_indexes/snps/repgenomes.2.bt2
+Renaming /pipeline/results/02-variant-calling/SNP/MIDAS/single_sample/CCMD46727384ST-11-0/bt2_indexes/snps/repgenomes.rev.1.bt2.tmp to /pipeline/results/02-variant-calling/SNP/MIDAS/single_sample/CCMD46727384ST-11-0/bt2_indexes/snps/repgenomes.rev.1.bt2
+Renaming /pipeline/results/02-variant-calling/SNP/MIDAS/single_sample/CCMD46727384ST-11-0/bt2_indexes/snps/repgenomes.rev.2.bt2.tmp to /pipeline/results/02-variant-calling/SNP/MIDAS/single_sample/CCMD46727384ST-11-0/bt2_indexes/snps/repgenomes.rev.2.bt2
+1786243317.8:  MIDAS2::build_bowtie2db::finish
+1786243317.8:  MIDAS2::bowtie2_align::start
+1786243317.8:  'bowtie2 --no-unal -x /pipeline/results/02-variant-calling/SNP/MIDAS/single_sample/CCMD46727384ST-11-0/bt2_indexes/snps/repgenomes -X 1000  --end-to-end --very-sensitive  --threads 8 -q -1 /pipeline/results/01-QC/CCMD46727384ST-11-0/CCMD46727384ST-11-0_paired_1.fastq -2 /pipeline/results/01-QC/CCMD46727384ST-11-0/CCMD46727384ST-11-0_paired_2.fastq |                 samtools view --threads 8 -b - |                 samtools sort --threads 8 -o /pipeline/results/02-variant-calling/SNP/MIDAS/single_sample/CCMD46727384ST-11-0/snps/CCMD46727384ST-11-0.bam'
+912216 reads; of these:
+  912216 (100.00%) were paired; of these:
+    773376 (84.78%) aligned concordantly 0 times
+    133908 (14.68%) aligned concordantly exactly 1 time
+    4932 (0.54%) aligned concordantly >1 times
+    ----
+    773376 pairs aligned concordantly 0 times; of these:
+      719 (0.09%) aligned discordantly 1 time
+    ----
+    772657 pairs aligned 0 times concordantly or discordantly; of these:
+      1545314 mates make up the pairs; of these:
+        1539610 (99.63%) aligned 0 times
+        4693 (0.30%) aligned exactly 1 time
+        1011 (0.07%) aligned >1 times
+15.61% overall alignment rate
+[bam_sort_core] merging from 0 files and 8 in-memory blocks...
+1786243326.5:  'samtools index -@ 8 /pipeline/results/02-variant-calling/SNP/MIDAS/single_sample/CCMD46727384ST-11-0/snps/CCMD46727384ST-11-0.bam'
+1786243326.5:  MIDAS2::bowtie2_align::finish
+1786243326.5:  MIDAS2::filter_bam::start
+1786243326.5:    MIDAS2::filter_bam_by_single_read::100004-0::start filter_bam_by_single_read
+1786243326.5:    MIDAS2::filter_bam_by_single_read::100037-0::start filter_bam_by_single_read
+1786243328.1:    MIDAS2::filter_bam_by_single_read::100004-0::finish filter_bam_by_single_read
+1786243328.7:    MIDAS2::filter_bam_by_single_read::100037-0::finish filter_bam_by_single_read
+1786243328.7:  'samtools sort -@ 4 -o /pipeline/results/02-variant-calling/SNP/MIDAS/single_sample/CCMD46727384ST-11-0/temp/snps/100004/100004.sorted.bam /pipeline/results/02-variant-calling/SNP/MIDAS/single_sample/CCMD46727384ST-11-0/temp/snps/100004/100004.bam'
+1786243328.7:  'samtools sort -@ 4 -o /pipeline/results/02-variant-calling/SNP/MIDAS/single_sample/CCMD46727384ST-11-0/temp/snps/100037/100037.sorted.bam /pipeline/results/02-variant-calling/SNP/MIDAS/single_sample/CCMD46727384ST-11-0/temp/snps/100037/100037.bam'
+[bam_sort_core] merging from 0 files and 4 in-memory blocks...
+[bam_sort_core] merging from 0 files and 4 in-memory blocks...
+1786243329.2:  'samtools index -@ 4 /pipeline/results/02-variant-calling/SNP/MIDAS/single_sample/CCMD46727384ST-11-0/temp/snps/100004/100004.sorted.bam'
+1786243329.2:  'samtools index -@ 4 /pipeline/results/02-variant-calling/SNP/MIDAS/single_sample/CCMD46727384ST-11-0/temp/snps/100037/100037.sorted.bam'
+1786243329.3:  MIDAS2::filter_bam::finish
+1786243329.3:  MIDAS2::multiprocessing_map::start
+1786243329.3:    MIDAS2::process_chunk_of_sites::100037-0::start compute_pileup_per_chunk
+1786243329.3:    MIDAS2::process_chunk_of_sites::100037-1::start compute_pileup_per_chunk
+1786243329.3:    MIDAS2::process_chunk_of_sites::100037-2::start compute_pileup_per_chunk
+1786243329.3:    MIDAS2::process_chunk_of_sites::100037-3::start compute_pileup_per_chunk
+1786243329.3:    MIDAS2::process_chunk_of_sites::100037-4::start compute_pileup_per_chunk
+1786243329.3:    MIDAS2::process_chunk_of_sites::100004-0::start compute_pileup_per_chunk
+1786243329.3:    MIDAS2::process_chunk_of_sites::100004-1::start compute_pileup_per_chunk
+1786243329.3:    MIDAS2::process_chunk_of_sites::100004-2::start compute_pileup_per_chunk
+1786243329.9:    MIDAS2::process_chunk_of_sites::100037-4::finish compute_pileup_per_chunk
+1786243329.9:    MIDAS2::process_chunk_of_sites::100004-3::start compute_pileup_per_chunk
+1786243331.7:    MIDAS2::process_chunk_of_sites::100004-2::finish compute_pileup_per_chunk
+1786243331.7:    MIDAS2::process_chunk_of_sites::100004-4::start compute_pileup_per_chunk
+1786243331.7:    MIDAS2::process_chunk_of_sites::100037-3::finish compute_pileup_per_chunk
+1786243331.7:    MIDAS2::process_chunk_of_sites::100037--1::wait merge_chunks_per_species
+1786243331.7:    MIDAS2::process_chunk_of_sites::100004-0::finish compute_pileup_per_chunk
+1786243331.7:    MIDAS2::process_chunk_of_sites::100004--1::wait merge_chunks_per_species
+1786243331.8:    MIDAS2::process_chunk_of_sites::100004-1::finish compute_pileup_per_chunk
+1786243332.0:    MIDAS2::process_chunk_of_sites::100037-2::finish compute_pileup_per_chunk
+1786243332.1:    MIDAS2::process_chunk_of_sites::100037-1::finish compute_pileup_per_chunk
+1786243332.2:    MIDAS2::process_chunk_of_sites::100004-3::finish compute_pileup_per_chunk
+1786243332.2:    MIDAS2::process_chunk_of_sites::100037--1::start merge_chunks_per_species
+1786243332.3:    MIDAS2::process_chunk_of_sites::100037-0::finish compute_pileup_per_chunk
+1786243332.3:  Deleting temporary sliced pileup files for 100037.
+1786243332.3:    MIDAS2::process_chunk_of_sites::100037--1::finish merge_chunks_per_species
+1786243333.4:    MIDAS2::process_chunk_of_sites::100004--1::start merge_chunks_per_species
+1786243333.4:    MIDAS2::process_chunk_of_sites::100004-4::finish compute_pileup_per_chunk
+1786243333.4:  Deleting temporary sliced pileup files for 100004.
+1786243333.5:    MIDAS2::process_chunk_of_sites::100004--1::finish merge_chunks_per_species
+1786243333.5:  MIDAS2::multiprocessing_map::finish
+1786243333.5:  MIDAS2::write_species_pileup_summary::start
+1786243333.5:  MIDAS2::write_species_pileup_summary::finish

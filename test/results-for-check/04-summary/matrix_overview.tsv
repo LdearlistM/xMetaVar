@@ -1,0 +1,2 @@
+n_samples	n_features	native_n_values	native_n_nonzero_values	native_nonzero_fraction	native_sparsity	scaled_n_values	scaled_n_positive_values	scaled_positive_fraction	scaled_sparsity	vsv_event_abs_threshold	cnv_event_copy_threshold
+2	7758	15516	13724	0.8845063160608404	0.1154936839391596	15516	11802	0.7606341840680588	0.23936581593194117	2.0	0.5

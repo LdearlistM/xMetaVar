@@ -1,0 +1,3 @@
+[xMetaVar] Webserver inputs: /pipeline/results/03-webserver-inputs
+[xMetaVar] Summary outputs: /pipeline/results/04-summary
+[xMetaVar] HTML report: /pipeline/results/05-report/xmetavar_report.html

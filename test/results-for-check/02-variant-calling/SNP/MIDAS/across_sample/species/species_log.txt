@@ -1,0 +1,8 @@
+Across samples abundant species merging in subcommand merge_species with args
+{
+    "subcommand": "merge_species",
+    "debug": false,
+    "midas_outdir": "/pipeline/results/02-variant-calling/SNP/MIDAS/across_sample",
+    "samples_list": "/pipeline/results/02-variant-calling/SNP/MIDAS/samples_list.tsv",
+    "min_cov": 2.0
+}

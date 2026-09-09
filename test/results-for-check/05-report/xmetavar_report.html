@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>xMetaVar Report</title>
+<style>
+:root {
+    --border: #e5e7eb;
+    --muted: #6b7280;
+    --bg-soft: #f9fafb;
+    --text: #111827;
+}
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+    margin: 32px;
+    color: var(--text);
+    background:
+        radial-gradient(circle at top left, rgba(148, 103, 189, 0.12), transparent 32%),
+        radial-gradient(circle at top right, rgba(214, 39, 40, 0.09), transparent 28%),
+        #ffffff;
+}
+h1, h2, h3 {
+    color: var(--text);
+}
+.hero {
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 26px 28px;
+    margin-bottom: 22px;
+    background: rgba(255,255,255,0.88);
+    box-shadow: 0 8px 28px rgba(15, 23, 42, 0.06);
+}
+.hero h1 {
+    margin: 0 0 8px 0;
+    font-size: 30px;
+}
+.hero p {
+    margin: 0;
+    color: var(--muted);
+}
+.card {
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 18px 22px;
+    margin: 18px 0;
+    background: rgba(255,255,255,0.94);
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+.card:hover {
+    box-shadow: 0 5px 18px rgba(15, 23, 42, 0.07);
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(140px, 1fr));
+    gap: 12px;
+}
+.metric {
+    background: var(--bg-soft);
+    border-radius: 12px;
+    padding: 14px;
+    border: 1px solid #eef2f7;
+}
+.metric .value {
+    font-size: 26px;
+    font-weight: 760;
+}
+.metric .label {
+    color: var(--muted);
+    font-size: 13px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 13px;
+}
+th, td {
+    border: 1px solid var(--border);
+    padding: 7px 9px;
+    text-align: left;
+}
+th {
+    background: #f3f4f6;
+}
+code {
+    background: #f3f4f6;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+.note {
+    color: var(--muted);
+    font-size: 13px;
+}
+.bar-row {
+    display: grid;
+    grid-template-columns: 130px 1fr 90px;
+    gap: 10px;
+    align-items: center;
+    margin: 9px 0;
+    font-size: 13px;
+}
+.bar-label {
+    color: #374151;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.bar-label.wide {
+    width: 210px;
+}
+.bar-track {
+    height: 14px;
+    border-radius: 999px;
+    background: #f3f4f6;
+    overflow: hidden;
+}
+.bar-fill {
+    height: 100%;
+    border-radius: 999px;
+}
+.bar-value {
+    text-align: right;
+    color: #374151;
+    font-variant-numeric: tabular-nums;
+}
+.status-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
+    gap: 12px;
+}
+.status-card {
+    border-radius: 12px;
+    padding: 14px;
+    border: 1px solid var(--border);
+    background: var(--bg-soft);
+}
+.status-title {
+    font-weight: 750;
+    font-size: 16px;
+}
+.status-subtitle {
+    color: var(--muted);
+    font-size: 12px;
+    margin-top: 2px;
+}
+.status-label {
+    margin-top: 8px;
+    font-weight: 750;
+}
+.status-detail {
+    color: var(--muted);
+    font-size: 12px;
+    margin-top: 4px;
+}
+.status-ok {
+    border-color: #bbf7d0;
+    background: #f0fdf4;
+}
+.status-bad {
+    border-color: #fecaca;
+    background: #fef2f2;
+}
+.status-na {
+    border-color: var(--border);
+    background: var(--bg-soft);
+}
+details {
+    margin-top: 10px;
+}
+summary {
+    cursor: pointer;
+    color: #374151;
+    font-size: 12px;
+    font-weight: 650;
+}
+details ul {
+    margin: 8px 0 0 18px;
+    padding: 0;
+    color: #4b5563;
+    font-size: 12px;
+}
+.stack-row {
+    display: grid;
+    grid-template-columns: 220px 1fr 90px;
+    gap: 10px;
+    align-items: center;
+    margin: 9px 0;
+    font-size: 13px;
+}
+.stack-label {
+    color: #374151;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.stack-track-outer {
+    height: 16px;
+    background: #f3f4f6;
+    border-radius: 999px;
+    overflow: hidden;
+}
+.stack-track-inner {
+    height: 100%;
+    display: flex;
+    border-radius: 999px;
+    overflow: hidden;
+}
+.stack-segment {
+    height: 100%;
+}
+.stack-value {
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+}
+.legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 8px 0 14px 0;
+    color: #374151;
+    font-size: 13px;
+}
+.legend-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+.legend-color {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 3px;
+}
+.footer {
+    color: var(--muted);
+    font-size: 12px;
+    margin-top: 24px;
+}
+@media (max-width: 900px) {
+    .grid {
+        grid-template-columns: repeat(2, minmax(140px, 1fr));
+    }
+    .stack-row {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>xMetaVar Workflow Report</h1>
+  <p>Multi-type strain-level variant outputs, standardized matrices and webserver-ready files.</p>
+</div>
+
+<div class="card">
+<h2>Run overview</h2>
+<div class="grid">
+  <div class="metric"><div class="value">2</div><div class="label">Samples</div></div>
+  <div class="metric"><div class="value">PE</div><div class="label">Sequencing mode</div></div>
+  <div class="metric"><div class="value">11</div><div class="label">Ready output files</div></div>
+  <div class="metric"><div class="value">7,758</div><div class="label">Standardized features</div></div>
+</div>
+</div>
+
+<div class="card">
+<h2>Module status summary</h2>
+<p class="note">Ready means the expected final files were generated and copied into <code>03-webserver-inputs/</code>. In partial deliverables mode, modules without available source files are shown as <strong>Not run</strong> rather than failed.</p>
+<div class='status-grid'>
+<div class="status-card status-ok">
+  <div class="status-title">SNP</div>
+  <div class="status-subtitle">MIDAS</div>
+  <div class="status-label">Ready</div>
+  <div class="status-detail">2/2 expected files ready</div>
+  <details>
+    <summary>File details</summary>
+    <ul><li><code>snps_freqs.tsv</code>: ready</li><li><code>snps_info.tsv</code>: ready</li></ul>
+  </details>
+</div>
+
+<div class="status-card status-ok">
+  <div class="status-title">INDEL</div>
+  <div class="status-subtitle">QuickVariants</div>
+  <div class="status-label">Ready</div>
+  <div class="status-detail">2/2 expected files ready</div>
+  <details>
+    <summary>File details</summary>
+    <ul><li><code>indel.tsv</code>: ready</li><li><code>indel_anno.tsv</code>: ready</li></ul>
+  </details>
+</div>
+
+<div class="status-card status-ok">
+  <div class="status-title">dSV</div>
+  <div class="status-subtitle">SGVFinder2</div>
+  <div class="status-label">Ready</div>
+  <div class="status-detail">2/2 expected files ready</div>
+  <details>
+    <summary>File details</summary>
+    <ul><li><code>dsgv.csv</code>: ready</li><li><code>dsgv_anno.tsv</code>: ready</li></ul>
+  </details>
+</div>
+
+<div class="status-card status-ok">
+  <div class="status-title">vSV</div>
+  <div class="status-subtitle">SGVFinder2</div>
+  <div class="status-label">Ready</div>
+  <div class="status-detail">2/2 expected files ready</div>
+  <details>
+    <summary>File details</summary>
+    <ul><li><code>vsgv.csv</code>: ready</li><li><code>vsgv_anno.tsv</code>: ready</li></ul>
+  </details>
+</div>
+
+<div class="status-card status-ok">
+  <div class="status-title">Inversion</div>
+  <div class="status-subtitle">PhaseFinder</div>
+  <div class="status-label">Ready</div>
+  <div class="status-detail">2/2 expected files ready</div>
+  <details>
+    <summary>File details</summary>
+    <ul><li><code>inversion.tsv</code>: ready</li><li><code>inversion_anno.tsv</code>: ready</li></ul>
+  </details>
+</div>
+
+<div class="status-card status-ok">
+  <div class="status-title">CNV</div>
+  <div class="status-subtitle">MIDAS</div>
+  <div class="status-label">Ready</div>
+  <div class="status-detail">1/1 expected files ready</div>
+  <details>
+    <summary>File details</summary>
+    <ul><li><code>genes_copynum.tsv</code>: ready</li></ul>
+  </details>
+</div>
+</div>
+</div>
+
+<div class="card">
+<h2>Matrix overview</h2>
+
+<div class="grid">
+  <div class="metric"><div class="value">2</div><div class="label">Matrix samples</div></div>
+  <div class="metric"><div class="value">7,758</div><div class="label">Matrix features</div></div>
+  <div class="metric"><div class="value">88.45%</div><div class="label">Native non-zero</div></div>
+  <div class="metric"><div class="value">76.06%</div><div class="label">Scaled positive</div></div>
+</div>
+
+<p class="note">
+The native feature matrix is stored at <code>04-summary/xmetavar_feature_matrix.tsv</code>.
+It preserves type-specific signals without thresholding or feature filtering, except for missing-value encoding.
+The scaled 0/1 matrix is stored at <code>04-summary/xmetavar_scaled_matrix.tsv</code>.
+vSV events are defined as <code>abs(value) ≥ 2.0</code>, and CNV events are defined as <code>copy number ≥ 0.5</code>.
+Type-specific native matrices are stored in <code>04-summary/type_matrices/</code>.
+</p>
+
+
+
+<table>
+  <thead><tr><th>variant_type</th><th>n_features</th></tr></thead>
+  <tbody><tr><td>SNP</td><td>17</td></tr><tr><td>INDEL</td><td>101</td></tr><tr><td>dSV</td><td>4</td></tr><tr><td>vSV</td><td>4</td></tr><tr><td>Inversion</td><td>6</td></tr><tr><td>CNV</td><td>7626</td></tr></tbody>
+</table>
+
+
+</div>
+
+<div class="card">
+<h2>Variant feature count</h2>
+
+<div class="bar-row">
+  <div class="bar-label">SNP</div>
+  <div class="bar-track">
+    <div class="bar-fill" style="width:2.00%; background:#d62728;"></div>
+  </div>
+  <div class="bar-value">17</div>
+</div>
+
+
+<div class="bar-row">
+  <div class="bar-label">INDEL</div>
+  <div class="bar-track">
+    <div class="bar-fill" style="width:2.00%; background:#1f77b4;"></div>
+  </div>
+  <div class="bar-value">101</div>
+</div>
+
+
+<div class="bar-row">
+  <div class="bar-label">dSV</div>
+  <div class="bar-track">
+    <div class="bar-fill" style="width:2.00%; background:#9467bd;"></div>
+  </div>
+  <div class="bar-value">4</div>
+</div>
+
+
+<div class="bar-row">
+  <div class="bar-label">vSV</div>
+  <div class="bar-track">
+    <div class="bar-fill" style="width:2.00%; background:#8c564b;"></div>
+  </div>
+  <div class="bar-value">4</div>
+</div>
+
+
+<div class="bar-row">
+  <div class="bar-label">Inversion</div>
+  <div class="bar-track">
+    <div class="bar-fill" style="width:2.00%; background:#2ca02c;"></div>
+  </div>
+  <div class="bar-value">6</div>
+</div>
+
+
+<div class="bar-row">
+  <div class="bar-label">CNV</div>
+  <div class="bar-track">
+    <div class="bar-fill" style="width:100.00%; background:#ff7f0e;"></div>
+  </div>
+  <div class="bar-value">7,626</div>
+</div>
+
+</div>
+
+<div class="card">
+<h2>Sample scaled-matrix burden</h2>
+<p class="note">
+This panel is based on <code>xmetavar_scaled_matrix.tsv</code>.
+The matrix is binary. vSV uses <code>abs(value) ≥ 2.0</code>;
+CNV uses <code>copy number ≥ 0.5</code>.
+</p>
+
+<div class="legend"><span class='legend-item'><span class='legend-color' style='background:#d62728;'></span>SNP</span><span class='legend-item'><span class='legend-color' style='background:#1f77b4;'></span>INDEL</span><span class='legend-item'><span class='legend-color' style='background:#9467bd;'></span>dSV</span><span class='legend-item'><span class='legend-color' style='background:#8c564b;'></span>vSV</span><span class='legend-item'><span class='legend-color' style='background:#2ca02c;'></span>Inversion</span><span class='legend-item'><span class='legend-color' style='background:#ff7f0e;'></span>CNV</span></div>
+
+<div class="stack-row">
+  <div class="stack-label">CCMD19168690ST-11-0</div>
+  <div class="stack-track-outer">
+    <div class="stack-track-inner" style="width:100.00%;">
+      <div class='stack-segment' title='SNP: 17' style='width:0.28%; background:#d62728;'></div><div class='stack-segment' title='INDEL: 101' style='width:1.67%; background:#1f77b4;'></div><div class='stack-segment' title='dSV: 2' style='width:0.03%; background:#9467bd;'></div><div class='stack-segment' title='vSV: 4' style='width:0.07%; background:#8c564b;'></div><div class='stack-segment' title='Inversion: 4' style='width:0.07%; background:#2ca02c;'></div><div class='stack-segment' title='CNV: 5,917' style='width:97.88%; background:#ff7f0e;'></div>
+    </div>
+  </div>
+  <div class="stack-value">6,045</div>
+</div>
+
+<div class="stack-row">
+  <div class="stack-label">CCMD46727384ST-11-0</div>
+  <div class="stack-track-outer">
+    <div class="stack-track-inner" style="width:95.24%;">
+      <div class='stack-segment' title='SNP: 17' style='width:0.30%; background:#d62728;'></div><div class='stack-segment' title='INDEL: 101' style='width:1.75%; background:#1f77b4;'></div><div class='stack-segment' title='dSV: 2' style='width:0.03%; background:#9467bd;'></div><div class='stack-segment' title='vSV: 4' style='width:0.07%; background:#8c564b;'></div><div class='stack-segment' title='Inversion: 3' style='width:0.05%; background:#2ca02c;'></div><div class='stack-segment' title='CNV: 5,630' style='width:97.79%; background:#ff7f0e;'></div>
+    </div>
+  </div>
+  <div class="stack-value">5,757</div>
+</div>
+
+
+</div>
+
+<div class="card">
+<h2>Output file size</h2>
+<p class="note">Only ready, non-placeholder files are shown in this chart.</p>
+
+<div class="bar-row">
+  <div class="bar-label wide">snps_freqs.tsv</div>
+  <div class="bar-track">
+    <div class="bar-fill" style="width:2.00%; background:#d62728;"></div>
+  </div>
+  <div class="bar-value">884 B</div>
+</div>
+
+
+<div class="bar-row">
+  <div class="bar-label wide">snps_info.tsv</div>
+  <div class="bar-track">
+    <div class="bar-fill" style="width:2.00%; background:#d62728;"></div>
+  </div>
+  <div class="bar-value">1.8 KB</div>
+</div>
+
+
+<div class="bar-row">
+  <div class="bar-label wide">indel.tsv</div>
+  <div class="bar-track">
+    <div class="bar-fill" style="width:2.00%; background:#1f77b4;"></div>
+  </div>
+  <div class="bar-value">2.4 KB</div>
+</div>
+
+
+<div class="bar-row">
+  <div class="bar-label wide">indel_anno.tsv</div>
+  <div class="bar-track">
+    <div class="bar-fill" style="width:2.00%; background:#1f77b4;"></div>
+  </div>
+  <div class="bar-value">11.9 KB</div>
+</div>
+
+
+<div class="bar-row">
+  <div class="bar-label wide">dsgv.csv</div>
+  <div class="bar-track">
+    <div class="bar-fill" style="width:2.00%; background:#9467bd;"></div>
+  </div>
+  <div class="bar-value">3.3 KB</div>
+</div>
+
+
+<div class="bar-row">
+  <div class="bar-label wide">dsgv_anno.tsv</div>
+  <div class="bar-track">
+    <div class="bar-fill" style="width:100.00%; background:#9467bd;"></div>
+  </div>
+  <div class="bar-value">1.6 MB</div>
+</div>
+
+
+<div class="bar-row">
+  <div class="bar-label wide">vsgv.csv</div>
+  <div class="bar-track">
+    <div class="bar-fill" style="width:2.00%; background:#8c564b;"></div>
+  </div>
+  <div class="bar-value">764 B</div>
+</div>
+
+
+<div class="bar-row">
+  <div class="bar-label wide">vsgv_anno.tsv</div>
+  <div class="bar-track">
+    <div class="bar-fill" style="width:6.06%; background:#8c564b;"></div>
+  </div>
+  <div class="bar-value">101.1 KB</div>
+</div>
+
+
+<div class="bar-row">
+  <div class="bar-label wide">inversion.tsv</div>
+  <div class="bar-track">
+    <div class="bar-fill" style="width:2.00%; background:#2ca02c;"></div>
+  </div>
+  <div class="bar-value">311 B</div>
+</div>
+
+
+<div class="bar-row">
+  <div class="bar-label wide">inversion_anno.tsv</div>
+  <div class="bar-track">
+    <div class="bar-fill" style="width:2.00%; background:#2ca02c;"></div>
+  </div>
+  <div class="bar-value">979 B</div>
+</div>
+
+
+<div class="bar-row">
+  <div class="bar-label wide">genes_copynum.tsv</div>
+  <div class="bar-track">
+    <div class="bar-fill" style="width:17.24%; background:#ff7f0e;"></div>
+  </div>
+  <div class="bar-value">287.7 KB</div>
+</div>
+
+</div>
+
+<div class="card">
+<h2>Output manifest</h2>
+<details open>
+<summary>Show output manifest table</summary>
+
+
+<table>
+  <thead><tr><th>module</th><th>variant_type</th><th>file_role</th><th>file_name</th><th>value_type</th><th>is_required</th><th>source_path</th><th>output_path</th><th>status</th><th>source_exists</th><th>exists</th><th>is_placeholder</th><th>n_rows</th><th>n_columns</th><th>size_bytes</th><th>size_human</th></tr></thead>
+  <tbody><tr><td>MIDAS</td><td>SNP</td><td>matrix</td><td>snps_freqs.tsv</td><td>focal_allele_frequency</td><td>True</td><td>/pipeline/results/02-variant-calling/SNP/MIDAS/across_sample/merge.snps_freqs.tsv</td><td>/pipeline/results/03-webserver-inputs/snps_freqs.tsv</td><td>ready</td><td>True</td><td>True</td><td>False</td><td>17</td><td>3</td><td>884</td><td>884 B</td></tr><tr><td>MIDAS</td><td>SNP</td><td>annotation</td><td>snps_info.tsv</td><td>site_annotation</td><td>True</td><td>/pipeline/results/02-variant-calling/SNP/MIDAS/across_sample/merge.snps_info.tsv</td><td>/pipeline/results/03-webserver-inputs/snps_info.tsv</td><td>ready</td><td>True</td><td>True</td><td>False</td><td>17</td><td>17</td><td>1803</td><td>1.8 KB</td></tr><tr><td>QuickVariants</td><td>INDEL</td><td>matrix</td><td>indel.tsv</td><td>presence_absence</td><td>True</td><td>/pipeline/results/02-variant-calling/INDEL/across-sample/indel.tsv</td><td>/pipeline/results/03-webserver-inputs/indel.tsv</td><td>ready</td><td>True</td><td>True</td><td>False</td><td>101</td><td>3</td><td>2410</td><td>2.4 KB</td></tr><tr><td>QuickVariants</td><td>INDEL</td><td>annotation</td><td>indel_anno.tsv</td><td>site_annotation</td><td>True</td><td>/pipeline/results/02-variant-calling/INDEL/across-sample/indel_anno.tsv</td><td>/pipeline/results/03-webserver-inputs/indel_anno.tsv</td><td>ready</td><td>True</td><td>True</td><td>False</td><td>101</td><td>13</td><td>12206</td><td>11.9 KB</td></tr><tr><td>SGVFinder2</td><td>dSV</td><td>matrix</td><td>dsgv.csv</td><td>raw_deletion_state</td><td>True</td><td>/pipeline/results/02-variant-calling/SV/dSV-vSV/across-sample/dsgv.csv</td><td>/pipeline/results/03-webserver-inputs/dsgv.csv</td><td>ready</td><td>True</td><td>True</td><td>False</td><td>2</td><td>5</td><td>3330</td><td>3.3 KB</td></tr><tr><td>SGVFinder2</td><td>dSV</td><td>annotation</td><td>dsgv_anno.tsv</td><td>cluster_annotation</td><td>True</td><td>/pipeline/results/02-variant-calling/SV/dSV-vSV/across-sample/dsgv_anno.tsv</td><td>/pipeline/results/03-webserver-inputs/dsgv_anno.tsv</td><td>ready</td><td>True</td><td>True</td><td>False</td><td>1582</td><td>13</td><td>1708596</td><td>1.6 MB</td></tr><tr><td>SGVFinder2</td><td>vSV</td><td>matrix</td><td>vsgv.csv</td><td>signed_standardized_signal</td><td>True</td><td>/pipeline/results/02-variant-calling/SV/dSV-vSV/across-sample/vsgv.csv</td><td>/pipeline/results/03-webserver-inputs/vsgv.csv</td><td>ready</td><td>True</td><td>True</td><td>False</td><td>2</td><td>5</td><td>764</td><td>764 B</td></tr><tr><td>SGVFinder2</td><td>vSV</td><td>annotation</td><td>vsgv_anno.tsv</td><td>cluster_annotation</td><td>True</td><td>/pipeline/results/02-variant-calling/SV/dSV-vSV/across-sample/vsgv_anno.tsv</td><td>/pipeline/results/03-webserver-inputs/vsgv_anno.tsv</td><td>ready</td><td>True</td><td>True</td><td>False</td><td>338</td><td>13</td><td>103518</td><td>101.1 KB</td></tr><tr><td>PhaseFinder</td><td>Inversion</td><td>matrix</td><td>inversion.tsv</td><td>presence_absence</td><td>PE_only</td><td>/pipeline/results/02-variant-calling/SV/Inversion/across-sample/inversion.tsv</td><td>/pipeline/results/03-webserver-inputs/inversion.tsv</td><td>ready</td><td>True</td><td>True</td><td>False</td><td>6</td><td>3</td><td>311</td><td>311 B</td></tr><tr><td>PhaseFinder</td><td>Inversion</td><td>annotation</td><td>inversion_anno.tsv</td><td>site_annotation</td><td>PE_only</td><td>/pipeline/results/02-variant-calling/SV/Inversion/across-sample/inversion_anno.tsv</td><td>/pipeline/results/03-webserver-inputs/inversion_anno.tsv</td><td>ready</td><td>True</td><td>True</td><td>False</td><td>6</td><td>13</td><td>979</td><td>979 B</td></tr><tr><td>MIDAS</td><td>CNV</td><td>matrix</td><td>genes_copynum.tsv</td><td>copy_number</td><td>True</td><td>/pipeline/results/02-variant-calling/SV/CNV/across_sample/merge.genes_copynum.tsv</td><td>/pipeline/results/03-webserver-inputs/genes_copynum.tsv</td><td>ready</td><td>True</td><td>True</td><td>False</td><td>7626</td><td>3</td><td>294624</td><td>287.7 KB</td></tr></tbody>
+</table>
+
+</details>
+</div>
+
+<div class="card">
+<h2>Sample scaled-matrix burden table</h2>
+
+
+<table>
+  <thead><tr><th>sample</th><th>n_snp_events</th><th>n_indel_events</th><th>n_dsv_events</th><th>n_vsv_events</th><th>n_inversion_events</th><th>n_cnv_events</th><th>total_event_features</th></tr></thead>
+  <tbody><tr><td>CCMD19168690ST-11-0</td><td>17</td><td>101</td><td>2</td><td>4</td><td>4</td><td>5917</td><td>6045</td></tr><tr><td>CCMD46727384ST-11-0</td><td>17</td><td>101</td><td>2</td><td>4</td><td>3</td><td>5630</td><td>5757</td></tr></tbody>
+</table>
+
+</div>
+
+<p class="footer">
+Generated by xMetaVar Snakemake workflow.
+</p>
+
+</body>
+</html>

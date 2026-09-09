@@ -1,0 +1,22 @@
+1786243269.6:  Across samples abundant species merging in subcommand merge_species with args
+1786243269.6:  {
+1786243269.6:      "subcommand": "merge_species",
+1786243269.6:      "force": false,
+1786243269.6:      "debug": false,
+1786243269.6:      "zzz_worker_mode": false,
+1786243269.6:      "batch_branch": "master",
+1786243269.6:      "batch_memory": 378880,
+1786243269.6:      "batch_vcpus": 48,
+1786243269.6:      "batch_queue": "pairani",
+1786243269.6:      "batch_ecr_image": "pairani:latest",
+1786243269.6:      "midas_outdir": "/pipeline/results/02-variant-calling/SNP/MIDAS/across_sample",
+1786243269.6:      "samples_list": "/pipeline/results/02-variant-calling/SNP/MIDAS/samples_list.tsv",
+1786243269.6:      "min_cov": 2.0
+1786243269.6:  }
+1786243269.6:  Create OUTPUT directory.
+1786243269.6:  'rm -rf /pipeline/results/02-variant-calling/SNP/MIDAS/across_sample/species'
+1786243269.6:  'mkdir -p /pipeline/results/02-variant-calling/SNP/MIDAS/across_sample/species'
+1786243269.7:  MIDAS2::write_species_results::start
+1786243269.7:  MIDAS2::write_species_results::finish
+1786243269.7:  MIDAS2::write_stats::start
+1786243269.7:  MIDAS2::write_stats::finish
